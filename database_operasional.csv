@@ -9,6 +9,7 @@ TIPE_DATA,PERIODE,TANGGAL,WAKTU_ATAU_STOK,NAMA_ATAU_KEGIATAN,ALAMAT_ATAU_ORDER,K
 "GANGGUAN_PELANGGAN","ALL","13/11/2026","-","jalur lek nden","ajung tengah","kabel putus","1 jam"
 "GANGGUAN_PELANGGAN","ALL","14/11/2026","-","jalur wiwin","ajung timur","kabel putus","4 jam"
 "GANGGUAN_PELANGGAN","ALL","14/11/2026","-","ayu selatan dan nurhanifah","ajung selatan","spliter eror","1 jam"
+"GANGGUAN_PELANGGAN","ALL","18/11/2026","-","asfdsa","dasf","sdaf","dsfa"
 "AGENDA_TEKNISI","ALL","02/11/2026","-","perbaikan pak rafi","dawuhan","kabel putus",""
 "AGENDA_TEKNISI","ALL","02/11/2026","-","perbaikan gudang rukin","stasiun","kabel putus",""
 "AGENDA_TEKNISI","ALL","02/11/2026","-","psb risal","karang paiton","",""
