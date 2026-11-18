@@ -1,5 +1,4 @@
 TIPE_DATA,PERIODE,TANGGAL,WAKTU_ATAU_STOK,NAMA_ATAU_KEGIATAN,ALAMAT_ATAU_ORDER,KETERANGAN_TROUBLE,ESTIMASI
-"GANGGUAN_PELANGGAN","ALL","02/11/2026","-","gudang rukin","stasiun","kabel putus","1 jam"
 "GANGGUAN_PELANGGAN","ALL","06/11/2026","-","jalur pak vivi","sumber malang","kabel putus","2 jam"
 "GANGGUAN_PELANGGAN","ALL","06/11/2026","-","pak qois","ajung utara","rooter mati","15 menit"
 "GANGGUAN_PELANGGAN","ALL","06/11/2026","-","jalur asari","ajung selatan","redaman naik","4 jam"
