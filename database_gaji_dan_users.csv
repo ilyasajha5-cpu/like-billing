@@ -7,3 +7,4 @@ TIPE_DATA,PERIODE,KODE_ATAU_USERNAME,NAMA_LENGKAP,FIELD_1,FIELD_2,FIELD_3,FIELD_
 "GAJI_TIM","11-2026","BU. AREP","BU. AREP","650000","0","100000","0","0","0","0"
 "APP_USER","ALL","admin","Administrator Utama","admin","Super Admin","Akun Utama Full Kontrol (Semua Menu)","","","",""
 "APP_USER","ALL","ilyas","ilyas","1234","Super Admin","","","","",""
+"APP_USER","ALL","rendi","rendi","1234","Admin","","","","",""
