@@ -23,7 +23,7 @@ ID_Pelanggan,NAMA,ALAMAT,NO.HP,PAKET,DISKON,TELAT,TOTAL,STATUS,USERNAME_PPPoE,KE
 "PLG006","NOVITASARI","SUMBER ANGET","082257934593","100000","0","0","100000","BELUM LUNAS","553@novitasarisumberanget","Tagihan Desember 2026","ferdi","12-2026"
 "PLG007","RISAL","KARANG PAITON","085804174918","100000","0","0","100000","BELUM LUNAS","554@risalkarangpaiton","Tagihan Desember 2026","ferdi","12-2026"
 "PLG008","NURI","DAWUHAN","0882001666530","100000","0","0","100000","BELUM LUNAS","555@nuridawuhan","Tagihan Desember 2026","ferdi","12-2026"
-"PLG009","DESTA","AJUNG UTARA","081917030513","100000","0","0","100000","BELUM LUNAS","288@destaajungutara","Tagihan Desember 2026","arep","12-2026"
+"PLG009","DESTA","AJUNG UTARA","081917030513","100000","0","0","100000","LUNAS","288@destaajungutara","Tagihan Desember 2026","arep","12-2026"
 "PLG010","MOS","PLALANGAN","085708233985","100000","0","0","100000","BELUM LUNAS","520@mosplalangan","Tagihan Desember 2026","rendi","12-2026"
 "PLG011","BELVA","AJUNG TENGAH","081515616543","100000","0","0","100000","LUNAS","556@belvaajungtengah","Tagihan Desember 2026","arep","12-2026"
 "PLG012","HASAN","PLALANGAN","085649597289","100000","0","0","100000","BELUM LUNAS","557@cakhasanplalangan","Tagihan Desember 2026","rendi","12-2026"
