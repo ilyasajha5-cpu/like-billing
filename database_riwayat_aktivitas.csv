@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795092424464-681","19/11/2026","19:47:04","ilyas","ilyas","Super Admin","TAMBAH","Input Lokasi / Area","UTARASAWAH","Menambahkan lokasi/area baru ""UTARASAWAH"""
 "LOG-1795092417205-421","19/11/2026","19:46:57","ilyas","ilyas","Super Admin","HAPUS","Input Lokasi / Area","UTARASAWAH","Menghapus lokasi/area ""UTARASAWAH"""
 "LOG-1795092391222-146","19/11/2026","19:46:31","ilyas","ilyas","Super Admin","LOGIN","Autentikasi","ilyas","User ""ilyas"" (ilyas) berhasil login ke aplikasi"
 "LOG-1795092270750-149","19/11/2026","19:44:30","ilyas","ilyas","Super Admin","LOGOUT","Autentikasi","ilyas","User ""ilyas"" keluar dari sesi login"
