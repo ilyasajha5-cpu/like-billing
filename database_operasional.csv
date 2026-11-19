@@ -1,5 +1,4 @@
 TIPE_DATA,PERIODE,TANGGAL,WAKTU_ATAU_STOK,NAMA_ATAU_KEGIATAN,ALAMAT_ATAU_ORDER,KETERANGAN_TROUBLE,ESTIMASI
-"GANGGUAN_ISP","ALL","18/11/2026","15.30 WIB","ISP PUSAT","","kabel putus","10 menit"
 "GANGGUAN_ISP","ALL","03/12/2026","sf","ISP PUSAT","","sdf","sdf"
 "AGENDA_TEKNISI","ALL","02/11/2026","-","perbaikan pak rafi","dawuhan","kabel putus",""
 "AGENDA_TEKNISI","ALL","02/11/2026","-","perbaikan gudang rukin","stasiun","kabel putus",""
