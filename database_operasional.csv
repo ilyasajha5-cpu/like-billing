@@ -1,8 +1,6 @@
 TIPE_DATA,PERIODE,TANGGAL,WAKTU_ATAU_STOK,NAMA_ATAU_KEGIATAN,ALAMAT_ATAU_ORDER,KETERANGAN_TROUBLE,ESTIMASI
 "GANGGUAN_ISP","ALL","18/11/2026","15.30 WIB","ISP PUSAT","","kabel putus","10 menit"
 "GANGGUAN_ISP","ALL","03/12/2026","sf","ISP PUSAT","","sdf","sdf"
-"GANGGUAN_PELANGGAN","ALL","07/11/2026","-","topan","ajung 5","ppoe ke reset","1 jam"
-"GANGGUAN_PELANGGAN","ALL","08/11/2026","-","jalur hernik","ajung selatan","redaman naik","2 jam"
 "GANGGUAN_PELANGGAN","ALL","11/11/2026","-","buk fani","utara sawah","kabel putus","1 jam"
 "GANGGUAN_PELANGGAN","ALL","13/11/2026","-","jalur lek nden","ajung tengah","kabel putus","1 jam"
 "GANGGUAN_PELANGGAN","ALL","14/11/2026","-","jalur wiwin","ajung timur","kabel putus","4 jam"
