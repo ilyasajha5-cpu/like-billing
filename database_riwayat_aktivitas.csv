@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795097537914","19-11-2026","21.12.17","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (@rendi) masuk sebagai Admin"
 "LOG-1795097474427","19-11-2026","21.11.14","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (@rendi) masuk sebagai Admin"
 "LOG-1795097441289","19-11-2026","21.10.41","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (@rendi) keluar / logout dari aplikasi"
 "LOG-1795097138707","19-11-2026","21.05.38","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (@rendi) masuk sebagai Admin"
