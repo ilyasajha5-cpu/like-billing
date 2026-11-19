@@ -3,7 +3,6 @@ KATEGORI,KODE_ATAU_NAMA,SUB_FIELD_1,SUB_FIELD_2,SUB_FIELD_3,KETERANGAN
 "PAKET","Paket Reguler","25 Mbps","100000","100.000","Unlimited Tanpa FUP (4-6 HP)"
 "PAKET","Paket Fast","50 Mbps","150000","150.000","Prioritas Bandwidth"
 "PAKET","paket 75","10 Mbps","75000","75.000",""
-"LOKASI","SUMBER ANGET","","","","Area Sumber Anget"
 "LOKASI","KARANG PAITON","","","","Area Karang Paiton"
 "LOKASI","DAWUHAN","","","","Area Dawuhan"
 "LOKASI","PLALANGAN","","","","Area Plalangan"
