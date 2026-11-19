@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795096003164","19-11-2026","20.46.43","rendi","rendi","Admin","TAMBAH","Catatan Janji Bayar","Salin November 2026 → Desember 2026","Menyalin 3 daftar pelanggan janji bayar dari November 2026 ke Desember 2026"
 "LOG-1795095974197","19-11-2026","20.46.14","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (@rendi) masuk sebagai Admin"
 "LOG-1795095758511","19-11-2026","20.42.38","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (@rendi) masuk sebagai Admin"
 "LOG-1795095580462","19-11-2026","20.39.40","ilyas","ilyas","Super Admin","SIMPAN","Catatan Janji Bayar","3 Pelanggan (November 2026)","Menerapkan massal 3 catatan janji bayar ke Tagihan Pelanggan periode November 2026"
