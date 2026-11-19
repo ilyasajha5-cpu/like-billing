@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795096691230","19-11-2026","20.58.11","ilyas","ilyas","Super Admin","EDIT","Catatan Janji Bayar","PLG019 - AMELIA AJUNG","Membatalkan penerapan keterangan ""Bayar tgl 20 tiap Bulan"" dari Tagihan Pelanggan periode November 2026"
 "LOG-1795096684983","19-11-2026","20.58.04","ilyas","ilyas","Super Admin","SIMPAN","Catatan Janji Bayar","3 Pelanggan (November 2026)","Menerapkan massal 3 catatan janji bayar ke Tagihan Pelanggan periode November 2026"
 "LOG-1795096683518","19-11-2026","20.58.03","ilyas","ilyas","Super Admin","EDIT","Catatan Janji Bayar","PLG020 - BUK PREI AJUNG","Menerapkan keterangan ""Bayar tgl 25 tiap Bulan"" ke Tagihan Pelanggan periode November 2026"
 "LOG-1795096682895","19-11-2026","20.58.02","ilyas","ilyas","Super Admin","EDIT","Catatan Janji Bayar","PLG019 - AMELIA AJUNG","Menerapkan keterangan ""Bayar tgl 20 tiap Bulan"" ke Tagihan Pelanggan periode November 2026"
