@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795098750825","19-11-2026","21.32.30","ilyas","ilyas","Super Admin","TAMBAH","Input Lokasi / Area","PLALANGAN","Menambahkan area lokasi baru: PLALANGAN (-)"
 "LOG-1795098747648","19-11-2026","21.32.27","ilyas","ilyas","Super Admin","TAMBAH","Input Lokasi / Area","DAWUHAN","Menambahkan area lokasi baru: DAWUHAN (-)"
 "LOG-1795098743920","19-11-2026","21.32.23","ilyas","ilyas","Super Admin","TAMBAH","Input Lokasi / Area","SUMBERKETEMPA","Menambahkan area lokasi baru: SUMBERKETEMPA (-)"
 "LOG-1795098739200","19-11-2026","21.32.19","ilyas","ilyas","Super Admin","TAMBAH","Input Lokasi / Area","SUKOREJO","Menambahkan area lokasi baru: SUKOREJO (-)"
