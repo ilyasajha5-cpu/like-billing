@@ -69,6 +69,5 @@ TIPE_DATA,PERIODE,KODE_ATAU_USERNAME,NAMA_LENGKAP,FIELD_1,FIELD_2,FIELD_3,FIELD_
 "GAJI_MANUAL","01-2027","MANUAL_3","","0","0","0","0","0","0","0"
 "GAJI_MANUAL","01-2027","MANUAL_4","","0","0","0","0","0","0","0"
 "GAJI_MANUAL","01-2027","MANUAL_5","","0","0","0","0","0","0","0"
-"APP_USER","ALL","admin","Administrator Utama","admin","Super Admin","Akun Utama Full Kontrol (Semua Menu)","","","",""
 "APP_USER","ALL","rendi","rendi","1234","Admin","","","","",""
 "APP_USER","ALL","ilyas","ilyas","irmawatidewi","Super Admin","","","","",""
