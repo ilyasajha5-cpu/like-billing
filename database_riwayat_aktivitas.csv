@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795105014623","19-11-2026","23.16.54","ILYAS","ILYAS","Super Admin","EDIT","Daftar Paket Internet","PAKET 75.000","Edit paket PAKET 75.000 (7 Mbps - Rp 75.000)"
 "LOG-1795105005275","19-11-2026","23.16.45","ILYAS","ILYAS","Super Admin","EDIT","Daftar Paket Internet","PAKET 50.000","Edit paket PAKET 50.000 (4 Mbps - Rp 50.000)"
 "LOG-1795104958591","19-11-2026","23.15.58","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
 "LOG-1795103892876","19-11-2026","22.58.12","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
