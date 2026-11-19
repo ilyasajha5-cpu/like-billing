@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795096844626","19-11-2026","21.00.44","ilyas","ilyas","Super Admin","EDIT","Daftar Paket Internet","PAKET 200.000","Edit paket PAKET 200.000 (50 Mbps - Rp 200.000)"
 "LOG-1795096841042","19-11-2026","21.00.41","ilyas","ilyas","Super Admin","EDIT","Daftar Paket Internet","PAKET 150.000","Edit paket PAKET 150.000 (35 Mbps - Rp 150.000)"
 "LOG-1795096834946","19-11-2026","21.00.34","ilyas","ilyas","Super Admin","EDIT","Daftar Paket Internet","PAKET 50.000","Edit paket PAKET 50.000 (3 Mbps - Rp 50.000)"
 "LOG-1795096828690","19-11-2026","21.00.28","ilyas","ilyas","Super Admin","EDIT","Daftar Paket Internet","PAKET 75.000","Edit paket PAKET 75.000 (5 Mbps - Rp 75.000)"
