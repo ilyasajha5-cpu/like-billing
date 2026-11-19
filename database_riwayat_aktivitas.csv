@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795092270750-149","19/11/2026","19:44:30","ilyas","ilyas","Super Admin","LOGOUT","Autentikasi","ilyas","User ""ilyas"" keluar dari sesi login"
 "LOG-1795092229008-884","19/11/2026","19:43:49","ilyas","ilyas","Super Admin","LOGIN","Autentikasi","ilyas","User ""ilyas"" (ilyas) berhasil login ke aplikasi"
 "LOG-1795092150187-426","19/11/2026","19:42:30","ilyas","ilyas","Super Admin","LOGIN","Autentikasi","ilyas","User ""ilyas"" (ilyas) berhasil login ke aplikasi"
 "LOG-1795092142951-136","19/11/2026","19:42:22","rendi","rendi","Admin","LOGOUT","Autentikasi","rendi","User ""rendi"" keluar dari sesi login"
