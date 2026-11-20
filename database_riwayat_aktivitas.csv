@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795159351524-962","20/11/2026","14:22:31","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG004 - YOGA UTARA AJUNGUTARA","Ubah status tagihan YOGA UTARA AJUNGUTARA (November 2026) dari LUNAS menjadi BELUM LUNAS"
 "LOG-1795159339724-722","20/11/2026","14:22:19","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG003 - FATHOR PTP AJUNGUTARA","Ubah status tagihan FATHOR PTP AJUNGUTARA (November 2026) dari LUNAS menjadi BELUM LUNAS"
 "LOG-1795159330468-336","20/11/2026","14:22:10","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG002 - LELI AJUNG","Ubah status tagihan LELI AJUNG (November 2026) dari LUNAS menjadi BELUM LUNAS"
 "LOG-1795159298540-770","20/11/2026","14:21:38","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG537 - USTAD AUREL TAHUAN","Ubah status tagihan USTAD AUREL TAHUAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795097474427","19-11-2026","21.11.14","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (@rendi) masuk sebagai Admin"
 "LOG-1795097441289","19-11-2026","21.10.41","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (@rendi) keluar / logout dari aplikasi"
 "LOG-1795097138707","19-11-2026","21.05.38","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (@rendi) masuk sebagai Admin"
-"LOG-1795097131267","19-11-2026","21.05.31","ilyas","ilyas","Super Admin","LOGIN","Autentikasi Sistem","ilyas","User ilyas (@ilyas) keluar / logout dari aplikasi"
