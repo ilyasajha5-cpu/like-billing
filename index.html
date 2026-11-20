@@ -3304,11 +3304,15 @@
                 })
                 .sort(sortByPetugasAlamatNama);
 
-            const totalTagihan = rows.reduce((s, r) => s + parseNumber(r.total), 0);
-            const filterInfo = [];
-            if (fStatus !== "ALL") filterInfo.push(`Status: ${fStatus}`);
-            if (fPtg !== "all") filterInfo.push(`Petugas: ${rawPtg.toUpperCase()}`);
-            const filterSub = filterInfo.length > 0 ? ` (${filterInfo.join(" | ")})` : "";
+            const kolektorNames = fPtg !== "all"
+                ? rawPtg.toUpperCase()
+                : Array.from(new Set(rows.map(r => String(r.petugas || "").trim().toUpperCase()).filter(Boolean))).sort().join(", ") || "-";
+
+            const formatShortTotal = (val) => {
+                const num = parseNumber(val);
+                if (num >= 1000 && num % 1000 === 0) return String(num / 1000);
+                return formatRibuan(num);
+            };
 
             const html = `
                 <!DOCTYPE html>
@@ -3339,26 +3343,12 @@
                         .header {
                             display: flex;
                             justify-content: space-between;
-                            align-items: flex-end;
+                            align-items: center;
                             border-bottom: 2px solid #000000;
-                            padding-bottom: 6px;
-                            margin-bottom: 10px;
-                        }
-                        .header-title {
-                            font-size: 13pt !important;
+                            padding-bottom: 5px;
+                            margin-bottom: 8px;
                             font-weight: 700;
-                            letter-spacing: 0.2px;
-                        }
-                        .header-sub {
-                            font-size: 11pt !important;
-                            font-weight: 400;
-                            margin-top: 2px;
-                        }
-                        .header-right {
-                            text-align: right;
-                            font-size: 11pt !important;
-                            font-weight: 700;
-                            line-height: 1.3;
+                            text-transform: uppercase;
                         }
                         table {
                             width: 100%;
@@ -3367,85 +3357,56 @@
                         }
                         th, td {
                             border: 1px solid #000000;
-                            padding: 4px 6px;
+                            padding: 4px 7px;
                             vertical-align: middle;
                             font-family: 'Calibri', Arial, sans-serif !important;
                             font-size: 11pt !important;
                             color: #000000;
                         }
                         th {
-                            background: #e2e8f0;
+                            background: #f1f5f9;
                             font-weight: 700;
                             text-align: center;
+                            text-transform: uppercase;
                             white-space: nowrap;
                             border-bottom: 1.5px solid #000000;
                         }
                         tr { page-break-inside: avoid; }
-                        .col-no { text-align: center; font-weight: 700; }
-                        .col-nama { font-weight: 700; }
-                        .col-hp { white-space: nowrap; }
-                        .col-num { text-align: right; white-space: nowrap; }
-                        .col-total { text-align: right; font-weight: 700; white-space: nowrap; }
-                        .col-status { text-align: center; font-weight: 700; white-space: nowrap; }
-                        .col-ptg { text-align: center; font-weight: 700; text-transform: uppercase; white-space: nowrap; }
-                        tfoot td {
-                            background: #e2e8f0;
-                            font-weight: 700;
-                            border-top: 1.5px solid #000000;
-                        }
+                        .col-no { text-align: center; width: 38px; }
+                        .col-nama { font-weight: 700; text-transform: uppercase; }
+                        .col-alamat { text-transform: uppercase; }
+                        .col-total { text-align: center; font-weight: 700; width: 62px; white-space: nowrap; }
+                        .col-hp { text-align: center; width: 125px; white-space: nowrap; }
                     </style>
                 </head>
                 <body>
                     <div class="header">
-                        <div>
-                            <div class="header-title">DAFTAR TAGIHAN PELANGGAN${escapeHTML(filterSub)}</div>
-                            <div class="header-sub">${escapeHTML(appConfig.companyName || "PT. JAVA DIGITAL NUSANTARA")}</div>
-                        </div>
-                        <div class="header-right">
-                            <div>PERIODE: ${escapeHTML(label.toUpperCase())}</div>
-                            <div>TOTAL: ${rows.length} PELANGGAN &bull; Rp ${formatRibuan(totalTagihan)}</div>
-                        </div>
+                        <div>PETUGAS / KOLEKTOR: ${escapeHTML(kolektorNames)}</div>
+                        <div>PERIODE TAGIHAN: ${escapeHTML(label.toUpperCase())}</div>
                     </div>
                     <table>
                         <thead>
                             <tr>
-                                <th style="width:32px;">No</th>
-                                <th>ID</th>
-                                <th>Nama Pelanggan</th>
-                                <th>Alamat / Lokasi</th>
-                                <th>No. HP</th>
-                                <th>Paket</th>
-                                <th>Diskon</th>
-                                <th>Total</th>
-                                <th>Status</th>
-                                <th>Petugas</th>
-                                <th>Keterangan</th>
+                                <th class="col-no">NO</th>
+                                <th>NAMA PELANGGAN</th>
+                                <th>ALAMAT</th>
+                                <th class="col-total">TOTAL</th>
+                                <th class="col-hp">NOMOR HP</th>
+                                <th>KETERANGAN</th>
                             </tr>
                         </thead>
                         <tbody>
                             ${rows.map((r, i) => `
                                 <tr>
                                     <td class="col-no">${i + 1}</td>
-                                    <td style="text-align:center; white-space:nowrap;">${escapeHTML(r.id)}</td>
                                     <td class="col-nama">${escapeHTML(r.nama)}</td>
-                                    <td>${escapeHTML(r.alamat)}</td>
+                                    <td class="col-alamat">${escapeHTML(r.alamat)}</td>
+                                    <td class="col-total">${escapeHTML(formatShortTotal(r.total))}</td>
                                     <td class="col-hp">${escapeHTML(r.hp || "-")}</td>
-                                    <td class="col-num">${formatRibuan(r.paket)}</td>
-                                    <td class="col-num">${formatRibuan(r.diskon || 0)}</td>
-                                    <td class="col-total">${formatRibuan(r.total)}</td>
-                                    <td class="col-status">${escapeHTML(r.status)}</td>
-                                    <td class="col-ptg">${escapeHTML(r.petugas || "-")}</td>
                                     <td>${escapeHTML(r.ket || "-")}</td>
                                 </tr>
                             `).join("")}
                         </tbody>
-                        <tfoot>
-                            <tr>
-                                <td colspan="7" style="text-align:right;">TOTAL TAGIHAN (${rows.length} PELANGGAN)</td>
-                                <td class="col-total">Rp ${formatRibuan(totalTagihan)}</td>
-                                <td colspan="3"></td>
-                            </tr>
-                        </tfoot>
                     </table>
                 </body>
                 </html>
@@ -3672,6 +3633,69 @@
             refreshActiveTabOnly();
             triggerAutoSave(["database_psb.csv", "database_data_pelanggan.csv", "database_pelanggan.csv"], true);
             showToast(`Data PSB "${obj.nama}" berhasil disimpan`, "success");
+        }
+
+        function filterPSBBonusCustomerList(query = "") {
+            const dropdown = document.getElementById("psb-bonus-dropdown");
+            if (!dropdown) return;
+            const q = String(query || "").trim().toLowerCase();
+
+            const custMap = new Map();
+            masterCustomers.forEach(c => {
+                if (c.nama) {
+                    custMap.set(c.nama.toUpperCase(), {
+                        id: c.id || "",
+                        nama: c.nama.toUpperCase(),
+                        alamat: c.alamat || ""
+                    });
+                }
+            });
+            ensureActiveBillingList().forEach(b => {
+                if (b.nama && !custMap.has(b.nama.toUpperCase())) {
+                    custMap.set(b.nama.toUpperCase(), {
+                        id: b.id || "",
+                        nama: b.nama.toUpperCase(),
+                        alamat: b.alamat || ""
+                    });
+                }
+            });
+
+            const allList = Array.from(custMap.values()).sort((a, b) => a.nama.localeCompare(b.nama));
+            const matched = allList.filter(c =>
+                !q || c.nama.toLowerCase().includes(q) || c.id.toLowerCase().includes(q) || c.alamat.toLowerCase().includes(q)
+            ).slice(0, 40);
+
+            if (matched.length === 0) {
+                dropdown.innerHTML = `<div class="px-3.5 py-2.5 text-slate-500 text-[11px]">Pelanggan tidak ditemukan di daftar. Nama <b>"${escapeHTML(query.toUpperCase())}"</b> tetap bisa disimpan manual.</div>`;
+            } else {
+                dropdown.innerHTML = matched.map(c => `
+                    <div onclick="selectPSBBonusCustomer('${escapeHTML(c.nama.replace(/'/g, "\\'"))}')" class="px-3.5 py-2 hover:bg-blue-50 cursor-pointer flex items-center justify-between transition">
+                        <div>
+                            <div class="font-extrabold text-slate-900 text-xs">${escapeHTML(c.nama)}</div>
+                            <div class="text-[10px] text-slate-500 font-semibold">${escapeHTML(c.id || "-")} &bull; ${escapeHTML(c.alamat || "-")}</div>
+                        </div>
+                        <span class="px-2 py-0.5 rounded bg-blue-100 text-blue-800 font-bold text-[10px]">Pilih</span>
+                    </div>
+                `).join("");
+            }
+            dropdown.classList.remove("hidden");
+        }
+
+        function selectPSBBonusCustomer(nama) {
+            const inp = document.getElementById("psb-bonus");
+            if (inp) inp.value = String(nama || "").toUpperCase();
+            const dropdown = document.getElementById("psb-bonus-dropdown");
+            if (dropdown) dropdown.classList.add("hidden");
+        }
+
+        function clearPSBBonusCustomerInput() {
+            const inp = document.getElementById("psb-bonus");
+            if (inp) {
+                inp.value = "";
+                inp.focus();
+            }
+            const dropdown = document.getElementById("psb-bonus-dropdown");
+            if (dropdown) dropdown.classList.add("hidden");
         }
 
         function deletePSB(idx) {
