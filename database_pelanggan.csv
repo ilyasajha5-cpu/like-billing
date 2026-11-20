@@ -1,6 +1,6 @@
 ID_Pelanggan,NAMA,ALAMAT,NO.HP,PAKET,DISKON,TELAT,TOTAL,STATUS,USERNAME_PPPoE,KETERANGAN,PETUGAS,PERIODE
 "PLG001","HAMBALI AJUNG","AJUNG","085852228894","100000","0","0","100000","LUNAS","450@hambaliajung","Tagihan November 2026 | Bayar tgl 20 tiap Bulan","arep","11-2026"
-"PLG002","LELI AJUNG","AJUNG","089682756456","100000","0","0","100000","LUNAS","123@leliajung","Tagihan November 2026 | Bayar tgl 25 tiap Bulan","arep","11-2026"
+"PLG002","LELI AJUNG","AJUNG","089682756456","100000","0","0","100000","BELUM LUNAS","123@leliajung","Tagihan November 2026 | Bayar tgl 25 tiap Bulan","arep","11-2026"
 "PLG003","FATHOR PTP AJUNGUTARA","AJUNGUTARA","082331858435","100000","0","0","100000","LUNAS","272@fathorutaragudangptp","Tagihan November 2026 | Bayar tgl 25 tiap Bulan","arep","11-2026"
 "PLG004","YOGA UTARA AJUNGUTARA","AJUNGUTARA","085702449299","100000","0","0","100000","LUNAS","437@yogautara","Tagihan November 2026 | Bayar tgl 25 tiap Bulan","arep","11-2026"
 "PLG005","BUK CICIK STASIUN","STASIUN","085100853019","100000","0","0","100000","LUNAS","490@bukcicikstasiun","Tagihan November 2026 | Bayar tgl 20 tiap Bulan","arep","11-2026"
