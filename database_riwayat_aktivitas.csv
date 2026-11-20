@@ -1,4 +1,7 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795159283388-435","20/11/2026","14:21:23","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG528 - CAK MAT TAHUAN","Ubah status tagihan CAK MAT TAHUAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795159282333-232","20/11/2026","14:21:22","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG527 - BELA SALSABILA TAHUAN","Ubah status tagihan BELA SALSABILA TAHUAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795159281093-306","20/11/2026","14:21:21","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG526 - ALFIN TAHUAN","Ubah status tagihan ALFIN TAHUAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159280117-162","20/11/2026","14:21:20","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG487 - YUMUNA SUMBERANGET","Ubah status tagihan YUMUNA SUMBERANGET (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159279092-179","20/11/2026","14:21:19","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG486 - YOGA SUMBERANGET","Ubah status tagihan YOGA SUMBERANGET (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159278012-181","20/11/2026","14:21:18","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG479 - PAK PRI SUMBERANGET","Ubah status tagihan PAK PRI SUMBERANGET (November 2026) dari BELUM LUNAS menjadi LUNAS"
@@ -996,6 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795097066095","19-11-2026","21.04.26","ilyas","ilyas","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: blue, Sidebar: slate, Background: ice-blue)"
 "LOG-1795097063031","19-11-2026","21.04.23","ilyas","ilyas","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: blue, Sidebar: slate, Background: clean)"
 "LOG-1795097061727","19-11-2026","21.04.21","ilyas","ilyas","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: blue, Sidebar: slate, Background: ice-blue)"
-"LOG-1795097042416","19-11-2026","21.04.02","ilyas","ilyas","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: blue, Sidebar: slate, Background: warm-ivory)"
-"LOG-1795097027871","19-11-2026","21.03.47","ilyas","ilyas","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: blue, Sidebar: slate, Background: ice-blue)"
-"LOG-1795097000191","19-11-2026","21.03.20","ilyas","ilyas","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: blue, Sidebar: slate, Background: dark-canvas)"
