@@ -1,4 +1,7 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795158977599-173","20/11/2026","14:16:17","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG362 - BUK DEWI PLALANGAN","Ubah status tagihan BUK DEWI PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795158976336-576","20/11/2026","14:16:16","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG361 - BUK DAVA PLALANGAN","Ubah status tagihan BUK DAVA PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795158975103-205","20/11/2026","14:16:15","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG360 - AULIA PLALANGAN TIMUR","Ubah status tagihan AULIA PLALANGAN TIMUR (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158973839-738","20/11/2026","14:16:13","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG359 - ANDAI PLALANGAN","Ubah status tagihan ANDAI PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158972768-777","20/11/2026","14:16:12","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG184 - VITA AJUNGTENGAH","Ubah status tagihan VITA AJUNGTENGAH (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158971736-482","20/11/2026","14:16:11","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG177 - SILVI AJUNGTENGAH","Ubah status tagihan SILVI AJUNGTENGAH (November 2026) dari BELUM LUNAS menjadi LUNAS"
@@ -996,6 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795095556607","19-11-2026","20.39.16","ilyas","ilyas","Super Admin","EDIT","Catatan Janji Bayar","PLG018 - ABDUH AJUNG","Menerapkan keterangan ""Bayar tgl 25 tiap Bulan"" ke Tagihan Pelanggan periode November 2026"
 "LOG-1795095514837","19-11-2026","20.38.34","ilyas","ilyas","Super Admin","TAMBAH","Catatan Janji Bayar","PLG020 - BUK PREI AJUNG","Tambah catatan janji bayar baru (Bayar tgl 25 tiap Bulan | Periode November 2026)"
 "LOG-1795095497103","19-11-2026","20.38.17","ilyas","ilyas","Super Admin","TAMBAH","Catatan Janji Bayar","PLG019 - AMELIA AJUNG","Tambah catatan janji bayar baru (Bayar tgl 20 tiap Bulan | Periode November 2026)"
-"LOG-1795095458974","19-11-2026","20.37.38","ilyas","ilyas","Super Admin","TAMBAH","Catatan Janji Bayar","PLG018 - ABDUH AJUNG","Tambah catatan janji bayar baru (Bayar tgl 25 tiap Bulan | Periode November 2026)"
-"LOG-1795094622014","19-11-2026","20.23.41","ilyas","ilyas","Super Admin","LOGIN","Autentikasi Sistem","ilyas","User ilyas (@ilyas) masuk sebagai Super Admin"
-"LOG-20261119-200745-719","19/11/2026","20:07:45","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (Admin) berhasil login ke aplikasi"
