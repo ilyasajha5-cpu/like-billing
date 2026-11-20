@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795165077809-9","20/11/2026","15:57:57","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
 "LOG-1795162862697-642","20/11/2026","15:21:02","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
 "LOG-1795161116317-404","20/11/2026","14:51:56","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","20-11-2026 (November 2026)","Tambah pengeluaran Rp 50.000 — bensin mobil"
 "LOG-1795161013033-41","20/11/2026","14:50:13","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795098119332","19-11-2026","21.21.59","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (@rendi) keluar / logout dari aplikasi"
 "LOG-1795098040575","19-11-2026","21.20.40","rendi","rendi","Admin","EDIT","Tagihan Pelanggan","PLG021 - BUNDA ARIN AJUNG","Ubah status tagihan periode November 2026 dari BARU menjadi BELUM LUNAS"
 "LOG-1795098022663","19-11-2026","21.20.22","rendi","rendi","Admin","EDIT","Tagihan Pelanggan","PLG021 - BUNDA ARIN AJUNG","Ubah status tagihan periode November 2026 dari LUNAS menjadi BARU"
-"LOG-1795097965992","19-11-2026","21.19.25","rendi","rendi","Admin","EDIT","Tagihan Pelanggan","PLG021 - BUNDA ARIN AJUNG","Ubah status tagihan periode November 2026 dari BELUM LUNAS menjadi LUNAS"
