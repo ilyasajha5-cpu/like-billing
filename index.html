@@ -125,7 +125,7 @@
         button *, a * { pointer-events: none; }
     </style>
 </head>
-<body class="min-h-screen flex flex-col lg:flex-row">
+<body class="min-h-screen lg:h-screen lg:overflow-hidden flex flex-col lg:flex-row">
 
     <!-- LAYAR LOGIN SEBELUM MASUK APLIKASI -->
     <div id="login-screen" class="fixed inset-0 z-[100] bg-slate-950/95 backdrop-blur-md flex items-center justify-center p-4">
@@ -186,7 +186,7 @@
     </div>
 
     <!-- SIDEBAR NAVIGASI KIRI -->
-    <aside id="app-sidebar" class="app-sidebar w-full lg:w-72 text-slate-300 flex flex-col shrink-0 border-b lg:border-b-0 lg:border-r transition-all z-30">
+    <aside id="app-sidebar" class="app-sidebar w-full lg:w-72 lg:h-screen lg:overflow-hidden text-slate-300 flex flex-col shrink-0 border-b lg:border-b-0 lg:border-r transition-all z-30">
         <!-- Brand Header -->
         <div class="px-4 py-4 flex items-center justify-between border-b border-white/10 bg-slate-950/20">
             <div class="flex items-center gap-3">
@@ -271,6 +271,14 @@
                     <span class="flex items-center gap-2.5"><i data-lucide="router" class="w-4 h-4"></i> Order Alat Jaringan</span>
                     <span id="badge-alat" class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-indigo-500/20 text-indigo-300">0</span>
                 </button>
+                <button type="button" data-tab="absensi-izin" onclick="switchTab('absensi-izin')" class="nav-item w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl font-bold text-slate-300 hover:bg-white/10 hover:text-white transition cursor-pointer">
+                    <span class="flex items-center gap-2.5"><i data-lucide="clipboard-check" class="w-4 h-4"></i> Absensi &amp; Perizinan</span>
+                    <span id="badge-absensi-izin" class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-emerald-500/20 text-emerald-300">0</span>
+                </button>
+                <button type="button" data-tab="lembur-teknisi" onclick="switchTab('lembur-teknisi')" class="nav-item w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl font-bold text-slate-300 hover:bg-white/10 hover:text-white transition cursor-pointer">
+                    <span class="flex items-center gap-2.5"><i data-lucide="clock" class="w-4 h-4"></i> Aktivitas Lembur Teknisi</span>
+                    <span id="badge-lembur-teknisi" class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-amber-500/20 text-amber-300">0</span>
+                </button>
             </div>
 
             <!-- KEUANGAN & KOLEKTOR -->
@@ -306,7 +314,7 @@
     </aside>
 
     <!-- KONTEN UTAMA KANAN -->
-    <div class="flex-1 flex flex-col min-w-0">
+    <div class="flex-1 flex flex-col min-w-0 lg:h-screen lg:overflow-y-auto">
         <!-- TOP HEADER -->
         <header class="bg-white border-b border-slate-200 px-5 lg:px-8 py-4 flex flex-wrap items-center justify-between gap-4 sticky top-0 z-20">
             <div>
@@ -1099,6 +1107,108 @@
                                 </tr>
                             </thead>
                             <tbody id="alat-tbody" class="divide-y divide-slate-100"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 12B. ABSENSI & PERIZINAN -->
+            <section id="view-absensi-izin" class="hidden space-y-5">
+                <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-xs flex flex-wrap items-center justify-between gap-3 text-xs">
+                    <div class="flex flex-wrap items-center gap-2.5">
+                        <span class="font-extrabold text-slate-700">Periode Absensi &amp; Perizinan:</span>
+                        <select id="absen-month" onchange="renderAbsensiIzinView(); updateAllSidebarBadges();" class="px-3 py-2 rounded-xl border border-slate-300 font-bold outline-none">
+                            <option value="ALL">Semua Bulan</option>
+                            <option value="01">Januari</option><option value="02">Februari</option><option value="03">Maret</option>
+                            <option value="04">April</option><option value="05">Mei</option><option value="06">Juni</option>
+                            <option value="07">Juli</option><option value="08">Agustus</option><option value="09">September</option>
+                            <option value="10">Oktober</option><option value="11" selected>November</option><option value="12">Desember</option>
+                        </select>
+                        <select id="absen-year" onchange="renderAbsensiIzinView(); updateAllSidebarBadges();" class="px-3 py-2 rounded-xl border border-slate-300 font-bold outline-none">
+                            <option value="2025">2025</option><option value="2026" selected>2026</option><option value="2027">2027</option>
+                        </select>
+                        <select id="absen-filter-teknisi" onchange="renderAbsensiIzinView();" class="px-3 py-2 rounded-xl border border-slate-300 font-bold text-slate-700 outline-none uppercase">
+                            <option value="ALL">Semua Teknisi</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <button type="button" onclick="printAbsensiIzinReport()" class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-900 text-white font-bold flex items-center gap-1.5 cursor-pointer">
+                            <i data-lucide="printer" class="w-4 h-4"></i> Cetak Absensi &amp; Izin
+                        </button>
+                        <button type="button" onclick="openAbsensiIzinModal(-1)" class="px-4 py-2 rounded-xl btn-accent font-extrabold flex items-center gap-1.5 cursor-pointer">
+                            <i data-lucide="plus" class="w-4 h-4"></i> Tambah Absensi &amp; Izin
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
+                    <div class="px-5 py-3.5 border-b border-slate-100 flex items-center justify-between text-xs">
+                        <span id="absen-table-header-title" class="font-extrabold text-slate-700 uppercase">Daftar Absensi &amp; Perizinan Teknisi</span>
+                        <span id="absen-count-label" class="font-bold text-emerald-700">0 Data</span>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-xs text-left">
+                            <thead>
+                                <tr class="bg-slate-50 text-slate-500 text-[11px] uppercase border-b border-slate-200">
+                                    <th class="px-4 py-3 font-extrabold w-14 text-center">Nomor</th>
+                                    <th class="px-4 py-3 font-extrabold w-40">Tanggal</th>
+                                    <th class="px-4 py-3 font-extrabold">Nama Teknisi</th>
+                                    <th class="px-4 py-3 font-extrabold">Keterangan</th>
+                                    <th class="px-4 py-3 font-extrabold text-center w-28">Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody id="absensi-izin-tbody" class="divide-y divide-slate-100"></tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 12C. AKTIVITAS LEMBUR TEKNISI -->
+            <section id="view-lembur-teknisi" class="hidden space-y-5">
+                <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-xs flex flex-wrap items-center justify-between gap-3 text-xs">
+                    <div class="flex flex-wrap items-center gap-2.5">
+                        <span class="font-extrabold text-slate-700">Periode Aktivitas Lembur:</span>
+                        <select id="lembur-month" onchange="renderLemburTeknisiView(); updateAllSidebarBadges();" class="px-3 py-2 rounded-xl border border-slate-300 font-bold outline-none">
+                            <option value="ALL">Semua Bulan</option>
+                            <option value="01">Januari</option><option value="02">Februari</option><option value="03">Maret</option>
+                            <option value="04">April</option><option value="05">Mei</option><option value="06">Juni</option>
+                            <option value="07">Juli</option><option value="08">Agustus</option><option value="09">September</option>
+                            <option value="10">Oktober</option><option value="11" selected>November</option><option value="12">Desember</option>
+                        </select>
+                        <select id="lembur-year" onchange="renderLemburTeknisiView(); updateAllSidebarBadges();" class="px-3 py-2 rounded-xl border border-slate-300 font-bold outline-none">
+                            <option value="2025">2025</option><option value="2026" selected>2026</option><option value="2027">2027</option>
+                        </select>
+                        <select id="lembur-filter-teknisi" onchange="renderLemburTeknisiView();" class="px-3 py-2 rounded-xl border border-slate-300 font-bold text-slate-700 outline-none uppercase">
+                            <option value="ALL">Semua Teknisi</option>
+                        </select>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <button type="button" onclick="printLemburTeknisiReport()" class="px-3.5 py-2 rounded-xl bg-slate-800 hover:bg-slate-900 text-white font-bold flex items-center gap-1.5 cursor-pointer">
+                            <i data-lucide="printer" class="w-4 h-4"></i> Cetak Aktivitas Lembur
+                        </button>
+                        <button type="button" onclick="openLemburTeknisiModal(-1)" class="px-4 py-2 rounded-xl btn-accent font-extrabold flex items-center gap-1.5 cursor-pointer">
+                            <i data-lucide="plus" class="w-4 h-4"></i> Tambah Aktivitas Lembur
+                        </button>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
+                    <div class="px-5 py-3.5 border-b border-slate-100 flex items-center justify-between text-xs">
+                        <span id="lembur-table-header-title" class="font-extrabold text-slate-700 uppercase">Daftar Aktivitas Lembur Teknisi</span>
+                        <span id="lembur-count-label" class="font-bold text-amber-700">0 Data</span>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-xs text-left">
+                            <thead>
+                                <tr class="bg-slate-50 text-slate-500 text-[11px] uppercase border-b border-slate-200">
+                                    <th class="px-4 py-3 font-extrabold w-14 text-center">Nomor</th>
+                                    <th class="px-4 py-3 font-extrabold w-40">Tanggal</th>
+                                    <th class="px-4 py-3 font-extrabold">Nama Teknisi</th>
+                                    <th class="px-4 py-3 font-extrabold">Keterangan</th>
+                                    <th class="px-4 py-3 font-extrabold text-center w-28">Aksi</th>
+                                </tr>
+                            </thead>
+                            <tbody id="lembur-teknisi-tbody" class="divide-y divide-slate-100"></tbody>
                         </table>
                     </div>
                 </div>
@@ -2026,6 +2136,64 @@
         </div>
     </div>
 
+    <!-- 8B. MODAL ABSENSI & PERIZINAN -->
+    <div id="absensi-izin-modal" class="fixed inset-0 bg-slate-950/60 backdrop-blur-xs z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full shadow-2xl border border-slate-200 overflow-hidden text-xs">
+            <div class="px-6 py-4 border-b border-slate-100 flex items-center justify-between">
+                <h3 id="absen-modal-title" class="font-black text-sm text-slate-900">Tambah Absensi &amp; Perizinan</h3>
+                <button type="button" onclick="closeAbsensiIzinModal()" class="p-1.5 rounded-lg hover:bg-slate-100 text-slate-500 cursor-pointer"><i data-lucide="x" class="w-4 h-4"></i></button>
+            </div>
+            <form onsubmit="saveAbsensiIzinForm(event)" class="p-6 space-y-3.5">
+                <input type="hidden" id="absen-edit-index" value="-1">
+                <div class="space-y-1">
+                    <label class="font-bold text-slate-700">Tanggal *</label>
+                    <input type="date" id="absen-tanggal-picker" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold">
+                </div>
+                <div class="space-y-1">
+                    <label class="font-bold text-slate-700">Nama Teknisi *</label>
+                    <select id="absen-teknisi" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold uppercase"></select>
+                </div>
+                <div class="space-y-1">
+                    <label class="font-bold text-slate-700">Keterangan *</label>
+                    <input type="text" id="absen-ket" required placeholder="Contoh: Izin sakit / Izin keperluan keluarga / Terlambat" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300">
+                </div>
+                <div class="flex justify-end gap-2 pt-3 border-t border-slate-100">
+                    <button type="button" onclick="closeAbsensiIzinModal()" class="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 font-bold text-slate-700 cursor-pointer">Batal</button>
+                    <button type="submit" class="px-5 py-2 rounded-xl btn-accent font-extrabold cursor-pointer">Simpan Absensi &amp; Izin</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- 8C. MODAL AKTIVITAS LEMBUR TEKNISI -->
+    <div id="lembur-teknisi-modal" class="fixed inset-0 bg-slate-950/60 backdrop-blur-xs z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-2xl max-w-md w-full shadow-2xl border border-slate-200 overflow-hidden text-xs">
+            <div class="px-6 py-4 border-b border-slate-100 flex items-center justify-between">
+                <h3 id="lembur-modal-title" class="font-black text-sm text-slate-900">Tambah Aktivitas Lembur Teknisi</h3>
+                <button type="button" onclick="closeLemburTeknisiModal()" class="p-1.5 rounded-lg hover:bg-slate-100 text-slate-500 cursor-pointer"><i data-lucide="x" class="w-4 h-4"></i></button>
+            </div>
+            <form onsubmit="saveLemburTeknisiForm(event)" class="p-6 space-y-3.5">
+                <input type="hidden" id="lembur-edit-index" value="-1">
+                <div class="space-y-1">
+                    <label class="font-bold text-slate-700">Tanggal *</label>
+                    <input type="date" id="lembur-tanggal-picker" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold">
+                </div>
+                <div class="space-y-1">
+                    <label class="font-bold text-slate-700">Nama Teknisi *</label>
+                    <select id="lembur-teknisi" required class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold uppercase"></select>
+                </div>
+                <div class="space-y-1">
+                    <label class="font-bold text-slate-700">Keterangan *</label>
+                    <input type="text" id="lembur-ket" required placeholder="Contoh: Lembur sambung kabel backbone malam (19:00 - 22:30)" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300">
+                </div>
+                <div class="flex justify-end gap-2 pt-3 border-t border-slate-100">
+                    <button type="button" onclick="closeLemburTeknisiModal()" class="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 font-bold text-slate-700 cursor-pointer">Batal</button>
+                    <button type="submit" class="px-5 py-2 rounded-xl btn-accent font-extrabold cursor-pointer">Simpan Aktivitas Lembur</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <!-- 9. MODAL USER LOGIN & HAK AKSES -->
     <div id="user-modal" class="fixed inset-0 bg-slate-950/60 backdrop-blur-xs z-50 hidden items-center justify-center p-4">
         <div class="bg-white rounded-2xl max-w-md w-full shadow-2xl border border-slate-200 overflow-hidden text-xs">
@@ -2456,6 +2624,8 @@
         if (!Array.isArray(allGangguanISP)) allGangguanISP = [];
         let allGangguanCust = loadValidArrayFromStorage("like_billing_gg_cust", DEFAULT_GANGGUAN_PELANGGAN);
         let allAgenda = loadValidArrayFromStorage("like_billing_agenda", DEFAULT_AGENDA_DATA);
+        let allAbsensiIzin = loadValidArrayFromStorage("like_billing_absensi_izin", []);
+        let allLemburTeknisi = loadValidArrayFromStorage("like_billing_lembur_teknisi", []);
 
         let monthlyAlatStore = JSON.parse(localStorage.getItem("like_billing_monthly_alat") || "{}");
         if (!Array.isArray(monthlyAlatStore["11-2026"])) {
@@ -2603,6 +2773,8 @@
                 localStorage.setItem("like_billing_gg_isp", JSON.stringify(allGangguanISP));
                 localStorage.setItem("like_billing_gg_cust", JSON.stringify(allGangguanCust));
                 localStorage.setItem("like_billing_agenda", JSON.stringify(allAgenda));
+                localStorage.setItem("like_billing_absensi_izin", JSON.stringify(allAbsensiIzin));
+                localStorage.setItem("like_billing_lembur_teknisi", JSON.stringify(allLemburTeknisi));
                 localStorage.setItem("like_billing_monthly_alat", JSON.stringify(monthlyAlatStore));
                 localStorage.setItem("like_billing_monthly_gaji", JSON.stringify(monthlyGajiStore));
             } catch (e) {
@@ -5191,6 +5363,313 @@
             }, "Iya, Hapus", "Tidak, Batalkan");
         }
 
+        // ==================== 12B & 12C. ABSENSI & PERIZINAN + AKTIVITAS LEMBUR TEKNISI ====================
+        function renderAbsensiIzinView() {
+            const m = document.getElementById("absen-month")?.value || getCurrentPeriodMonth();
+            const y = document.getElementById("absen-year")?.value || getCurrentPeriodYear();
+            const fTek = (document.getElementById("absen-filter-teknisi")?.value || "ALL").toUpperCase();
+            const periodTitle = m === "ALL" ? `Semua Bulan ${y}` : `${MONTH_NAMES_ID[m] || m} ${y}`;
+            const tekLabel = fTek === "ALL" ? "" : ` — Teknisi: ${fTek}`;
+
+            const headerEl = document.getElementById("absen-table-header-title");
+            if (headerEl) headerEl.textContent = `Daftar Absensi & Perizinan Teknisi — Periode ${periodTitle}${tekLabel}`;
+
+            const filtered = allAbsensiIzin.map((item, i) => ({ ...item, _idx: i }))
+                .filter(item => matchesMonthYearFilter(item.tanggal, m, y))
+                .filter(item => fTek === "ALL" || String(item.teknisi || "").trim().toUpperCase() === fTek);
+
+            const countEl = document.getElementById("absen-count-label");
+            if (countEl) countEl.textContent = `${filtered.length} Data (${periodTitle})`;
+
+            const tbody = document.getElementById("absensi-izin-tbody");
+            if (!tbody) return;
+
+            tbody.innerHTML = filtered.length ? filtered.map((item, i) => `
+                <tr class="hover:bg-slate-50">
+                    <td class="px-4 py-3 text-center font-bold text-slate-500">${i + 1}</td>
+                    <td class="px-4 py-3 font-extrabold text-blue-700">${escapeHTML(item.tanggal)}</td>
+                    <td class="px-4 py-3 font-extrabold text-slate-900 uppercase">${escapeHTML(item.teknisi)}</td>
+                    <td class="px-4 py-3 text-slate-700 font-semibold">${escapeHTML(item.ket || "-")}</td>
+                    <td class="px-4 py-3 text-center">
+                        <button type="button" onclick="openAbsensiIzinModal(${item._idx})" title="Edit" class="p-1.5 text-amber-700 cursor-pointer"><i data-lucide="pencil" class="w-3.5 h-3.5"></i></button>
+                        <button type="button" onclick="deleteAbsensiIzin(${item._idx})" title="Hapus" class="p-1.5 text-rose-600 cursor-pointer"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i></button>
+                    </td>
+                </tr>
+            `).join("") : `<tr><td colspan="5" class="px-4 py-6 text-center text-slate-400 font-semibold">Belum ada data absensi &amp; perizinan pada periode ${escapeHTML(periodTitle)}${escapeHTML(tekLabel)}.</td></tr>`;
+            scheduleLucideIcons(tbody);
+        }
+
+        function openAbsensiIzinModal(idx = -1) {
+            populateDropdownOptions();
+            document.getElementById("absen-edit-index").value = idx;
+            document.getElementById("absen-modal-title").textContent = idx >= 0 ? "Edit Absensi & Perizinan" : "Tambah Absensi & Perizinan";
+            if (idx >= 0 && allAbsensiIzin[idx]) {
+                const item = allAbsensiIzin[idx];
+                document.getElementById("absen-tanggal-picker").value = toPickerDate(item.tanggal);
+                setSelectValueSafely("absen-teknisi", item.teknisi, String(item.teknisi || "").toUpperCase());
+                document.getElementById("absen-ket").value = item.ket || "";
+            } else {
+                document.getElementById("absen-tanggal-picker").value = getLocalTodayIsoDate();
+                if (allPetugas[0]) setSelectValueSafely("absen-teknisi", allPetugas[0].nama.toUpperCase());
+                document.getElementById("absen-ket").value = "";
+            }
+            const m = document.getElementById("absensi-izin-modal");
+            m.classList.remove("hidden"); m.classList.add("flex");
+        }
+
+        function closeAbsensiIzinModal() {
+            const m = document.getElementById("absensi-izin-modal");
+            if (m) {
+                m.classList.add("hidden"); m.classList.remove("flex");
+            }
+        }
+
+        function saveAbsensiIzinForm(e) {
+            e.preventDefault();
+            const idx = parseInt(document.getElementById("absen-edit-index").value, 10);
+            const obj = {
+                tanggal: fromPickerDateSlash(document.getElementById("absen-tanggal-picker").value),
+                teknisi: document.getElementById("absen-teknisi").value.trim().toUpperCase(),
+                ket: document.getElementById("absen-ket").value.trim()
+            };
+            if (idx >= 0) {
+                allAbsensiIzin[idx] = obj;
+                recordUserActivity("EDIT", "Absensi & Perizinan", `${obj.teknisi} (${obj.tanggal})`, `Edit absensi & perizinan ${obj.teknisi}: ${obj.ket}`);
+            } else {
+                allAbsensiIzin.push(obj);
+                recordUserActivity("TAMBAH", "Absensi & Perizinan", `${obj.teknisi} (${obj.tanggal})`, `Tambah absensi & perizinan ${obj.teknisi}: ${obj.ket}`);
+            }
+            closeAbsensiIzinModal();
+            renderAbsensiIzinView();
+            updateAllSidebarBadges();
+            triggerAutoSave("database_absensi_dan_lembur.csv", true);
+            showToast("Data absensi & perizinan berhasil disimpan", "success");
+        }
+
+        function deleteAbsensiIzin(idx) {
+            const del = { ...allAbsensiIzin[idx] };
+            openActionConfirmModal("Hapus Data Absensi & Perizinan", `Apakah Anda yakin ingin menghapus data absensi/izin <b>"${escapeHTML(del?.teknisi || "-")}"</b> tanggal <b>${escapeHTML(del?.tanggal || "-")}</b>?`, () => {
+                allAbsensiIzin.splice(idx, 1);
+                recordUserActivity("HAPUS", "Absensi & Perizinan", `${del?.teknisi || "-"} (${del?.tanggal || "-"})`, `Menghapus absensi & perizinan ${del?.teknisi || "-"}: ${del?.ket || "-"}`);
+                renderAbsensiIzinView();
+                updateAllSidebarBadges();
+                triggerAutoSave("database_absensi_dan_lembur.csv", true);
+                showToast("Data absensi & perizinan dihapus", "info");
+            }, "Iya, Hapus", "Tidak, Batalkan");
+        }
+
+        function printAbsensiIzinReport() {
+            const m = document.getElementById("absen-month")?.value || getCurrentPeriodMonth();
+            const y = document.getElementById("absen-year")?.value || getCurrentPeriodYear();
+            const fTek = (document.getElementById("absen-filter-teknisi")?.value || "ALL").toUpperCase();
+            const periodTitle = m === "ALL" ? `SEMUA BULAN ${y}` : `${(MONTH_NAMES_ID[m] || m).toUpperCase()} ${y}`;
+            const rows = allAbsensiIzin
+                .filter(item => matchesMonthYearFilter(item.tanggal, m, y))
+                .filter(item => fTek === "ALL" || String(item.teknisi || "").trim().toUpperCase() === fTek);
+            const html = `
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <title>LAPORAN_ABSENSI_PERIZIN_${periodTitle.replace(/\s+/g, "_")}</title>
+                    <style>
+                        body { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000; margin: 18px; }
+                        .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000; padding-bottom: 8px; margin-bottom: 12px; }
+                        table { width: 100%; border-collapse: collapse; }
+                        th, td { border: 1px solid #000; padding: 6px 8px; }
+                        th { background: #f1f5f9; font-weight: 800; text-align: center; }
+                    </style>
+                </head>
+                <body>
+                    <div class="header">
+                        <div>
+                            <div style="font-size:14px; font-weight:900;">LAPORAN ABSENSI &amp; PERIZINAN TEKNISI</div>
+                            <div style="font-size:11px;">${escapeHTML(appConfig.companyName || "PT. JAVA DIGITAL NUSANTARA")}${fTek !== "ALL" ? ` &bull; TEKNISI: ${escapeHTML(fTek)}` : ""}</div>
+                        </div>
+                        <div style="text-align:right; font-weight:800;">
+                            <div>PERIODE: ${escapeHTML(periodTitle)}</div>
+                            <div>TOTAL DATA: ${rows.length} REKAMAN</div>
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width:55px;">Nomor</th>
+                                <th style="width:120px;">Tanggal</th>
+                                <th style="width:200px;">Nama Teknisi</th>
+                                <th>Keterangan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${rows.length ? rows.map((r, i) => `
+                                <tr>
+                                    <td style="text-align:center;">${i + 1}</td>
+                                    <td style="text-align:center;">${escapeHTML(r.tanggal)}</td>
+                                    <td style="font-weight:700; text-transform:uppercase;">${escapeHTML(r.teknisi)}</td>
+                                    <td>${escapeHTML(r.ket || "-")}</td>
+                                </tr>
+                            `).join("") : `<tr><td colspan="4" style="text-align:center; color:#64748b;">Tidak ada data absensi &amp; perizinan pada periode ini.</td></tr>`}
+                        </tbody>
+                    </table>
+                </body>
+                </html>
+            `;
+            openPrintPreviewModal(html, `Laporan_Absensi_Perizinan_${periodTitle}`);
+        }
+
+        function renderLemburTeknisiView() {
+            const m = document.getElementById("lembur-month")?.value || getCurrentPeriodMonth();
+            const y = document.getElementById("lembur-year")?.value || getCurrentPeriodYear();
+            const fTek = (document.getElementById("lembur-filter-teknisi")?.value || "ALL").toUpperCase();
+            const periodTitle = m === "ALL" ? `Semua Bulan ${y}` : `${MONTH_NAMES_ID[m] || m} ${y}`;
+            const tekLabel = fTek === "ALL" ? "" : ` — Teknisi: ${fTek}`;
+
+            const headerEl = document.getElementById("lembur-table-header-title");
+            if (headerEl) headerEl.textContent = `Daftar Aktivitas Lembur Teknisi — Periode ${periodTitle}${tekLabel}`;
+
+            const filtered = allLemburTeknisi.map((item, i) => ({ ...item, _idx: i }))
+                .filter(item => matchesMonthYearFilter(item.tanggal, m, y))
+                .filter(item => fTek === "ALL" || String(item.teknisi || "").trim().toUpperCase() === fTek);
+
+            const countEl = document.getElementById("lembur-count-label");
+            if (countEl) countEl.textContent = `${filtered.length} Data (${periodTitle})`;
+
+            const tbody = document.getElementById("lembur-teknisi-tbody");
+            if (!tbody) return;
+
+            tbody.innerHTML = filtered.length ? filtered.map((item, i) => `
+                <tr class="hover:bg-slate-50">
+                    <td class="px-4 py-3 text-center font-bold text-slate-500">${i + 1}</td>
+                    <td class="px-4 py-3 font-extrabold text-blue-700">${escapeHTML(item.tanggal)}</td>
+                    <td class="px-4 py-3 font-extrabold text-slate-900 uppercase">${escapeHTML(item.teknisi)}</td>
+                    <td class="px-4 py-3 text-slate-700 font-semibold">${escapeHTML(item.ket || "-")}</td>
+                    <td class="px-4 py-3 text-center">
+                        <button type="button" onclick="openLemburTeknisiModal(${item._idx})" title="Edit" class="p-1.5 text-amber-700 cursor-pointer"><i data-lucide="pencil" class="w-3.5 h-3.5"></i></button>
+                        <button type="button" onclick="deleteLemburTeknisi(${item._idx})" title="Hapus" class="p-1.5 text-rose-600 cursor-pointer"><i data-lucide="trash-2" class="w-3.5 h-3.5"></i></button>
+                    </td>
+                </tr>
+            `).join("") : `<tr><td colspan="5" class="px-4 py-6 text-center text-slate-400 font-semibold">Belum ada aktivitas lembur teknisi pada periode ${escapeHTML(periodTitle)}${escapeHTML(tekLabel)}.</td></tr>`;
+            scheduleLucideIcons(tbody);
+        }
+
+        function openLemburTeknisiModal(idx = -1) {
+            populateDropdownOptions();
+            document.getElementById("lembur-edit-index").value = idx;
+            document.getElementById("lembur-modal-title").textContent = idx >= 0 ? "Edit Aktivitas Lembur Teknisi" : "Tambah Aktivitas Lembur Teknisi";
+            if (idx >= 0 && allLemburTeknisi[idx]) {
+                const item = allLemburTeknisi[idx];
+                document.getElementById("lembur-tanggal-picker").value = toPickerDate(item.tanggal);
+                setSelectValueSafely("lembur-teknisi", item.teknisi, String(item.teknisi || "").toUpperCase());
+                document.getElementById("lembur-ket").value = item.ket || "";
+            } else {
+                document.getElementById("lembur-tanggal-picker").value = getLocalTodayIsoDate();
+                if (allPetugas[0]) setSelectValueSafely("lembur-teknisi", allPetugas[0].nama.toUpperCase());
+                document.getElementById("lembur-ket").value = "";
+            }
+            const m = document.getElementById("lembur-teknisi-modal");
+            m.classList.remove("hidden"); m.classList.add("flex");
+        }
+
+        function closeLemburTeknisiModal() {
+            const m = document.getElementById("lembur-teknisi-modal");
+            if (m) {
+                m.classList.add("hidden"); m.classList.remove("flex");
+            }
+        }
+
+        function saveLemburTeknisiForm(e) {
+            e.preventDefault();
+            const idx = parseInt(document.getElementById("lembur-edit-index").value, 10);
+            const obj = {
+                tanggal: fromPickerDateSlash(document.getElementById("lembur-tanggal-picker").value),
+                teknisi: document.getElementById("lembur-teknisi").value.trim().toUpperCase(),
+                ket: document.getElementById("lembur-ket").value.trim()
+            };
+            if (idx >= 0) {
+                allLemburTeknisi[idx] = obj;
+                recordUserActivity("EDIT", "Aktivitas Lembur Teknisi", `${obj.teknisi} (${obj.tanggal})`, `Edit aktivitas lembur ${obj.teknisi}: ${obj.ket}`);
+            } else {
+                allLemburTeknisi.push(obj);
+                recordUserActivity("TAMBAH", "Aktivitas Lembur Teknisi", `${obj.teknisi} (${obj.tanggal})`, `Tambah aktivitas lembur ${obj.teknisi}: ${obj.ket}`);
+            }
+            closeLemburTeknisiModal();
+            renderLemburTeknisiView();
+            updateAllSidebarBadges();
+            triggerAutoSave("database_absensi_dan_lembur.csv", true);
+            showToast("Data aktivitas lembur teknisi berhasil disimpan", "success");
+        }
+
+        function deleteLemburTeknisi(idx) {
+            const del = { ...allLemburTeknisi[idx] };
+            openActionConfirmModal("Hapus Aktivitas Lembur Teknisi", `Apakah Anda yakin ingin menghapus data lembur <b>"${escapeHTML(del?.teknisi || "-")}"</b> tanggal <b>${escapeHTML(del?.tanggal || "-")}</b>?`, () => {
+                allLemburTeknisi.splice(idx, 1);
+                recordUserActivity("HAPUS", "Aktivitas Lembur Teknisi", `${del?.teknisi || "-"} (${del?.tanggal || "-"})`, `Menghapus aktivitas lembur ${del?.teknisi || "-"}: ${del?.ket || "-"}`);
+                renderLemburTeknisiView();
+                updateAllSidebarBadges();
+                triggerAutoSave("database_absensi_dan_lembur.csv", true);
+                showToast("Data aktivitas lembur teknisi dihapus", "info");
+            }, "Iya, Hapus", "Tidak, Batalkan");
+        }
+
+        function printLemburTeknisiReport() {
+            const m = document.getElementById("lembur-month")?.value || getCurrentPeriodMonth();
+            const y = document.getElementById("lembur-year")?.value || getCurrentPeriodYear();
+            const fTek = (document.getElementById("lembur-filter-teknisi")?.value || "ALL").toUpperCase();
+            const periodTitle = m === "ALL" ? `SEMUA BULAN ${y}` : `${(MONTH_NAMES_ID[m] || m).toUpperCase()} ${y}`;
+            const rows = allLemburTeknisi
+                .filter(item => matchesMonthYearFilter(item.tanggal, m, y))
+                .filter(item => fTek === "ALL" || String(item.teknisi || "").trim().toUpperCase() === fTek);
+            const html = `
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <meta charset="UTF-8">
+                    <title>LAPORAN_AKTIVITAS_LEMBUR_${periodTitle.replace(/\s+/g, "_")}</title>
+                    <style>
+                        body { font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #000; margin: 18px; }
+                        .header { display: flex; justify-content: space-between; align-items: center; border-bottom: 2px solid #000; padding-bottom: 8px; margin-bottom: 12px; }
+                        table { width: 100%; border-collapse: collapse; }
+                        th, td { border: 1px solid #000; padding: 6px 8px; }
+                        th { background: #f1f5f9; font-weight: 800; text-align: center; }
+                    </style>
+                </head>
+                <body>
+                    <div class="header">
+                        <div>
+                            <div style="font-size:14px; font-weight:900;">LAPORAN AKTIVITAS LEMBUR TEKNISI</div>
+                            <div style="font-size:11px;">${escapeHTML(appConfig.companyName || "PT. JAVA DIGITAL NUSANTARA")}${fTek !== "ALL" ? ` &bull; TEKNISI: ${escapeHTML(fTek)}` : ""}</div>
+                        </div>
+                        <div style="text-align:right; font-weight:800;">
+                            <div>PERIODE: ${escapeHTML(periodTitle)}</div>
+                            <div>TOTAL DATA: ${rows.length} REKAMAN</div>
+                        </div>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th style="width:55px;">Nomor</th>
+                                <th style="width:120px;">Tanggal</th>
+                                <th style="width:200px;">Nama Teknisi</th>
+                                <th>Keterangan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${rows.length ? rows.map((r, i) => `
+                                <tr>
+                                    <td style="text-align:center;">${i + 1}</td>
+                                    <td style="text-align:center;">${escapeHTML(r.tanggal)}</td>
+                                    <td style="font-weight:700; text-transform:uppercase;">${escapeHTML(r.teknisi)}</td>
+                                    <td>${escapeHTML(r.ket || "-")}</td>
+                                </tr>
+                            `).join("") : `<tr><td colspan="4" style="text-align:center; color:#64748b;">Tidak ada data aktivitas lembur pada periode ini.</td></tr>`}
+                        </tbody>
+                    </table>
+                </body>
+                </html>
+            `;
+            openPrintPreviewModal(html, `Laporan_Aktivitas_Lembur_${periodTitle}`);
+        }
+
         // ==================== 13. REKAP PETUGAS / KOLEKTOR ====================
         function renderPetugasView() {
             const m = document.getElementById("ptg-month")?.value || getCurrentPeriodMonth();
@@ -6196,9 +6675,9 @@
                                     <thead>
                                         <tr class="bg-slate-100/80 text-slate-600 text-[10px] uppercase border-b border-slate-200">
                                             <th class="px-3.5 py-2.5 font-extrabold">Nama Tim</th>
-                                            <th class="px-3 py-2.5 font-extrabold text-right">Pokok + Free</th>
-                                            <th class="px-3 py-2.5 font-extrabold text-right">Bonus + PSB</th>
-                                            <th class="px-3 py-2.5 font-extrabold text-right">Pot. Bon/Absen</th>
+                                            <th class="px-3.5 py-2.5 font-extrabold text-right">Pokok + Free</th>
+                                            <th class="px-3.5 py-2.5 font-extrabold text-right">Bonus + PSB</th>
+                                            <th class="px-3.5 py-2.5 font-extrabold text-right">Pot. Bon/Absen</th>
                                             <th class="px-3.5 py-2.5 font-extrabold text-right">Gaji Bersih</th>
                                         </tr>
                                     </thead>
@@ -7524,6 +8003,14 @@
                 ].map(csvEscape).join(","));
                 return [header, ...rows].join("\n");
             }
+            if (fileName === "database_absensi_dan_lembur.csv") {
+                const header = "TIPE_DATA,NOMOR,TANGGAL,NAMA_TEKNISI,KETERANGAN";
+                const rows = [
+                    ...allAbsensiIzin.map((a, idx) => ["ABSENSI_IZIN", idx + 1, a.tanggal, a.teknisi, a.ket].map(csvEscape).join(",")),
+                    ...allLemburTeknisi.map((l, idx) => ["LEMBUR_TEKNISI", idx + 1, l.tanggal, l.teknisi, l.ket].map(csvEscape).join(","))
+                ];
+                return [header, ...rows].join("\n");
+            }
             return "";
         }
 
@@ -7860,6 +8347,22 @@
                 allActivityLogs = logs;
                 return true;
             }
+            if (fileName === "database_absensi_dan_lembur.csv") {
+                const absList = [], lemList = [];
+                rows.forEach(r => {
+                    const [tipe, , tanggal, teknisi, ket] = r;
+                    const tipeUp = String(tipe || "").trim().toUpperCase();
+                    if (!tanggal && !teknisi) return;
+                    if (tipeUp === "ABSENSI_IZIN") {
+                        absList.push({ tanggal: tanggal || "", teknisi: (teknisi || "").toUpperCase(), ket: ket || "" });
+                    } else if (tipeUp === "LEMBUR_TEKNISI") {
+                        lemList.push({ tanggal: tanggal || "", teknisi: (teknisi || "").toUpperCase(), ket: ket || "" });
+                    }
+                });
+                allAbsensiIzin = absList;
+                allLemburTeknisi = lemList;
+                return true;
+            }
             return false;
         }
 
@@ -8051,6 +8554,7 @@
                     "database_catatan_janji_bayar.csv",
                     "database_pengeluaran.csv",
                     "database_operasional.csv",
+                    "database_absensi_dan_lembur.csv",
                     "database_gaji_dan_users.csv",
                     "database_riwayat_aktivitas.csv"
                 ];
@@ -8109,6 +8613,7 @@
                     "database_pengeluaran.csv",
                     "database_master_konfigurasi.csv",
                     "database_operasional.csv",
+                    "database_absensi_dan_lembur.csv",
                     "database_gaji_dan_users.csv",
                     "database_riwayat_aktivitas.csv"
                 ].forEach(f => pendingDirtyFilesSet.add(f));
@@ -8155,6 +8660,7 @@
                 "database_catatan_janji_bayar.csv",
                 "database_pengeluaran.csv",
                 "database_operasional.csv",
+                "database_absensi_dan_lembur.csv",
                 "database_gaji_dan_users.csv",
                 "database_riwayat_aktivitas.csv"
             ];
@@ -8432,6 +8938,8 @@
             "gangguan": ["Data Laporan Gangguan", "Monitoring trouble ISP pusat dan jalur pelanggan per bulan & tahun"],
             "agenda": ["Agenda Teknisi", "Jadwal harian kegiatan pemasangan dan perbaikan teknisi per bulan"],
             "alat": ["Order Alat Jaringan", "Kontrol stok material dan kebutuhan order alat jaringan per bulan"],
+            "absensi-izin": ["Absensi & Perizinan", "Pencatatan data absensi dan perizinan teknisi per bulan & tahun"],
+            "lembur-teknisi": ["Aktivitas Lembur Teknisi", "Pencatatan data aktivitas lemburan teknisi per bulan & tahun"],
             "petugas": ["Rekap Petugas / Kolektor", "Laporan setoran lunas, sisa piutang, dan poin PSB masing-masing petugas"],
             "gaji": ["Gaji Tim", "Perhitungan gaji pokok, bonus PSB otomatis, denda telat, dan potongan absen"],
             "pengeluaran": ["Catatan Pengeluaran", "Pencatatan pengeluaran operasional berdasarkan tanggal, bulan, dan tahun beserta keterangannya"],
@@ -8485,6 +8993,8 @@
             else if (tabId === "gangguan") renderGangguanView();
             else if (tabId === "agenda") renderAgendaView();
             else if (tabId === "alat") renderAlatView();
+            else if (tabId === "absensi-izin") { populateDropdownOptions(); renderAbsensiIzinView(); }
+            else if (tabId === "lembur-teknisi") { populateDropdownOptions(); renderLemburTeknisiView(); }
             else if (tabId === "petugas") renderPetugasView();
             else if (tabId === "gaji") {
                 const activeEl = document.activeElement;
@@ -8517,16 +9027,22 @@
                 if (prev) setSelectValueSafely(id, prev);
             });
 
-            const paketSelects = ["mc-paket", "inp-paket", "psb-paket"];
-            paketSelects.forEach(id => {
+            ["absen-teknisi", "lembur-teknisi"].forEach(id => {
                 const el = document.getElementById(id);
                 if (!el) return;
                 const prev = el.value;
-                el.innerHTML = allPaket.map(p => {
-                    const hrgFmt = formatRibuan(p.harga);
-                    return `<option value="${hrgFmt}">${escapeHTML(p.nama)} (${escapeHTML(p.speed)}) — Rp ${hrgFmt}</option>`;
-                }).join("");
-                if (prev) setSelectValueSafely(id, prev, `Paket Khusus — Rp ${prev}`);
+                el.innerHTML = allPetugas.map(p => `<option value="${escapeHTML(p.nama.toUpperCase())}">${escapeHTML(p.nama.toUpperCase())}</option>`).join("");
+                if (prev) setSelectValueSafely(id, prev, prev.toUpperCase());
+            });
+
+            ["absen-filter-teknisi", "lembur-filter-teknisi"].forEach(id => {
+                const el = document.getElementById(id);
+                if (!el) return;
+                const prev = el.value || "ALL";
+                el.innerHTML = `<option value="ALL">Semua Teknisi</option>` +
+                    allPetugas.map(p => `<option value="${escapeHTML(p.nama.toUpperCase())}">${escapeHTML(p.nama.toUpperCase())}</option>`).join("");
+                const hasOpt = Array.from(el.options).some(o => o.value.toUpperCase() === prev.toUpperCase());
+                el.value = hasOpt ? prev : "ALL";
             });
 
             const psbMulaiEl = document.getElementById("psb-mulai");
@@ -8654,6 +9170,20 @@
 
             const activeAlatList = ensureActiveAlatList();
             document.getElementById("badge-alat").textContent = activeAlatList.length;
+
+            const badgeAbsen = document.getElementById("badge-absensi-izin");
+            if (badgeAbsen) {
+                const absM = document.getElementById("absen-month")?.value || getCurrentPeriodMonth();
+                const absY = document.getElementById("absen-year")?.value || getCurrentPeriodYear();
+                badgeAbsen.textContent = allAbsensiIzin.filter(a => matchesMonthYearFilter(a.tanggal, absM, absY)).length;
+            }
+
+            const badgeLembur = document.getElementById("badge-lembur-teknisi");
+            if (badgeLembur) {
+                const lemM = document.getElementById("lembur-month")?.value || getCurrentPeriodMonth();
+                const lemY = document.getElementById("lembur-year")?.value || getCurrentPeriodYear();
+                badgeLembur.textContent = allLemburTeknisi.filter(l => matchesMonthYearFilter(l.tanggal, lemM, lemY)).length;
+            }
 
             const badgePengeluaran = document.getElementById("badge-pengeluaran");
             if (badgePengeluaran) {
@@ -8903,6 +9433,8 @@
             "gangguan": ["gg-month", "gg-year"],
             "agenda": ["ag-month", "ag-year"],
             "alat": ["alat-month", "alat-year"],
+            "absensi-izin": ["absen-month", "absen-year"],
+            "lembur-teknisi": ["lembur-month", "lembur-year"],
             "petugas": ["ptg-month", "ptg-year"],
             "gaji": ["gaji-month", "gaji-year"],
             "pengeluaran": ["pengeluaran-month", "pengeluaran-year"],
@@ -9161,6 +9693,8 @@
                 closePetugasModal();
                 closeGangguanModal();
                 closeAgendaModal();
+                closeAbsensiIzinModal();
+                closeLemburTeknisiModal();
                 closeUserModal();
                 closeActionConfirmModal();
                 closePrintPreviewModal();
@@ -9178,6 +9712,8 @@
             if (e.target && e.target.id === "petugas-modal") closePetugasModal();
             if (e.target && e.target.id === "gangguan-modal") closeGangguanModal();
             if (e.target && e.target.id === "agenda-modal") closeAgendaModal();
+            if (e.target && e.target.id === "absensi-izin-modal") closeAbsensiIzinModal();
+            if (e.target && e.target.id === "lembur-teknisi-modal") closeLemburTeknisiModal();
             if (e.target && e.target.id === "user-modal") closeUserModal();
         });
 
