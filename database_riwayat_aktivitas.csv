@@ -1,4 +1,6 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795158984312-58","20/11/2026","14:16:24","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG367 - HOTIM PLALANGAN","Ubah status tagihan HOTIM PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795158983007-496","20/11/2026","14:16:23","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG366 - CLARA PAK GUNTUR PLALANGAN","Ubah status tagihan CLARA PAK GUNTUR PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158981344-472","20/11/2026","14:16:21","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG365 - BUK YULI PLALANGAN","Ubah status tagihan BUK YULI PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158980047-258","20/11/2026","14:16:20","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG364 - BUK RADIT-2 PLALANGAN","Ubah status tagihan BUK RADIT-2 PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158978904-39","20/11/2026","14:16:18","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG363 - BUK RADIT PLALANGAN","Ubah status tagihan BUK RADIT PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
@@ -997,5 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795096410505","19-11-2026","20.53.30","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (@rendi) masuk sebagai Admin"
 "LOG-1795096003164","19-11-2026","20.46.43","rendi","rendi","Admin","TAMBAH","Catatan Janji Bayar","Salin November 2026 → Desember 2026","Menyalin 3 daftar pelanggan janji bayar dari November 2026 ke Desember 2026"
 "LOG-1795095974197","19-11-2026","20.46.14","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (@rendi) masuk sebagai Admin"
-"LOG-1795095758511","19-11-2026","20.42.38","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (@rendi) masuk sebagai Admin"
-"LOG-1795095580462","19-11-2026","20.39.40","ilyas","ilyas","Super Admin","SIMPAN","Catatan Janji Bayar","3 Pelanggan (November 2026)","Menerapkan massal 3 catatan janji bayar ke Tagihan Pelanggan periode November 2026"
