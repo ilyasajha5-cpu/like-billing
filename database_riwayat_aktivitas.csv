@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795183673070-917","20/11/2026","21:07:53","ILYAS","ILYAS","Super Admin","TAMBAH","Absensi & Perizinan","ERVAN (01/11/2026)","Tambah absensi & perizinan ERVAN: TIDAK MASUK KERJA"
 "LOG-1795183596471-529","20/11/2026","21:06:36","ILYAS","ILYAS","Super Admin","TAMBAH","Absensi & Perizinan","RENDI (02/11/2026)","Tambah absensi & perizinan RENDI: IZIN TELAT ADA KEPENTINGAN"
 "LOG-1795183461836-848","20/11/2026","21:04:21","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
 "LOG-1795181814736-838","20/11/2026","20:36:54","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795098666928","19-11-2026","21.31.06","ilyas","ilyas","Super Admin","HAPUS","Input Lokasi / Area","STASIUN","Menghapus area lokasi: STASIUN"
 "LOG-1795098460006","19-11-2026","21.27.40","ilyas","ilyas","Super Admin","EDIT","Manajemen User Login","ILYAS","Mengubah akun user ILYAS (ILYAS - Role: Super Admin)"
 "LOG-1795098449520","19-11-2026","21.27.29","ilyas","ilyas","Super Admin","EDIT","Manajemen User Login","RENDI","Mengubah akun user RENDI (RENDI - Role: Admin)"
-"LOG-1795098432333","19-11-2026","21.27.12","ilyas","ilyas","Super Admin","LOGIN","Autentikasi Sistem","ilyas","User ilyas (@ilyas) masuk sebagai Super Admin"
