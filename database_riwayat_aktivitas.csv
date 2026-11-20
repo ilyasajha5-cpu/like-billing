@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795135796406-82","20/11/2026","07:49:56","ILYAS","ILYAS","Super Admin","EDIT","Tagihan Pelanggan","PLG018 - ABDUH AJUNG","Ubah status tagihan ABDUH AJUNG (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795135738237-562","20/11/2026","07:48:58","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
 "LOG-1795135694958-376","20/11/2026","07:48:14","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
 "LOG-1795135437776-546","20/11/2026","07:43:57","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
