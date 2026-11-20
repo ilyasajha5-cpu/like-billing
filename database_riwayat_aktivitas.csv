@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795135052892-681","20/11/2026","07:37:32","ILYAS","ILYAS","Super Admin","EDIT","Tagihan Pelanggan","PLG021 - BUNDA ARIN AJUNG","Ubah status tagihan (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795135051612-565","20/11/2026","07:37:31","ILYAS","ILYAS","Super Admin","EDIT","Tagihan Pelanggan","PLG020 - BUK PREI AJUNG","Ubah status tagihan (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795135050251-448","20/11/2026","07:37:30","ILYAS","ILYAS","Super Admin","EDIT","Tagihan Pelanggan","PLG019 - AMELIA AJUNG","Ubah status tagihan (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795135049019-7","20/11/2026","07:37:29","ILYAS","ILYAS","Super Admin","EDIT","Tagihan Pelanggan","PLG018 - ABDUH AJUNG","Ubah status tagihan (November 2026) dari BELUM LUNAS menjadi LUNAS"
