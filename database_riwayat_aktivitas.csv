@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795159563193-322","20/11/2026","14:26:03","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) keluar / logout dari aplikasi"
 "LOG-1795159370371-546","20/11/2026","14:22:50","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG009 - BUK ADI SUMBERANGET","Ubah status tagihan BUK ADI SUMBERANGET (November 2026) dari LUNAS menjadi BELUM LUNAS"
 "LOG-1795159359020-892","20/11/2026","14:22:39","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG007 - PEPENG STASIUN","Ubah status tagihan PEPENG STASIUN (November 2026) dari LUNAS menjadi BELUM LUNAS"
 "LOG-1795159351524-962","20/11/2026","14:22:31","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG004 - YOGA UTARA AJUNGUTARA","Ubah status tagihan YOGA UTARA AJUNGUTARA (November 2026) dari LUNAS menjadi BELUM LUNAS"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795097772801","19-11-2026","21.16.12","rendi","rendi","Admin","EDIT","Tagihan Pelanggan","PLG020 - BUK PREI AJUNG","Ubah status tagihan periode November 2026 dari ISOLIR menjadi BELUM LUNAS"
 "LOG-1795097550602","19-11-2026","21.12.30","rendi","rendi","Admin","EDIT","Tagihan Pelanggan","PLG020 - BUK PREI AJUNG","Ubah status tagihan periode November 2026 dari BELUM LUNAS menjadi ISOLIR"
 "LOG-1795097537914","19-11-2026","21.12.17","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (@rendi) masuk sebagai Admin"
-"LOG-1795097474427","19-11-2026","21.11.14","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (@rendi) masuk sebagai Admin"
