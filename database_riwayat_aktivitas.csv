@@ -1,4 +1,7 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795159237453-353","20/11/2026","14:20:37","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG381 - PAK SOFAN PLALANGAN TIMUR","Ubah status tagihan PAK SOFAN PLALANGAN TIMUR (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795159236198-36","20/11/2026","14:20:36","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG380 - PAK SISEH PLALANGAN","Ubah status tagihan PAK SISEH PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795159234917-375","20/11/2026","14:20:34","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG379 - PAK RIKO PLALANGAN","Ubah status tagihan PAK RIKO PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159233685-418","20/11/2026","14:20:33","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG378 - PAK NANIK PLALANGAN","Ubah status tagihan PAK NANIK PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159232334-699","20/11/2026","14:20:32","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG377 - PAK HERI DIMAS PLALANGAN","Ubah status tagihan PAK HERI DIMAS PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159231150-659","20/11/2026","14:20:31","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG376 - PAK HABI PLALANGAN","Ubah status tagihan PAK HABI PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
@@ -996,6 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795096691230","19-11-2026","20.58.11","ilyas","ilyas","Super Admin","EDIT","Catatan Janji Bayar","PLG019 - AMELIA AJUNG","Membatalkan penerapan keterangan ""Bayar tgl 20 tiap Bulan"" dari Tagihan Pelanggan periode November 2026"
 "LOG-1795096684983","19-11-2026","20.58.04","ilyas","ilyas","Super Admin","SIMPAN","Catatan Janji Bayar","3 Pelanggan (November 2026)","Menerapkan massal 3 catatan janji bayar ke Tagihan Pelanggan periode November 2026"
 "LOG-1795096683518","19-11-2026","20.58.03","ilyas","ilyas","Super Admin","EDIT","Catatan Janji Bayar","PLG020 - BUK PREI AJUNG","Menerapkan keterangan ""Bayar tgl 25 tiap Bulan"" ke Tagihan Pelanggan periode November 2026"
-"LOG-1795096682895","19-11-2026","20.58.02","ilyas","ilyas","Super Admin","EDIT","Catatan Janji Bayar","PLG019 - AMELIA AJUNG","Menerapkan keterangan ""Bayar tgl 20 tiap Bulan"" ke Tagihan Pelanggan periode November 2026"
-"LOG-1795096682199","19-11-2026","20.58.02","ilyas","ilyas","Super Admin","EDIT","Catatan Janji Bayar","PLG018 - ABDUH AJUNG","Menerapkan keterangan ""Bayar tgl 25 tiap Bulan"" ke Tagihan Pelanggan periode November 2026"
-"LOG-1795096675903","19-11-2026","20.57.55","ilyas","ilyas","Super Admin","EDIT","Catatan Janji Bayar","PLG020 - BUK PREI AJUNG","Membatalkan penerapan keterangan ""Bayar tgl 25 tiap Bulan"" dari Tagihan Pelanggan periode November 2026"
