@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795138158635-178","20/11/2026","08:29:18","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","20-11-2026 (November 2026)","Tambah pengeluaran Rp 200.000 — basmalah kirim adit ke pondok"
 "LOG-1795138054444-810","20/11/2026","08:27:34","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
 "LOG-1795138048059-122","20/11/2026","08:27:28","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) keluar / logout dari aplikasi"
 "LOG-1795138040836-913","20/11/2026","08:27:20","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
