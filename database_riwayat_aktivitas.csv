@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795159298540-770","20/11/2026","14:21:38","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG537 - USTAD AUREL TAHUAN","Ubah status tagihan USTAD AUREL TAHUAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159296316-881","20/11/2026","14:21:36","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG536 - SANTI TAHUAN","Ubah status tagihan SANTI TAHUAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159294020-234","20/11/2026","14:21:34","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG535 - RISAL LEK REDI TAHUAN","Ubah status tagihan RISAL LEK REDI TAHUAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159292588-541","20/11/2026","14:21:32","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG534 - RIRIN TAHUAN","Ubah status tagihan RIRIN TAHUAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795097131267","19-11-2026","21.05.31","ilyas","ilyas","Super Admin","LOGIN","Autentikasi Sistem","ilyas","User ilyas (@ilyas) keluar / logout dari aplikasi"
 "LOG-1795097125654","19-11-2026","21.05.25","ilyas","ilyas","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: blue, Sidebar: slate, Background: clean)"
 "LOG-1795097123727","19-11-2026","21.05.23","ilyas","ilyas","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: blue, Sidebar: slate, Background: clean)"
-"LOG-1795097121774","19-11-2026","21.05.21","ilyas","ilyas","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: blue, Sidebar: slate, Background: clean)"
