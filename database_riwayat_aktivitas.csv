@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795191129357-43","20/11/2026","23:12:09","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
 "LOG-1795190460280-994","20/11/2026","23:01:00","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
 "LOG-1795190443946-878","20/11/2026","23:00:43","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
 "LOG-1795188712103-36","20/11/2026","22:31:52","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795139679825-206","20/11/2026","08:54:39","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","05-11-2026 (November 2026)","Tambah pengeluaran Rp 150.000 — sedekah ke iva sama alfan"
 "LOG-1795139660104-191","20/11/2026","08:54:20","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","05-11-2026 (November 2026)","Tambah pengeluaran Rp 100.000 — sedekah ke bapak kalisat"
 "LOG-1795139641640-486","20/11/2026","08:54:01","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","05-11-2026 (November 2026)","Tambah pengeluaran Rp 500.000 — sedekah ke ibu kalisat"
-"LOG-1795139607672-257","20/11/2026","08:53:27","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","05-11-2026 (November 2026)","Tambah pengeluaran Rp 40.000 — beli kerupuk, cawo dan marjan"
