@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795139500401-804","20/11/2026","08:51:40","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","04-11-2026 (November 2026)","Tambah pengeluaran Rp 35.000 — servis sepeda tim"
 "LOG-1795139483610-2","20/11/2026","08:51:23","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","04-11-2026 (November 2026)","Tambah pengeluaran Rp 750.000 — tf ke bapak utara pesan ranggun dan transport pikep"
 "LOG-1795139444282-554","20/11/2026","08:50:44","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","04-11-2026 (November 2026)","Tambah pengeluaran Rp 235.000 — cod stiker dan lipstik bunda"
 "LOG-1795139390458-439","20/11/2026","08:49:50","ILYAS","ILYAS","Super Admin","HAPUS","Catatan Pengeluaran","03-11-2026 (11-2026)","Menghapus pengeluaran Rp 50.000 — TIAR BON"
