@@ -1,4 +1,6 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795159231150-659","20/11/2026","14:20:31","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG376 - PAK HABI PLALANGAN","Ubah status tagihan PAK HABI PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795159229958-624","20/11/2026","14:20:29","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG375 - PAK DANIL PLALANGANTIMUR","Ubah status tagihan PAK DANIL PLALANGANTIMUR (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159228661-596","20/11/2026","14:20:28","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG374 - PAK ANGGA PLALANGAN","Ubah status tagihan PAK ANGGA PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159227614-572","20/11/2026","14:20:27","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG373 - NOVI PLALANGAN","Ubah status tagihan NOVI PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159226334-362","20/11/2026","14:20:26","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG372 - MELI PLALANGAN","Ubah status tagihan MELI PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
@@ -997,5 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795096675903","19-11-2026","20.57.55","ilyas","ilyas","Super Admin","EDIT","Catatan Janji Bayar","PLG020 - BUK PREI AJUNG","Membatalkan penerapan keterangan ""Bayar tgl 25 tiap Bulan"" dari Tagihan Pelanggan periode November 2026"
 "LOG-1795096675071","19-11-2026","20.57.55","ilyas","ilyas","Super Admin","EDIT","Catatan Janji Bayar","PLG019 - AMELIA AJUNG","Membatalkan penerapan keterangan ""Bayar tgl 20 tiap Bulan"" dari Tagihan Pelanggan periode November 2026"
 "LOG-1795096672935","19-11-2026","20.57.52","ilyas","ilyas","Super Admin","EDIT","Catatan Janji Bayar","PLG018 - ABDUH AJUNG","Membatalkan penerapan keterangan ""Bayar tgl 25 tiap Bulan"" dari Tagihan Pelanggan periode November 2026"
-"LOG-1795096656081","19-11-2026","20.57.36","ilyas","ilyas","Super Admin","LOGIN","Autentikasi Sistem","ilyas","User ilyas (@ilyas) masuk sebagai Super Admin"
-"LOG-1795096649239","19-11-2026","20.57.29","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (@rendi) keluar / logout dari aplikasi"
