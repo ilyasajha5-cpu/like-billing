@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795143020056","20-11-2026","09.50.20","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
 "LOG-1795142649955-623","20/11/2026","09:44:09","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","14-11-2026 (November 2026)","Tambah pengeluaran Rp 105.000 — beli sandal ayah sama adek"
 "LOG-1795142636259-485","20/11/2026","09:43:56","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","14-11-2026 (November 2026)","Tambah pengeluaran Rp 180.000 — bayar cod"
 "LOG-1795142613395-111","20/11/2026","09:43:33","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","14-11-2026 (November 2026)","Tambah pengeluaran Rp 20.000 — belanja ke pasar"
