@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795192152586-76","20/11/2026","23:29:12","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
 "LOG-1795192146388-682","20/11/2026","23:29:06","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) keluar / logout dari aplikasi"
 "LOG-1795192118098-340","20/11/2026","23:28:38","RENDI","RENDI","Admin","SIMPAN","Setting Aplikasi & User","Identitas Perusahaan","Menyimpan konfigurasi aplikasi (LIKE Billing - PT. JAVA DIGITAL NUSANTARA)"
 "LOG-1795192090559-170","20/11/2026","23:28:10","RENDI","RENDI","Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: blue, Wallpaper: pattern, Animasi: flip)"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795140871591-577","20/11/2026","09:14:31","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","09-11-2026 (November 2026)","Tambah pengeluaran Rp 500.000 — CAK NONO PINJAM ( janji 15hari ) dari tgl 9"
 "LOG-1795140828463-209","20/11/2026","09:13:48","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","09-11-2026 (November 2026)","Tambah pengeluaran Rp 25.000 — bensin tim"
 "LOG-1795140373547-357","20/11/2026","09:06:13","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","09-11-2026 (November 2026)","Tambah pengeluaran Rp 40.000 — beli telur, sayur, dan bumbu"
-"LOG-1795140350587-970","20/11/2026","09:05:50","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","09-11-2026 (November 2026)","Tambah pengeluaran Rp 50.000 — periksa bunda"
