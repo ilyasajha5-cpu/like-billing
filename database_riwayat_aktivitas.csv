@@ -1,4 +1,7 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795159244733-875","20/11/2026","14:20:44","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG387 - SLAMET RIYADI PLALANGAN TIMUR","Ubah status tagihan SLAMET RIYADI PLALANGAN TIMUR (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795159243389-216","20/11/2026","14:20:43","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG386 - SAYATI PLALANGAN","Ubah status tagihan SAYATI PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795159242325-571","20/11/2026","14:20:42","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG385 - REZA PLALANGAN","Ubah status tagihan REZA PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159241077-791","20/11/2026","14:20:41","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG384 - RASULI PLALANGAN","Ubah status tagihan RASULI PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159239798-663","20/11/2026","14:20:39","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG383 - PAK WAHED PLALANGAN TIMUR","Ubah status tagihan PAK WAHED PLALANGAN TIMUR (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159238678-706","20/11/2026","14:20:38","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG382 - PAK VITA PLALANGAN","Ubah status tagihan PAK VITA PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
@@ -996,6 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795096748102","19-11-2026","20.59.08","ilyas","ilyas","Super Admin","HAPUS","Catatan Janji Bayar","PLG018 - ABDUH AJUNG","Menghapus catatan janji bayar (Bayar tgl 25 tiap Bulan)"
 "LOG-1795096743742","19-11-2026","20.59.03","ilyas","ilyas","Super Admin","HAPUS","Catatan Janji Bayar","PLG020 - BUK PREI AJUNG","Menghapus catatan janji bayar (Bayar tgl 25 tiap Bulan)"
 "LOG-1795096741638","19-11-2026","20.59.01","ilyas","ilyas","Super Admin","HAPUS","Catatan Janji Bayar","PLG019 - AMELIA AJUNG","Menghapus catatan janji bayar (Bayar tgl 20 tiap Bulan)"
-"LOG-1795096739854","19-11-2026","20.58.59","ilyas","ilyas","Super Admin","HAPUS","Catatan Janji Bayar","PLG018 - ABDUH AJUNG","Menghapus catatan janji bayar (Bayar tgl 25 tiap Bulan)"
-"LOG-1795096696439","19-11-2026","20.58.16","ilyas","ilyas","Super Admin","EDIT","Catatan Janji Bayar","PLG020 - BUK PREI AJUNG","Membatalkan penerapan keterangan ""Bayar tgl 25 tiap Bulan"" dari Tagihan Pelanggan periode November 2026"
-"LOG-1795096695494","19-11-2026","20.58.15","ilyas","ilyas","Super Admin","EDIT","Catatan Janji Bayar","PLG018 - ABDUH AJUNG","Membatalkan penerapan keterangan ""Bayar tgl 25 tiap Bulan"" dari Tagihan Pelanggan periode November 2026"
