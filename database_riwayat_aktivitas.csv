@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795135429158-823","20/11/2026","07:43:49","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
 "LOG-1795135358039-889","20/11/2026","07:42:38","ILYAS","ILYAS","Super Admin","HAPUS","Catatan Pengeluaran","07-12-2026 (12-2026)","Menghapus pengeluaran Rp 1.000.000 — d"
 "LOG-1795135296046-315","20/11/2026","07:41:36","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","07-12-2026 (Desember 2026)","Tambah pengeluaran Rp 1.000.000 — d"
 "LOG-1795135253001-412","20/11/2026","07:40:53","ILYAS","ILYAS","Super Admin","EDIT","Tagihan Pelanggan","PLG021 - BUNDA ARIN AJUNG","Ubah status tagihan (November 2026) dari LUNAS menjadi BELUM LUNAS"
