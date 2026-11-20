@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795184375935-129","20/11/2026","21:19:35","ILYAS","ILYAS","Super Admin","TAMBAH","Absensi & Perizinan","TIAR (14/11/2026)","Tambah absensi & perizinan TIAR: TIDAK MASUK KERJA"
 "LOG-1795184368015-327","20/11/2026","21:19:28","ILYAS","ILYAS","Super Admin","TAMBAH","Absensi & Perizinan","TIAR (13/11/2026)","Tambah absensi & perizinan TIAR: TIDAK MASUK KERJA"
 "LOG-1795184361415-151","20/11/2026","21:19:21","ILYAS","ILYAS","Super Admin","TAMBAH","Absensi & Perizinan","TIAR (12/11/2026)","Tambah absensi & perizinan TIAR: TIDAK MASUK KERJA"
 "LOG-1795184354541-540","20/11/2026","21:19:14","ILYAS","ILYAS","Super Admin","TAMBAH","Absensi & Perizinan","TIAR (11/11/2026)","Tambah absensi & perizinan TIAR: TIDAK MASUK KERJA"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795098760369","19-11-2026","21.32.40","ilyas","ilyas","Super Admin","TAMBAH","Input Lokasi / Area","STASIUN","Menambahkan area lokasi baru: STASIUN (-)"
 "LOG-1795098757296","19-11-2026","21.32.37","ilyas","ilyas","Super Admin","TAMBAH","Input Lokasi / Area","BARATGUDANG","Menambahkan area lokasi baru: BARATGUDANG (-)"
 "LOG-1795098754200","19-11-2026","21.32.34","ilyas","ilyas","Super Admin","TAMBAH","Input Lokasi / Area","TAHUAN","Menambahkan area lokasi baru: TAHUAN (-)"
-"LOG-1795098750825","19-11-2026","21.32.30","ilyas","ilyas","Super Admin","TAMBAH","Input Lokasi / Area","PLALANGAN","Menambahkan area lokasi baru: PLALANGAN (-)"
