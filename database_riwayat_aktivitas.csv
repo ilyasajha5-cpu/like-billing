@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795184238936-573","20/11/2026","21:17:18","ILYAS","ILYAS","Super Admin","TAMBAH","Absensi & Perizinan","AREP (05/11/2026)","Tambah absensi & perizinan AREP: IZIN TELAT, KARENA MALAMNYA LEMBUR SERVER"
 "LOG-1795184231720-520","20/11/2026","21:17:11","ILYAS","ILYAS","Super Admin","TAMBAH","Absensi & Perizinan","RENDI (05/11/2026)","Tambah absensi & perizinan RENDI: IZIN TELAT, KARENA MALAMNYA LEMBUR SERVER"
 "LOG-1795184144167-85","20/11/2026","21:15:44","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
 "LOG-1795183970184-259","20/11/2026","21:12:50","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795098708799","19-11-2026","21.31.48","ilyas","ilyas","Super Admin","TAMBAH","Input Lokasi / Area","AJUNG-5","Menambahkan area lokasi baru: AJUNG-5 (-)"
 "LOG-1795098702568","19-11-2026","21.31.42","ilyas","ilyas","Super Admin","HAPUS","Input Lokasi / Area","AJUNG-5","Menghapus area lokasi: AJUNG-5"
 "LOG-1795098695712","19-11-2026","21.31.35","ilyas","ilyas","Super Admin","HAPUS","Input Lokasi / Area","UTARASAWAH","Menghapus area lokasi: UTARASAWAH"
-"LOG-1795098693368","19-11-2026","21.31.33","ilyas","ilyas","Super Admin","HAPUS","Input Lokasi / Area","BARATGUDANG","Menghapus area lokasi: BARATGUDANG"
