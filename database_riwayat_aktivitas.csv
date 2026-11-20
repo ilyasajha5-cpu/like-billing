@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795183728605-648","20/11/2026","21:08:48","ILYAS","ILYAS","Super Admin","TAMBAH","Absensi & Perizinan","FERDI (03/11/2026)","Tambah absensi & perizinan FERDI: IZIN TELAT ADA KEPENTINGAN"
 "LOG-1795183706064-137","20/11/2026","21:08:26","ILYAS","ILYAS","Super Admin","EDIT","Absensi & Perizinan","ERVAN (03/11/2026)","Edit absensi & perizinan ERVAN: TIDAK MASUK KERJA"
 "LOG-1795183694580-171","20/11/2026","21:08:14","ILYAS","ILYAS","Super Admin","TAMBAH","Absensi & Perizinan","RENDI (03/11/2026)","Tambah absensi & perizinan RENDI: TIDAK MASUK KERJA"
 "LOG-1795183686119-83","20/11/2026","21:08:06","ILYAS","ILYAS","Super Admin","TAMBAH","Absensi & Perizinan","ERVAN (02/11/2026)","Tambah absensi & perizinan ERVAN: TIDAK MASUK KERJA"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795098677032","19-11-2026","21.31.17","ilyas","ilyas","Super Admin","HAPUS","Input Lokasi / Area","KARANGPAITON","Menghapus area lokasi: KARANGPAITON"
 "LOG-1795098675192","19-11-2026","21.31.15","ilyas","ilyas","Super Admin","HAPUS","Input Lokasi / Area","SUMBERMALANG","Menghapus area lokasi: SUMBERMALANG"
 "LOG-1795098673240","19-11-2026","21.31.13","ilyas","ilyas","Super Admin","HAPUS","Input Lokasi / Area","SUMBERANGET","Menghapus area lokasi: SUMBERANGET"
-"LOG-1795098669417","19-11-2026","21.31.09","ilyas","ilyas","Super Admin","HAPUS","Input Lokasi / Area","PLALANGAN","Menghapus area lokasi: PLALANGAN"
