@@ -1,6 +1,6 @@
 ID_Pelanggan,NAMA,ALAMAT,NO.HP,PAKET,DISKON,TELAT,TOTAL,STATUS,USERNAME_PPPoE,KETERANGAN,PETUGAS,PERIODE
 "PLG001","HAMBALI AJUNG","AJUNG","085852228894","100000","0","0","100000","LUNAS","450@hambaliajung","Tagihan November 2026 | Bayar tgl 20 tiap Bulan","arep","11-2026"
-"PLG002","LELI AJUNG","AJUNG","089682756456","100000","0","0","100000","BELUM LUNAS","123@leliajung","Tagihan November 2026 | Bayar tgl 25 tiap Bulan","arep","11-2026"
+"PLG002","LELI AJUNG","AJUNG","089682756456","100000","0","0","100000","LUNAS","123@leliajung","Tagihan November 2026 | Bayar tgl 25 tiap Bulan","arep","11-2026"
 "PLG003","FATHOR PTP AJUNGUTARA","AJUNGUTARA","082331858435","100000","0","0","100000","BELUM LUNAS","272@fathorutaragudangptp","Tagihan November 2026 | Bayar tgl 25 tiap Bulan","arep","11-2026"
 "PLG004","YOGA UTARA AJUNGUTARA","AJUNGUTARA","085702449299","100000","0","0","100000","BELUM LUNAS","437@yogautara","Tagihan November 2026 | Bayar tgl 25 tiap Bulan","arep","11-2026"
 "PLG005","BUK CICIK STASIUN","STASIUN","085100853019","100000","0","0","100000","BELUM LUNAS","490@bukcicikstasiun","Tagihan November 2026 | Bayar tgl 20 tiap Bulan","arep","11-2026"
@@ -38,7 +38,7 @@ ID_Pelanggan,NAMA,ALAMAT,NO.HP,PAKET,DISKON,TELAT,TOTAL,STATUS,USERNAME_PPPoE,KE
 "PLG037","MAS BADRUS AJUNG","AJUNG","089683155966","25000","0","0","25000","LUNAS","275@badrusajung","Tagihan November 2026","arep","11-2026"
 "PLG038","MBAK TATIK AJUNG","AJUNG","085335413867","50000","0","0","50000","LUNAS","012@mbaktatikajung","Tagihan November 2026","arep","11-2026"
 "PLG039","MBAK ULIL AJUNG","AJUNG","085220714312","100000","0","0","100000","LUNAS","211@mbakulilajung","Tagihan November 2026","arep","11-2026"
-"PLG040","MILA BUK FERA AJUNG","AJUNG","085945365402","100000","0","0","100000","BELUM LUNAS","379@milaajung","Tagihan November 2026","arep","11-2026"
+"PLG040","MILA BUK FERA AJUNG","AJUNG","085945365402","100000","0","0","100000","LUNAS","379@milaajung","Tagihan November 2026","arep","11-2026"
 "PLG041","NITA LEK JOKO AJUNG","AJUNG","08996192084","100000","0","0","100000","BELUM LUNAS","002@nitalekjokoajung","Tagihan November 2026","arep","11-2026"
 "PLG042","NYAK PAN AJUNG","AJUNG","085100645070","100000","0","0","100000","BELUM LUNAS","177@nyakpan","Tagihan November 2026","arep","11-2026"
 "PLG043","PAK AKBAR AJUNG","AJUNG","089528438089","100000","0","0","100000","BELUM LUNAS","247@pakakbarajung","Tagihan November 2026","arep","11-2026"
