@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795187293065-586","20/11/2026","22:08:13","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
 "LOG-1795187055451-632","20/11/2026","22:04:15","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
 "LOG-1795186987712-439","20/11/2026","22:03:07","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: blue, Sidebar: slate, Background: clean)"
 "LOG-1795186985824-612","20/11/2026","22:03:05","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: blue, Sidebar: slate, Background: clean)"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795134287816-470","20/11/2026","07:24:47","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
 "LOG-1795133106802-166","20/11/2026","07:05:06","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
 "LOG-1795133100064-604","20/11/2026","07:05:00","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
-"LOG-1795133093337-631","20/11/2026","07:04:53","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
