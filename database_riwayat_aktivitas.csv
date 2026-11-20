@@ -1,4 +1,6 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795187953100-305","20/11/2026","22:19:13","RENDI","RENDI","Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: blue, Wallpaper: pattern, Animasi: zoom)"
+"LOG-1795187951718-718","20/11/2026","22:19:11","RENDI","RENDI","Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: blue, Wallpaper: pattern, Animasi: zoom)"
 "LOG-1795187949183-736","20/11/2026","22:19:09","RENDI","RENDI","Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: blue, Wallpaper: pattern, Animasi: zoom)"
 "LOG-1795187945301-726","20/11/2026","22:19:05","RENDI","RENDI","Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: blue, Wallpaper: pattern, Animasi: zoom)"
 "LOG-1795187943397-165","20/11/2026","22:19:03","RENDI","RENDI","Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: blue, Wallpaper: pattern, Animasi: zoom)"
@@ -997,5 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795138305985-954","20/11/2026","08:31:45","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","01-11-2026 (November 2026)","Tambah pengeluaran Rp 500.000 — sedekah ke ibu situbondo"
 "LOG-1795138287633-65","20/11/2026","08:31:27","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","01-11-2026 (November 2026)","Tambah pengeluaran Rp 35.000 — beli mainan danta"
 "LOG-1795138273274-214","20/11/2026","08:31:13","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","01-11-2026 (November 2026)","Tambah pengeluaran Rp 100.000 — koleman ke farhan situbondo"
-"LOG-1795138252571-494","20/11/2026","08:30:52","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","01-11-2026 (November 2026)","Tambah pengeluaran Rp 450.000 — pengeluaran kirim adit ke pondok"
-"LOG-1795138227908-465","20/11/2026","08:30:27","ILYAS","ILYAS","Super Admin","EDIT","Catatan Pengeluaran","01-11-2026 (November 2026)","Edit pengeluaran Rp 100.000 — belanja makan kirim adit ke pondok"
