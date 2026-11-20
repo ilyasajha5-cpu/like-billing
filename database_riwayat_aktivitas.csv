@@ -1,4 +1,10 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795158718175-4","20/11/2026","14:11:58","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG310 - HOLIP K.U","Ubah status tagihan HOLIP K.U (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795158717104-871","20/11/2026","14:11:57","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG309 - HOLIP FERDI K.U","Ubah status tagihan HOLIP FERDI K.U (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795158716599-796","20/11/2026","14:11:56","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG308 - HOLEL KARANGPAITON","Ubah status tagihan HOLEL KARANGPAITON (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795158716055-311","20/11/2026","14:11:56","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG307 - HOLEL K.U","Ubah status tagihan HOLEL K.U (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795158715520-74","20/11/2026","14:11:55","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG306 - HIKMATUL K.U","Ubah status tagihan HIKMATUL K.U (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795158715007-129","20/11/2026","14:11:55","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG305 - HERMAN K.U","Ubah status tagihan HERMAN K.U (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158714455-549","20/11/2026","14:11:54","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG304 - HARES/ RISKI K.U","Ubah status tagihan HARES/ RISKI K.U (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158713203-252","20/11/2026","14:11:53","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG303 - HALILI K.U","Ubah status tagihan HALILI K.U (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158712407-482","20/11/2026","14:11:52","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG302 - HAJI WIN KARANGPAITON","Ubah status tagihan HAJI WIN KARANGPAITON (November 2026) dari BELUM LUNAS menjadi LUNAS"
