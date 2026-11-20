@@ -1,4 +1,8 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795158701815-630","20/11/2026","14:11:41","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG286 - EDI HANIP K.U","Ubah status tagihan EDI HANIP K.U (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795158701191-582","20/11/2026","14:11:41","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG285 - DILA BUK DINI KARANGPAITON","Ubah status tagihan DILA BUK DINI KARANGPAITON (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795158700552-163","20/11/2026","14:11:40","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG284 - DESTA MAHARANI KARANGPAITON","Ubah status tagihan DESTA MAHARANI KARANGPAITON (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795158699943-974","20/11/2026","14:11:39","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG283 - DEQI K.U","Ubah status tagihan DEQI K.U (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158699295-912","20/11/2026","14:11:39","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG282 - DENI K.U","Ubah status tagihan DENI K.U (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158698699-112","20/11/2026","14:11:38","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG281 - BUSTOMI K.U","Ubah status tagihan BUSTOMI K.U (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158698056-231","20/11/2026","14:11:38","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG280 - BUK YUL K.U","Ubah status tagihan BUK YUL K.U (November 2026) dari BELUM LUNAS menjadi LUNAS"
