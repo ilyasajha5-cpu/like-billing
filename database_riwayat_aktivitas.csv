@@ -1,4 +1,7 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795158988135-670","20/11/2026","14:16:28","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG370 - KEN PLALANGAN TIMUR","Ubah status tagihan KEN PLALANGAN TIMUR (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795158986935-78","20/11/2026","14:16:26","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG369 - KARINA KARIN PLALANGAN","Ubah status tagihan KARINA KARIN PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795158985680-263","20/11/2026","14:16:25","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG368 - IMRON PLALANGAN","Ubah status tagihan IMRON PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158984312-58","20/11/2026","14:16:24","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG367 - HOTIM PLALANGAN","Ubah status tagihan HOTIM PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158983007-496","20/11/2026","14:16:23","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG366 - CLARA PAK GUNTUR PLALANGAN","Ubah status tagihan CLARA PAK GUNTUR PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158981344-472","20/11/2026","14:16:21","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG365 - BUK YULI PLALANGAN","Ubah status tagihan BUK YULI PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
@@ -996,6 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795096608151","19-11-2026","20.56.48","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (@rendi) masuk sebagai Admin"
 "LOG-1795096500481","19-11-2026","20.55.00","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (@rendi) masuk sebagai Admin"
 "LOG-1795096474072","19-11-2026","20.54.34","rendi","rendi","Admin","EDIT","Catatan Janji Bayar","PLG018 - ABDUH AJUNG","Menerapkan keterangan ""Bayar tgl 25 tiap Bulan"" ke Tagihan Pelanggan periode November 2026"
-"LOG-1795096410505","19-11-2026","20.53.30","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (@rendi) masuk sebagai Admin"
-"LOG-1795096003164","19-11-2026","20.46.43","rendi","rendi","Admin","TAMBAH","Catatan Janji Bayar","Salin November 2026 → Desember 2026","Menyalin 3 daftar pelanggan janji bayar dari November 2026 ke Desember 2026"
-"LOG-1795095974197","19-11-2026","20.46.14","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (@rendi) masuk sebagai Admin"
