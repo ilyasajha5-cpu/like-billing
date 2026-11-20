@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795138219988-285","20/11/2026","08:30:19","ILYAS","ILYAS","Super Admin","EDIT","Catatan Pengeluaran","01-11-2026 (November 2026)","Edit pengeluaran Rp 200.000 — basmalah kirim adit ke pondok"
 "LOG-1795138208130-888","20/11/2026","08:30:08","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","20-11-2026 (November 2026)","Tambah pengeluaran Rp 100.000 — belanja makan kirim adit ke pondok"
 "LOG-1795138158635-178","20/11/2026","08:29:18","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","20-11-2026 (November 2026)","Tambah pengeluaran Rp 200.000 — basmalah kirim adit ke pondok"
 "LOG-1795138054444-810","20/11/2026","08:27:34","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
