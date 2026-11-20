@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795139246388-610","20/11/2026","08:47:26","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","02-11-2026 (November 2026)","Tambah pengeluaran Rp 25.000 — bensin tim"
 "LOG-1795139173390-539","20/11/2026","08:46:13","ILYAS","ILYAS","Super Admin","EDIT","Setting Bonus Petugas","TIAR","Edit data petugas TIAR (Kolektor & Teknisi - Bonus PSB Rp 20.000)"
 "LOG-1795138802086-259","20/11/2026","08:40:02","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","03-11-2026 (November 2026)","Tambah pengeluaran Rp 230.000 — beli parfum ayah dan bunda"
 "LOG-1795138783177-174","20/11/2026","08:39:43","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","03-11-2026 (November 2026)","Tambah pengeluaran Rp 50.000 — beli mie ayam tim"
