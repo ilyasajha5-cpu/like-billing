@@ -100,6 +100,246 @@
             border-radius: 0.375rem !important;
         }
 
+        /* ==================== STUDIO ANIMASI & TRANSISI ==================== */
+        @keyframes pageFadeSlideUp {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes pageZoomIn {
+            from { opacity: 0; transform: scale(0.985); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes pageSlideRight {
+            from { opacity: 0; transform: translateX(14px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes pageFlipIn {
+            from { opacity: 0; transform: perspective(900px) rotateX(-3deg) translateY(8px); }
+            to { opacity: 1; transform: perspective(900px) rotateX(0deg) translateY(0); }
+        }
+        @keyframes pageBlurFade {
+            from { opacity: 0; filter: blur(4px); transform: scale(0.99); }
+            to { opacity: 1; filter: blur(0); transform: scale(1); }
+        }
+        @keyframes toastBounceSlide {
+            0% { opacity: 0; transform: translateY(16px) scale(0.94); }
+            65% { opacity: 1; transform: translateY(-3px) scale(1.01); }
+            100% { opacity: 1; transform: translateY(0) scale(1); }
+        }
+        @keyframes toastSlideRight {
+            from { opacity: 0; transform: translateX(28px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        @keyframes toastPopGlow {
+            0% { opacity: 0; transform: scale(0.85); }
+            70% { opacity: 1; transform: scale(1.03); }
+            100% { opacity: 1; transform: scale(1); }
+        }
+        body.anim-page-slide main > section:not(.hidden) {
+            animation: pageFadeSlideUp 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        body.anim-page-zoom main > section:not(.hidden) {
+            animation: pageZoomIn 0.24s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        body.anim-page-slide-right main > section:not(.hidden) {
+            animation: pageSlideRight 0.28s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        body.anim-page-flip main > section:not(.hidden) {
+            animation: pageFlipIn 0.32s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        body.anim-page-blur main > section:not(.hidden) {
+            animation: pageBlurFade 0.26s ease-out;
+        }
+        body.anim-btn-hover button,
+        body.anim-btn-hover a[href*="wa.me"] {
+            transition: transform 0.18s ease, box-shadow 0.18s ease, background-color 0.18s ease !important;
+        }
+        body.anim-btn-hover button:not(:disabled):hover,
+        body.anim-btn-hover a[href*="wa.me"]:hover {
+            transform: translateY(-1.5px);
+            box-shadow: 0 6px 16px -4px rgba(15, 23, 42, 0.18);
+        }
+        body.anim-btn-click button:not(:disabled):active,
+        body.anim-btn-click a[href*="wa.me"]:active {
+            transform: scale(0.96) !important;
+        }
+        body.anim-toast-bounce #toast-container > div {
+            animation: toastBounceSlide 0.35s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        body.anim-toast-slide-right #toast-container > div {
+            animation: toastSlideRight 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+        }
+        body.anim-toast-pop #toast-container > div {
+            animation: toastPopGlow 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+        body.anim-loading-pulse .animate-spin {
+            animation: spin 0.8s linear infinite, pulse 1.2s ease-in-out infinite;
+        }
+        body.anim-none * {
+            animation: none !important;
+            transition: none !important;
+        }
+
+        /* ==================== BACKGROUND & WALLPAPER STUDIO ==================== */
+        body.wp-type-solid.wp-grad-ocean,
+        body.wp-type-solid.wp-grad-ocean > div.flex-1 {
+            background-color: #f1f5f9 !important;
+        }
+        body.wp-type-solid.wp-grad-sunset,
+        body.wp-type-solid.wp-grad-sunset > div.flex-1 {
+            background-color: #fff7ed !important;
+        }
+        body.wp-type-solid.wp-grad-emerald,
+        body.wp-type-solid.wp-grad-emerald > div.flex-1 {
+            background-color: #ecfdf5 !important;
+        }
+        body.wp-type-solid.wp-grad-lavender,
+        body.wp-type-solid.wp-grad-lavender > div.flex-1 {
+            background-color: #f5f3ff !important;
+        }
+        body.wp-type-solid.wp-grad-rose,
+        body.wp-type-solid.wp-grad-rose > div.flex-1 {
+            background-color: #fff1f2 !important;
+        }
+        body.wp-type-solid.wp-grad-sky,
+        body.wp-type-solid.wp-grad-sky > div.flex-1 {
+            background-color: #e0f2fe !important;
+        }
+        body.wp-type-solid.wp-grad-sand,
+        body.wp-type-solid.wp-grad-sand > div.flex-1 {
+            background-color: #fefce8 !important;
+        }
+        body.wp-type-solid.wp-grad-midnight,
+        body.wp-type-solid.wp-grad-midnight > div.flex-1 {
+            background-color: #0f172a !important;
+        }
+
+        body.wp-type-gradient.wp-grad-ocean,
+        body.wp-type-gradient.wp-grad-ocean > div.flex-1 {
+            background: linear-gradient(135deg, #bae6fd 0%, #f1f5f9 50%, #c7d2fe 100%) !important;
+        }
+        body.wp-type-gradient.wp-grad-sunset,
+        body.wp-type-gradient.wp-grad-sunset > div.flex-1 {
+            background: linear-gradient(135deg, #fde68a 0%, #ffe4e6 52%, #e9d5ff 100%) !important;
+        }
+        body.wp-type-gradient.wp-grad-emerald,
+        body.wp-type-gradient.wp-grad-emerald > div.flex-1 {
+            background: linear-gradient(135deg, #a7f3d0 0%, #ecfdf5 50%, #bae6fd 100%) !important;
+        }
+        body.wp-type-gradient.wp-grad-lavender,
+        body.wp-type-gradient.wp-grad-lavender > div.flex-1 {
+            background: linear-gradient(135deg, #ddd6fe 0%, #f5f3ff 50%, #fbcfe8 100%) !important;
+        }
+        body.wp-type-gradient.wp-grad-rose,
+        body.wp-type-gradient.wp-grad-rose > div.flex-1 {
+            background: linear-gradient(135deg, #fecdd3 0%, #fff1f2 50%, #fed7aa 100%) !important;
+        }
+        body.wp-type-gradient.wp-grad-sky,
+        body.wp-type-gradient.wp-grad-sky > div.flex-1 {
+            background: linear-gradient(135deg, #7dd3fc 0%, #e0f2fe 50%, #a5f3fc 100%) !important;
+        }
+        body.wp-type-gradient.wp-grad-sand,
+        body.wp-type-gradient.wp-grad-sand > div.flex-1 {
+            background: linear-gradient(135deg, #fef08a 0%, #fefce8 52%, #fed7aa 100%) !important;
+        }
+        body.wp-type-gradient.wp-grad-midnight,
+        body.wp-type-gradient.wp-grad-midnight > div.flex-1 {
+            background: linear-gradient(135deg, #090d16 0%, #0f172a 50%, #1e1b4b 100%) !important;
+        }
+
+        body.wp-type-pattern.wp-pat-dots,
+        body.wp-type-pattern.wp-pat-dots > div.flex-1 {
+            background-color: var(--app-bg);
+            background-image: radial-gradient(rgba(71, 85, 105, 0.32) 1.5px, transparent 1.5px) !important;
+            background-size: 18px 18px !important;
+        }
+        body.wp-type-pattern.wp-pat-grid,
+        body.wp-type-pattern.wp-pat-grid > div.flex-1 {
+            background-color: var(--app-bg);
+            background-image: linear-gradient(to right, rgba(100, 116, 139, 0.2) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(100, 116, 139, 0.2) 1px, transparent 1px) !important;
+            background-size: 24px 24px !important;
+        }
+        body.wp-type-pattern.wp-pat-diagonal,
+        body.wp-type-pattern.wp-pat-diagonal > div.flex-1 {
+            background-color: var(--app-bg);
+            background-image: repeating-linear-gradient(45deg, rgba(100, 116, 139, 0.16) 0, rgba(100, 116, 139, 0.16) 2px, transparent 2px, transparent 10px) !important;
+        }
+        body.wp-type-pattern.wp-pat-cross,
+        body.wp-type-pattern.wp-pat-cross > div.flex-1 {
+            background-color: var(--app-bg);
+            background-image: radial-gradient(rgba(37, 99, 235, 0.25) 1.5px, transparent 1.5px),
+                              radial-gradient(rgba(37, 99, 235, 0.15) 1.5px, var(--app-bg) 1.5px) !important;
+            background-size: 28px 28px !important;
+            background-position: 0 0, 14px 14px !important;
+        }
+        body.wp-type-pattern.wp-pat-waves,
+        body.wp-type-pattern.wp-pat-waves > div.flex-1 {
+            background-color: var(--app-bg);
+            background-image: repeating-radial-gradient(circle at 0 0, transparent 0, var(--app-bg) 14px),
+                              repeating-linear-gradient(rgba(100, 116, 139, 0.12), rgba(100, 116, 139, 0.12)) !important;
+        }
+        body.wp-type-pattern.wp-pat-checker,
+        body.wp-type-pattern.wp-pat-checker > div.flex-1 {
+            background-color: var(--app-bg);
+            background-image: linear-gradient(45deg, rgba(148, 163, 184, 0.14) 25%, transparent 25%),
+                              linear-gradient(-45deg, rgba(148, 163, 184, 0.14) 25%, transparent 25%),
+                              linear-gradient(45deg, transparent 75%, rgba(148, 163, 184, 0.14) 75%),
+                              linear-gradient(-45deg, transparent 75%, rgba(148, 163, 184, 0.14) 75%) !important;
+            background-size: 26px 26px !important;
+            background-position: 0 0, 0 13px, 13px -13px, -13px 0 !important;
+        }
+
+        /* ==================== RESPONSIVE STUDIO ==================== */
+        body.resp-density-compact main {
+            padding: 0.85rem 1.1rem !important;
+            gap: 0.85rem !important;
+        }
+        body.resp-density-compact main section > div {
+            padding: 0.85rem 1rem !important;
+        }
+        body.resp-density-compact table th,
+        body.resp-density-compact table td {
+            padding-top: 0.38rem !important;
+            padding-bottom: 0.38rem !important;
+        }
+        body.resp-density-spacious main {
+            padding: 2.25rem 2.5rem !important;
+            gap: 2rem !important;
+        }
+        body.resp-density-spacious main section > div {
+            padding: 1.75rem 2rem !important;
+        }
+        body.resp-density-spacious table th,
+        body.resp-density-spacious table td {
+            padding-top: 0.95rem !important;
+            padding-bottom: 0.95rem !important;
+        }
+        body.resp-mobile-cards main button,
+        body.resp-mobile-cards main select,
+        body.resp-mobile-cards main input[type="text"],
+        body.resp-mobile-cards main input[type="date"] {
+            min-height: 42px !important;
+            padding-top: 0.55rem !important;
+            padding-bottom: 0.55rem !important;
+        }
+        body.resp-tablet-grid #dash-status-breakdown-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+        }
+        @media (min-width: 1024px) {
+            body.resp-tablet-grid #dash-status-breakdown-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+            }
+        }
+        body.resp-tablet-grid #dash-status-breakdown-grid {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+        @media (min-width: 1024px) {
+            body.resp-tablet-grid #dash-status-breakdown-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+
         .app-sidebar {
             background-color: var(--sidebar-bg);
             border-color: var(--sidebar-border);
@@ -357,7 +597,7 @@
             <!-- 1. DASHBOARD ANALITIK -->
             <section id="view-dashboard" class="space-y-6">
                 <!-- Ringkasan Status Tagihan Pelanggan (Mengikuti Bulan & Tahun Update PC) -->
-                <div class="bg-white rounded-2xl p-5 lg:p-6 border border-slate-200 shadow-xs space-y-5">
+                <div id="dash-widget-status-card" class="bg-white rounded-2xl p-5 lg:p-6 border border-slate-200 shadow-xs space-y-5">
                     <div class="flex flex-wrap items-center justify-between gap-3 border-b border-slate-100 pb-4">
                         <div class="flex items-center gap-3">
                             <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-blue-600 to-indigo-600 text-white flex items-center justify-center shadow-sm">
@@ -379,7 +619,7 @@
                 </div>
 
                 <!-- Grid Kartu Statistik Utama (Disembunyikan sesuai permintaan tanpa memutus elemen script) -->
-                <div class="hidden grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4" aria-hidden="true">
+                <div id="dash-widget-kpi-grid" class="hidden grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4" aria-hidden="true">
                     <div class="bg-white rounded-2xl p-5 border border-slate-200 shadow-xs space-y-2">
                         <div class="flex items-center justify-between">
                             <span class="text-xs font-bold text-slate-500">Total Pelanggan Aktif</span>
@@ -416,8 +656,8 @@
                 </div>
 
                 <!-- Ringkasan Cepat Kolektor & Aktivitas Terbaru -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <div class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
+                <div id="dash-widget-middle-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                    <div id="dash-widget-kolektor-card" class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
                         <div class="px-5 py-4 border-b border-slate-100 flex items-center justify-between">
                             <h3 class="font-extrabold text-sm text-slate-800">Progres Tagihan Kolektor (Periode Aktif)</h3>
                             <button type="button" onclick="switchTab('petugas')" class="text-xs font-bold text-blue-600 hover:underline cursor-pointer">Lihat Detail &rarr;</button>
@@ -437,7 +677,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
+                    <div id="dash-widget-ops-card" class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
                         <div class="px-5 py-4 border-b border-slate-100 flex items-center justify-between">
                             <h3 class="font-extrabold text-sm text-slate-800">Log Gangguan & Agenda Teknisi Terbaru</h3>
                             <button type="button" onclick="switchTab('gangguan')" class="text-xs font-bold text-blue-600 hover:underline cursor-pointer">Buka Operasional &rarr;</button>
@@ -447,7 +687,7 @@
                 </div>
 
                 <!-- Pengingat Catatan Janji Bayar Tagihan Pelanggan -->
-                <div class="bg-white rounded-2xl border border-amber-200/90 shadow-xs overflow-hidden">
+                <div id="dash-widget-janji-card" class="bg-white rounded-2xl border border-amber-200/90 shadow-xs overflow-hidden">
                     <div class="px-5 py-4 border-b border-amber-100 bg-gradient-to-r from-amber-50/80 via-white to-orange-50/50 flex flex-wrap items-center justify-between gap-2">
                         <div class="flex items-center gap-2.5">
                             <div class="w-9 h-9 rounded-xl bg-amber-500 text-white flex items-center justify-center shadow-xs">
@@ -1522,51 +1762,207 @@
             <section id="view-settings" class="hidden space-y-6">
                 <!-- Panel 1: Studio Kustomisasi Tampilan & Tema Visual -->
                 <div class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
-                    <div class="px-6 py-4 bg-gradient-to-r from-slate-900 to-blue-950 text-white flex items-center justify-between">
+                    <div class="px-6 py-4 bg-gradient-to-r from-slate-900 to-blue-950 text-white flex flex-wrap items-center justify-between gap-3">
                         <div>
                             <h3 class="font-black text-sm flex items-center gap-2"><i data-lucide="palette" class="w-4 h-4 text-blue-400"></i> Studio Tampilan & Tema Visual Aplikasi</h3>
-                            <p class="text-[11px] text-slate-300 mt-0.5">Ubah warna aksen, gaya sidebar, mode layar, dan sudut komponen secara real-time</p>
+                            <p class="text-[11px] text-slate-300 mt-0.5">Kustomisasi warna, animasi, wallpaper, responsivitas perangkat, dan widget dashboard yang tersimpan otomatis ke database</p>
                         </div>
-                        <button type="button" onclick="resetVisualThemeDefault()" class="px-3 py-1.5 rounded-xl bg-white/15 hover:bg-white/25 text-white text-xs font-bold cursor-pointer">
-                            Reset Tampilan Default
-                        </button>
+                        <div class="flex flex-wrap items-center gap-2 text-xs">
+                            <button type="button" onclick="saveVisualStudioToDatabase()" class="px-3.5 py-1.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold cursor-pointer flex items-center gap-1.5 shadow-sm">
+                                <i data-lucide="save" class="w-3.5 h-3.5"></i> Simpan Tampilan ke Database
+                            </button>
+                            <button type="button" onclick="resetVisualThemeDefault()" class="px-3.5 py-1.5 rounded-xl bg-white/15 hover:bg-white/25 text-white font-bold cursor-pointer flex items-center gap-1.5">
+                                <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i> Reset Tampilan Default
+                            </button>
+                        </div>
                     </div>
-                    <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 text-xs">
-                        <div class="space-y-2">
-                            <label class="font-extrabold text-slate-700 block">1. Tema Warna Aksen Utama</label>
-                            <select id="set-accent-theme" onchange="applyVisualThemeFromInputs()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold">
-                                <option value="blue">Ocean Blue (Default)</option>
-                                <option value="emerald">Emerald Pro (Hijau)</option>
-                                <option value="purple">Royal Purple (Ungu)</option>
-                                <option value="amber">Sunset Amber (Oranye)</option>
-                                <option value="rose">Crimson Rose (Merah)</option>
-                                <option value="cyan">Cyber Cyan (Tosca)</option>
-                            </select>
+                    <div class="p-6 space-y-6 text-xs">
+                        <!-- Grup A: Warna & Gaya Dasar -->
+                        <div>
+                            <p class="text-[11px] font-black uppercase tracking-wider text-blue-700 mb-3 flex items-center gap-1.5">
+                                <i data-lucide="swatch-book" class="w-3.5 h-3.5"></i> A. Identitas Warna & Gaya Komponen
+                            </p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                                <div class="space-y-1.5">
+                                    <label class="font-extrabold text-slate-700 block">1. Tema Warna Aksen Utama</label>
+                                    <select id="set-accent-theme" onchange="applyVisualThemeFromInputs()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold">
+                                        <option value="blue">Ocean Blue (Default)</option>
+                                        <option value="emerald">Emerald Pro (Hijau)</option>
+                                        <option value="purple">Royal Purple (Ungu)</option>
+                                        <option value="amber">Sunset Amber (Oranye)</option>
+                                        <option value="rose">Crimson Rose (Merah)</option>
+                                        <option value="cyan">Cyber Cyan (Tosca)</option>
+                                    </select>
+                                </div>
+                                <div class="space-y-1.5">
+                                    <label class="font-extrabold text-slate-700 block">2. Gaya Warna Sidebar Kiri</label>
+                                    <select id="set-sidebar-theme" onchange="applyVisualThemeFromInputs()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold">
+                                        <option value="slate">Midnight Slate (Default)</option>
+                                        <option value="indigo">Deep Indigo</option>
+                                        <option value="forest">Forest Pine</option>
+                                        <option value="carbon">Carbon Obsidian</option>
+                                    </select>
+                                </div>
+                                <div class="space-y-1.5">
+                                    <label class="font-extrabold text-slate-700 block">3. Mode Layar Dasar</label>
+                                    <select id="set-bg-theme" onchange="applyVisualThemeFromInputs()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold">
+                                        <option value="clean">Clean Slate (Terang)</option>
+                                        <option value="ice-blue">Cool Ice Blue</option>
+                                        <option value="warm-ivory">Warm Ivory</option>
+                                        <option value="dark-canvas">Dark Canvas (Mode Gelap)</option>
+                                    </select>
+                                </div>
+                                <div class="space-y-1.5">
+                                    <label class="font-extrabold text-slate-700 block">4. Gaya Sudut Komponen</label>
+                                    <select id="set-corner-style" onchange="applyVisualThemeFromInputs()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold">
+                                        <option value="rounded">Modern Rounded (Melengkung)</option>
+                                        <option value="sharp">Sharp Executive (Tegas)</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
-                        <div class="space-y-2">
-                            <label class="font-extrabold text-slate-700 block">2. Gaya Warna Sidebar Kiri</label>
-                            <select id="set-sidebar-theme" onchange="applyVisualThemeFromInputs()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold">
-                                <option value="slate">Midnight Slate (Default)</option>
-                                <option value="indigo">Deep Indigo</option>
-                                <option value="forest">Forest Pine</option>
-                                <option value="carbon">Carbon Obsidian</option>
-                            </select>
+
+                        <!-- Grup B: 1. Studio Animasi & Transisi -->
+                        <div class="pt-5 border-t border-slate-100">
+                            <p class="text-[11px] font-black uppercase tracking-wider text-purple-700 mb-3 flex items-center gap-1.5">
+                                <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> 1. Studio Animasi & Transisi
+                            </p>
+                            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                                <div class="space-y-1.5">
+                                    <label class="font-extrabold text-slate-700 block">Animasi Buka & Transisi Halaman</label>
+                                    <select id="set-anim-page" onchange="applyVisualThemeFromInputs()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold">
+                                        <option value="slide">Smooth Fade & Slide Up (Default)</option>
+                                        <option value="zoom">Modern Zoom In</option>
+                                        <option value="slide-right">Horizontal Slide Right</option>
+                                        <option value="flip">3D Perspective Flip In</option>
+                                        <option value="blur">Soft Focus Blur Fade</option>
+                                        <option value="none">Tanpa Animasi (Instan)</option>
+                                    </select>
+                                </div>
+                                <div class="space-y-1.5">
+                                    <label class="font-extrabold text-slate-700 block">Animasi Loading & Notifikasi Toast</label>
+                                    <select id="set-anim-feedback" onchange="applyVisualThemeFromInputs()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold">
+                                        <option value="bounce">Elastic Bounce & Pulse Loading (Default)</option>
+                                        <option value="slide-right">Slide From Right & Spin</option>
+                                        <option value="pop">Pop Scale & Glow Pulse</option>
+                                        <option value="smooth">Smooth Minimalist</option>
+                                    </select>
+                                </div>
+                                <div class="space-y-1.5">
+                                    <label class="font-extrabold text-slate-700 block">Interaksi Hover & Klik Tombol</label>
+                                    <div class="flex flex-wrap items-center gap-4 pt-1.5">
+                                        <label class="inline-flex items-center gap-2 font-bold text-slate-700 cursor-pointer">
+                                            <input type="checkbox" id="set-anim-hover" checked onchange="applyVisualThemeFromInputs()" class="rounded text-blue-600">
+                                            <span>Hover Effect Tombol</span>
+                                        </label>
+                                        <label class="inline-flex items-center gap-2 font-bold text-slate-700 cursor-pointer">
+                                            <input type="checkbox" id="set-anim-click" checked onchange="applyVisualThemeFromInputs()" class="rounded text-blue-600">
+                                            <span>Efek Klik Tombol</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="space-y-2">
-                            <label class="font-extrabold text-slate-700 block">3. Mode Latar Belakang</label>
-                            <select id="set-bg-theme" onchange="applyVisualThemeFromInputs()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold">
-                                <option value="clean">Clean Slate (Terang)</option>
-                                <option value="ice-blue">Cool Ice Blue</option>
-                                <option value="warm-ivory">Warm Ivory</option>
-                                <option value="dark-canvas">Dark Canvas (Mode Gelap)</option>
-                            </select>
+
+                        <!-- Grup C: 2. Background & Wallpaper Studio -->
+                        <div class="pt-5 border-t border-slate-100">
+                            <p class="text-[11px] font-black uppercase tracking-wider text-emerald-700 mb-3 flex items-center gap-1.5">
+                                <i data-lucide="image" class="w-3.5 h-3.5"></i> 2. Background & Wallpaper Studio
+                            </p>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="space-y-1.5">
+                                    <label class="font-extrabold text-slate-700 block">Jenis Latar Belakang</label>
+                                    <select id="set-wp-type" onchange="applyVisualThemeFromInputs()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold">
+                                        <option value="solid">Warna Solid (Default)</option>
+                                        <option value="gradient">Gradient Modern</option>
+                                        <option value="pattern">Pattern / Tekstur Halus</option>
+                                    </select>
+                                </div>
+                                <div class="space-y-1.5">
+                                    <label class="font-extrabold text-slate-700 block">Preset Warna Solid / Gradient</label>
+                                    <select id="set-wp-preset" onchange="applyVisualThemeFromInputs()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold">
+                                        <option value="ocean">Ocean Mist (Default)</option>
+                                        <option value="sky">Crystal Sky Blue</option>
+                                        <option value="emerald">Emerald Breeze Mint</option>
+                                        <option value="lavender">Royal Lavender Soft</option>
+                                        <option value="rose">Blossom Rose Coral</option>
+                                        <option value="sunset">Warm Sunset Amber</option>
+                                        <option value="sand">Golden Warm Ivory</option>
+                                        <option value="midnight">Midnight Aurora (Gelap)</option>
+                                    </select>
+                                </div>
+                                <div class="space-y-1.5">
+                                    <label class="font-extrabold text-slate-700 block">Tekstur / Pattern Latar</label>
+                                    <select id="set-wp-pattern" onchange="applyVisualThemeFromInputs()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold">
+                                        <option value="dots">Micro Dots Matrix</option>
+                                        <option value="grid">Blueprint Grid Halus</option>
+                                        <option value="diagonal">Diagonal Lines</option>
+                                        <option value="cross">Dual Polka Dots</option>
+                                        <option value="waves">Radial Ripple Waves</option>
+                                        <option value="checker">Subtle Diamond Mesh</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
-                        <div class="space-y-2">
-                            <label class="font-extrabold text-slate-700 block">4. Gaya Sudut Komponen</label>
-                            <select id="set-corner-style" onchange="applyVisualThemeFromInputs()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold">
-                                <option value="rounded">Modern Rounded (Melengkung)</option>
-                                <option value="sharp">Sharp Executive (Tegas)</option>
-                            </select>
+
+                        <!-- Grup D: 3. Responsive Studio -->
+                        <div class="pt-5 border-t border-slate-100">
+                            <p class="text-[11px] font-black uppercase tracking-wider text-amber-700 mb-3 flex items-center gap-1.5">
+                                <i data-lucide="monitor-smartphone" class="w-3.5 h-3.5"></i> 3. Responsive Studio (Desktop, Tablet & Smartphone)
+                            </p>
+                            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                                <div class="space-y-1.5">
+                                    <label class="font-extrabold text-slate-700 block">Kepadatan Tata Letak Desktop</label>
+                                    <select id="set-resp-density" onchange="applyVisualThemeFromInputs()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold">
+                                        <option value="normal">Normal Balanced (Default)</option>
+                                        <option value="compact">Compact Data (Muat Lebih Banyak)</option>
+                                        <option value="spacious">Spacious Luxury (Lega)</option>
+                                    </select>
+                                </div>
+                                <div class="space-y-1.5">
+                                    <label class="font-extrabold text-slate-700 block">Tata Letak Grid Tablet</label>
+                                    <select id="set-resp-tablet" onchange="applyVisualThemeFromInputs()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold">
+                                        <option value="auto">Adaptif Otomatis (Default)</option>
+                                        <option value="grid-2">2-3 Kolom Seimbang</option>
+                                    </select>
+                                </div>
+                                <div class="space-y-1.5">
+                                    <label class="font-extrabold text-slate-700 block">Optimasi Sentuh Smartphone</label>
+                                    <select id="set-resp-mobile" onchange="applyVisualThemeFromInputs()" class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 font-bold">
+                                        <option value="standard">Standar Responsif (Default)</option>
+                                        <option value="touch-friendly">Touch-Friendly (Tombol Lebih Besar di HP)</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Grup E: 4. Dashboard Personalization -->
+                        <div class="pt-5 border-t border-slate-100">
+                            <p class="text-[11px] font-black uppercase tracking-wider text-rose-700 mb-3 flex items-center gap-1.5">
+                                <i data-lucide="layout-dashboard" class="w-3.5 h-3.5"></i> 4. Dashboard Personalization (Atur Widget & Informasi Dashboard)
+                            </p>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 bg-slate-50/70 cursor-pointer font-bold text-slate-800">
+                                    <input type="checkbox" id="set-dash-w-status" checked onchange="applyVisualThemeFromInputs()" class="rounded text-blue-600">
+                                    <span>Ringkasan Status Tagihan Pelanggan</span>
+                                </label>
+                                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 bg-slate-50/70 cursor-pointer font-bold text-slate-800">
+                                    <input type="checkbox" id="set-dash-w-kpi" onchange="applyVisualThemeFromInputs()" class="rounded text-blue-600">
+                                    <span>Kartu Statistik Utama (KPI Pelanggan & PSB)</span>
+                                </label>
+                                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 bg-slate-50/70 cursor-pointer font-bold text-slate-800">
+                                    <input type="checkbox" id="set-dash-w-kolektor" checked onchange="applyVisualThemeFromInputs()" class="rounded text-blue-600">
+                                    <span>Progres Tagihan Kolektor</span>
+                                </label>
+                                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 bg-slate-50/70 cursor-pointer font-bold text-slate-800">
+                                    <input type="checkbox" id="set-dash-w-ops" checked onchange="applyVisualThemeFromInputs()" class="rounded text-blue-600">
+                                    <span>Log Gangguan & Agenda Teknisi</span>
+                                </label>
+                                <label class="flex items-center gap-2.5 p-3 rounded-xl border border-slate-200 bg-slate-50/70 cursor-pointer font-bold text-slate-800">
+                                    <input type="checkbox" id="set-dash-w-janji" checked onchange="applyVisualThemeFromInputs()" class="rounded text-blue-600">
+                                    <span>Pengingat Catatan Janji Bayar</span>
+                                </label>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -2355,7 +2751,24 @@
             accentTheme: "blue",
             sidebarTheme: "slate",
             bgTheme: "clean",
-            cornerStyle: "rounded"
+            cornerStyle: "rounded",
+            animPage: "slide",
+            animFeedback: "bounce",
+            animHover: true,
+            animClick: true,
+            wpType: "solid",
+            wpPreset: "ocean",
+            wpPattern: "dots",
+            respDensity: "normal",
+            respTablet: "auto",
+            respMobile: "standard",
+            dashWidgets: {
+                status: true,
+                kpi: false,
+                kolektor: true,
+                ops: true,
+                janji: true
+            }
         };
 
         const DEFAULT_APP_USERS = [
@@ -6944,21 +7357,84 @@
         // ==================== 17. SETTING APLIKASI, TAMPILAN & USER ====================
         function applyVisualThemeToDocument() {
             const b = document.body;
+            const cfg = Object.assign({}, DEFAULT_APP_CONFIG, appConfig || {});
+            const dw = Object.assign({}, DEFAULT_APP_CONFIG.dashWidgets, cfg.dashWidgets || {});
+
+            // 1. Warna Aksen, Sidebar, Mode Layar & Sudut
             b.classList.remove("accent-emerald", "accent-purple", "accent-amber", "accent-rose", "accent-cyan");
-            if (appConfig.accentTheme && appConfig.accentTheme !== "blue") b.classList.add(`accent-${appConfig.accentTheme}`);
+            if (cfg.accentTheme && cfg.accentTheme !== "blue") b.classList.add(`accent-${cfg.accentTheme}`);
 
             b.classList.remove("sidebar-indigo", "sidebar-forest", "sidebar-carbon");
-            if (appConfig.sidebarTheme && appConfig.sidebarTheme !== "slate") b.classList.add(`sidebar-${appConfig.sidebarTheme}`);
+            if (cfg.sidebarTheme && cfg.sidebarTheme !== "slate") b.classList.add(`sidebar-${cfg.sidebarTheme}`);
 
             b.classList.remove("theme-ice-blue", "theme-warm-ivory", "theme-dark-canvas");
-            if (appConfig.bgTheme && appConfig.bgTheme !== "clean") b.classList.add(`theme-${appConfig.bgTheme}`);
+            if (cfg.bgTheme && cfg.bgTheme !== "clean") b.classList.add(`theme-${cfg.bgTheme}`);
 
-            b.classList.toggle("corner-sharp", appConfig.cornerStyle === "sharp");
+            b.classList.toggle("corner-sharp", cfg.cornerStyle === "sharp");
 
-            document.getElementById("sidebar-brand-name").textContent = appConfig.brandName || "LIKE Billing";
-            document.getElementById("sidebar-company-name").textContent = appConfig.companyName || "PT. JAVA DIGITAL NUSANTARA";
-            document.getElementById("login-brand-title").textContent = appConfig.brandName || "LIKE Billing";
-            document.getElementById("login-company-subtitle").textContent = appConfig.companyName || "PT. JAVA DIGITAL NUSANTARA";
+            // 2. Studio Animasi & Transisi
+            b.classList.remove("anim-page-slide", "anim-page-zoom", "anim-page-slide-right", "anim-page-flip", "anim-page-blur", "anim-none", "anim-btn-hover", "anim-btn-click", "anim-toast-bounce", "anim-toast-slide-right", "anim-toast-pop", "anim-loading-pulse");
+            if (cfg.animPage === "none") {
+                b.classList.add("anim-none");
+            } else {
+                const pageAnimMap = {
+                    "slide": "anim-page-slide",
+                    "zoom": "anim-page-zoom",
+                    "slide-right": "anim-page-slide-right",
+                    "flip": "anim-page-flip",
+                    "blur": "anim-page-blur"
+                };
+                b.classList.add(pageAnimMap[cfg.animPage] || "anim-page-slide");
+                if (cfg.animHover !== false) b.classList.add("anim-btn-hover");
+                if (cfg.animClick !== false) b.classList.add("anim-btn-click");
+                if (cfg.animFeedback === "bounce") {
+                    b.classList.add("anim-toast-bounce", "anim-loading-pulse");
+                } else if (cfg.animFeedback === "slide-right") {
+                    b.classList.add("anim-toast-slide-right", "anim-loading-pulse");
+                } else if (cfg.animFeedback === "pop") {
+                    b.classList.add("anim-toast-pop", "anim-loading-pulse");
+                }
+            }
+
+            // 3. Background & Wallpaper Studio
+            b.classList.remove("wp-type-solid", "wp-type-gradient", "wp-type-pattern", "wp-grad-ocean", "wp-grad-sunset", "wp-grad-emerald", "wp-grad-lavender", "wp-grad-rose", "wp-grad-sky", "wp-grad-sand", "wp-grad-midnight", "wp-pat-dots", "wp-pat-grid", "wp-pat-diagonal", "wp-pat-cross", "wp-pat-waves", "wp-pat-checker");
+            if (cfg.wpType === "gradient") {
+                b.classList.add("wp-type-gradient", `wp-grad-${cfg.wpPreset || "ocean"}`);
+            } else if (cfg.wpType === "pattern") {
+                b.classList.add("wp-type-pattern", `wp-pat-${cfg.wpPattern || "dots"}`);
+            } else {
+                b.classList.add("wp-type-solid", `wp-grad-${cfg.wpPreset || "ocean"}`);
+            }
+
+            // 4. Responsive Studio
+            b.classList.remove("resp-density-compact", "resp-density-spacious", "resp-tablet-grid", "resp-mobile-cards");
+            if (cfg.respDensity === "compact") b.classList.add("resp-density-compact");
+            else if (cfg.respDensity === "spacious") b.classList.add("resp-density-spacious");
+            if (cfg.respTablet === "grid-2") b.classList.add("resp-tablet-grid");
+            if (cfg.respMobile === "touch-friendly") b.classList.add("resp-mobile-cards");
+
+            // 5. Dashboard Personalization
+            const wStatus = document.getElementById("dash-widget-status-card");
+            const wKpi = document.getElementById("dash-widget-kpi-grid");
+            const wMiddle = document.getElementById("dash-widget-middle-grid");
+            const wKol = document.getElementById("dash-widget-kolektor-card");
+            const wOps = document.getElementById("dash-widget-ops-card");
+            const wJanji = document.getElementById("dash-widget-janji-card");
+
+            if (wStatus) wStatus.classList.toggle("hidden", dw.status === false);
+            if (wKpi) {
+                wKpi.classList.toggle("hidden", !dw.kpi);
+                wKpi.classList.toggle("grid", !!dw.kpi);
+            }
+            if (wKol) wKol.classList.toggle("hidden", dw.kolektor === false);
+            if (wOps) wOps.classList.toggle("hidden", dw.ops === false);
+            if (wMiddle) wMiddle.classList.toggle("hidden", dw.kolektor === false && dw.ops === false);
+            if (wJanji) wJanji.classList.toggle("hidden", dw.janji === false);
+
+            document.getElementById("sidebar-brand-name").textContent = cfg.brandName || "LIKE Billing";
+            document.getElementById("sidebar-company-name").textContent = cfg.companyName || "PT. JAVA DIGITAL NUSANTARA";
+            document.getElementById("login-brand-title").textContent = cfg.brandName || "LIKE Billing";
+            document.getElementById("login-company-subtitle").textContent = cfg.companyName || "PT. JAVA DIGITAL NUSANTARA";
         }
 
         function applyVisualThemeFromInputs() {
@@ -6966,10 +7442,39 @@
             appConfig.sidebarTheme = document.getElementById("set-sidebar-theme").value;
             appConfig.bgTheme = document.getElementById("set-bg-theme").value;
             appConfig.cornerStyle = document.getElementById("set-corner-style").value;
+
+            appConfig.animPage = document.getElementById("set-anim-page")?.value || "slide";
+            appConfig.animFeedback = document.getElementById("set-anim-feedback")?.value || "bounce";
+            appConfig.animHover = !!document.getElementById("set-anim-hover")?.checked;
+            appConfig.animClick = !!document.getElementById("set-anim-click")?.checked;
+
+            appConfig.wpType = document.getElementById("set-wp-type")?.value || "solid";
+            appConfig.wpPreset = document.getElementById("set-wp-preset")?.value || "ocean";
+            appConfig.wpPattern = document.getElementById("set-wp-pattern")?.value || "dots";
+
+            appConfig.respDensity = document.getElementById("set-resp-density")?.value || "normal";
+            appConfig.respTablet = document.getElementById("set-resp-tablet")?.value || "auto";
+            appConfig.respMobile = document.getElementById("set-resp-mobile")?.value || "standard";
+
+            appConfig.dashWidgets = {
+                status: !!document.getElementById("set-dash-w-status")?.checked,
+                kpi: !!document.getElementById("set-dash-w-kpi")?.checked,
+                kolektor: !!document.getElementById("set-dash-w-kolektor")?.checked,
+                ops: !!document.getElementById("set-dash-w-ops")?.checked,
+                janji: !!document.getElementById("set-dash-w-janji")?.checked
+            };
+
             applyVisualThemeToDocument();
             saveAllToLocalStorage();
-            recordUserActivity("EDIT", "Setting Aplikasi & User", "Tema Visual", `Mengubah tema visual (Aksen: ${appConfig.accentTheme}, Sidebar: ${appConfig.sidebarTheme}, Background: ${appConfig.bgTheme})`);
-            showToast("Tema visual aplikasi diperbarui", "success");
+            triggerAutoSave("database_master_konfigurasi.csv", false);
+            recordUserActivity("EDIT", "Setting Aplikasi & User", "Studio Tampilan Visual", `Memperbarui tampilan aplikasi (Aksen: ${appConfig.accentTheme}, Wallpaper: ${appConfig.wpType}, Animasi: ${appConfig.animPage})`);
+            showToast("Tampilan visual diperbarui & tersimpan otomatis", "success");
+        }
+
+        function saveVisualStudioToDatabase() {
+            applyVisualThemeFromInputs();
+            triggerAutoSave("database_master_konfigurasi.csv", true);
+            showToast("Pengaturan Studio Tampilan berhasil disimpan ke database!", "success");
         }
 
         function resetVisualThemeDefault() {
@@ -6977,30 +7482,66 @@
             appConfig.sidebarTheme = "slate";
             appConfig.bgTheme = "clean";
             appConfig.cornerStyle = "rounded";
+            appConfig.animPage = "slide";
+            appConfig.animFeedback = "bounce";
+            appConfig.animHover = true;
+            appConfig.animClick = true;
+            appConfig.wpType = "solid";
+            appConfig.wpPreset = "ocean";
+            appConfig.wpPattern = "dots";
+            appConfig.respDensity = "normal";
+            appConfig.respTablet = "auto";
+            appConfig.respMobile = "standard";
+            appConfig.dashWidgets = { status: true, kpi: false, kolektor: true, ops: true, janji: true };
+
             renderSettingsView();
             applyVisualThemeToDocument();
             saveAllToLocalStorage();
-            recordUserActivity("RESET", "Setting Aplikasi & User", "Tema Visual", "Mengembalikan tema visual aplikasi ke default");
-            showToast("Tampilan dikembalikan ke default", "info");
+            triggerAutoSave("database_master_konfigurasi.csv", true);
+            recordUserActivity("RESET", "Setting Aplikasi & User", "Studio Tampilan Visual", "Mengembalikan seluruh pengaturan tampilan ke default");
+            showToast("Seluruh tampilan dikembalikan ke default & disimpan ke database", "info");
         }
 
         function renderSettingsView() {
-            document.getElementById("set-accent-theme").value = appConfig.accentTheme || "blue";
-            document.getElementById("set-sidebar-theme").value = appConfig.sidebarTheme || "slate";
-            document.getElementById("set-bg-theme").value = appConfig.bgTheme || "clean";
-            document.getElementById("set-corner-style").value = appConfig.cornerStyle || "rounded";
+            const cfg = Object.assign({}, DEFAULT_APP_CONFIG, appConfig || {});
+            const dw = Object.assign({}, DEFAULT_APP_CONFIG.dashWidgets, cfg.dashWidgets || {});
 
-            document.getElementById("cfg-brand-name").value = appConfig.brandName || "LIKE Billing";
-            document.getElementById("cfg-company-name").value = appConfig.companyName || "PT. JAVA DIGITAL NUSANTARA";
-            document.getElementById("cfg-cs-phone").value = appConfig.csPhone || "";
-            document.getElementById("cfg-bank-info").value = appConfig.bankInfo || "";
-            document.getElementById("cfg-referal-rp").value = formatRibuan(appConfig.referalBonusRp || 25000);
-            document.getElementById("cfg-telat-rp").value = formatRibuan(appConfig.telatDendaRp || 10000);
+            document.getElementById("set-accent-theme").value = cfg.accentTheme || "blue";
+            document.getElementById("set-sidebar-theme").value = cfg.sidebarTheme || "slate";
+            document.getElementById("set-bg-theme").value = cfg.bgTheme || "clean";
+            document.getElementById("set-corner-style").value = cfg.cornerStyle || "rounded";
+
+            if (document.getElementById("set-anim-page")) document.getElementById("set-anim-page").value = cfg.animPage || "slide";
+            if (document.getElementById("set-anim-feedback")) document.getElementById("set-anim-feedback").value = cfg.animFeedback || "bounce";
+            if (document.getElementById("set-anim-hover")) document.getElementById("set-anim-hover").checked = cfg.animHover !== false;
+            if (document.getElementById("set-anim-click")) document.getElementById("set-anim-click").checked = cfg.animClick !== false;
+
+            if (document.getElementById("set-wp-type")) document.getElementById("set-wp-type").value = cfg.wpType || "solid";
+            if (document.getElementById("set-wp-preset")) document.getElementById("set-wp-preset").value = cfg.wpPreset || "ocean";
+            if (document.getElementById("set-wp-pattern")) document.getElementById("set-wp-pattern").value = cfg.wpPattern || "dots";
+
+            if (document.getElementById("set-resp-density")) document.getElementById("set-resp-density").value = cfg.respDensity || "normal";
+            if (document.getElementById("set-resp-tablet")) document.getElementById("set-resp-tablet").value = cfg.respTablet || "auto";
+            if (document.getElementById("set-resp-mobile")) document.getElementById("set-resp-mobile").value = cfg.respMobile || "standard";
+
+            if (document.getElementById("set-dash-w-status")) document.getElementById("set-dash-w-status").checked = dw.status !== false;
+            if (document.getElementById("set-dash-w-kpi")) document.getElementById("set-dash-w-kpi").checked = !!dw.kpi;
+            if (document.getElementById("set-dash-w-kolektor")) document.getElementById("set-dash-w-kolektor").checked = dw.kolektor !== false;
+            if (document.getElementById("set-dash-w-ops")) document.getElementById("set-dash-w-ops").checked = dw.ops !== false;
+            if (document.getElementById("set-dash-w-janji")) document.getElementById("set-dash-w-janji").checked = dw.janji !== false;
+
+            document.getElementById("cfg-brand-name").value = cfg.brandName || "LIKE Billing";
+            document.getElementById("cfg-company-name").value = cfg.companyName || "PT. JAVA DIGITAL NUSANTARA";
+            document.getElementById("cfg-cs-phone").value = cfg.csPhone || "";
+            document.getElementById("cfg-bank-info").value = cfg.bankInfo || "";
+            document.getElementById("cfg-referal-rp").value = formatRibuan(cfg.referalBonusRp || 25000);
+            document.getElementById("cfg-telat-rp").value = formatRibuan(cfg.telatDendaRp || 10000);
 
             document.getElementById("gh-token-input").value = getActiveGitHubToken();
             document.getElementById("gh-repo-input").value = getActiveGitHubRepo();
             document.getElementById("gh-branch-input").value = getActiveGitHubBranch();
             renderAppUsersTable();
+            scheduleLucideIcons(document.getElementById("view-settings"));
         }
 
         function saveGitHubRepoSetting() {
@@ -7959,7 +8500,24 @@
                 const rows = [
                     ...allPaket.map(p => ["PAKET", p.nama, p.speed, p.harga, formatRibuan(p.harga), p.ket].map(csvEscape).join(",")),
                     ...allLokasi.map(l => ["LOKASI", l.nama, "", "", "", l.ket].map(csvEscape).join(",")),
-                    ...allPetugas.map(pt => ["PETUGAS", pt.nama, pt.hp, pt.role, pt.bonusRate, ""].map(csvEscape).join(","))
+                    ...allPetugas.map(pt => ["PETUGAS", pt.nama, pt.hp, pt.role, pt.bonusRate, ""].map(csvEscape).join(",")),
+                    ["UI_THEME_CONFIG", "VISUAL_STUDIO", "", "", "", JSON.stringify({
+                        accentTheme: appConfig.accentTheme,
+                        sidebarTheme: appConfig.sidebarTheme,
+                        bgTheme: appConfig.bgTheme,
+                        cornerStyle: appConfig.cornerStyle,
+                        animPage: appConfig.animPage,
+                        animFeedback: appConfig.animFeedback,
+                        animHover: appConfig.animHover,
+                        animClick: appConfig.animClick,
+                        wpType: appConfig.wpType,
+                        wpPreset: appConfig.wpPreset,
+                        wpPattern: appConfig.wpPattern,
+                        respDensity: appConfig.respDensity,
+                        respTablet: appConfig.respTablet,
+                        respMobile: appConfig.respMobile,
+                        dashWidgets: appConfig.dashWidgets
+                    })].map(csvEscape).join(",")
                 ];
                 return [header, ...rows].join("\n");
             }
@@ -8234,6 +8792,16 @@
                     if (kat === "PAKET") pList.push({ nama, speed: sub1 || "", harga: parseNumber(sub2), ket: ket || "" });
                     else if (kat === "LOKASI") lList.push({ nama, ket: ket || "" });
                     else if (kat === "PETUGAS") ptList.push({ nama, hp: sub1 || "", role: sub2 || "Kolektor & Teknisi", bonusRate: parseNumber(sub3) || 20000 });
+                    else if (kat === "UI_THEME_CONFIG" && ket) {
+                        try {
+                            const parsedTheme = JSON.parse(ket);
+                            if (parsedTheme && typeof parsedTheme === "object") {
+                                appConfig = Object.assign({}, DEFAULT_APP_CONFIG, appConfig, parsedTheme);
+                                localStorage.setItem("like_billing_app_config", JSON.stringify(appConfig));
+                                applyVisualThemeToDocument();
+                            }
+                        } catch (_) {}
+                    }
                 });
                 if (pList.length > 0) allPaket = pList;
                 if (lList.length > 0) allLokasi = lList;
