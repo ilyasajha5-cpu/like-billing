@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795141125133-935","20/11/2026","09:18:45","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","12-11-2026 (November 2026)","Tambah pengeluaran Rp 100.000 — belanja ke pasar"
 "LOG-1795141113509-960","20/11/2026","09:18:33","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","11-11-2026 (November 2026)","Tambah pengeluaran Rp 25.000 — bensin tim"
 "LOG-1795141103605-897","20/11/2026","09:18:23","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","11-11-2026 (November 2026)","Tambah pengeluaran Rp 15.000 — beli baterai avometer"
 "LOG-1795141087773-666","20/11/2026","09:18:07","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","11-11-2026 (November 2026)","Tambah pengeluaran Rp 35.000 — beli payung"
