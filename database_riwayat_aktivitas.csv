@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795137949887-794","20/11/2026","08:25:49","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG021 - BUNDA ARIN AJUNG","Ubah status tagihan BUNDA ARIN AJUNG (November 2026) dari BELUM LUNAS menjadi ISOLIR"
 "LOG-1795137884012-783","20/11/2026","08:24:44","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
 "LOG-1795137879357-351","20/11/2026","08:24:39","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
 "LOG-1795137825134-410","20/11/2026","08:23:45","ILYAS","ILYAS","Super Admin","SIMPAN","Setting Aplikasi & User","Identitas Perusahaan","Menyimpan konfigurasi aplikasi (LIKE Billing - PT. JAVA DIGITAL NUSANTARA)"
