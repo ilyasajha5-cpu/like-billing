@@ -1,4 +1,6 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795159259573-521","20/11/2026","14:20:59","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG450 - BUK DIMAS SUMBERANGET","Ubah status tagihan BUK DIMAS SUMBERANGET (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795159257101-559","20/11/2026","14:20:57","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG009 - BUK ADI SUMBERANGET","Ubah status tagihan BUK ADI SUMBERANGET (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159255918-40","20/11/2026","14:20:55","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG449 - BASRI SUMBERANGET","Ubah status tagihan BASRI SUMBERANGET (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159254830-273","20/11/2026","14:20:54","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG395 - WENI PLALANGAN","Ubah status tagihan WENI PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159253645-570","20/11/2026","14:20:53","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG394 - WAWAN PLALANGAN","Ubah status tagihan WAWAN PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
@@ -997,5 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795096957312","19-11-2026","21.02.37","ilyas","ilyas","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: emerald, Sidebar: slate, Background: clean)"
 "LOG-1795096955104","19-11-2026","21.02.35","ilyas","ilyas","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: blue, Sidebar: slate, Background: clean)"
 "LOG-1795096952568","19-11-2026","21.02.32","ilyas","ilyas","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: emerald, Sidebar: slate, Background: clean)"
-"LOG-1795096848306","19-11-2026","21.00.48","ilyas","ilyas","Super Admin","EDIT","Daftar Paket Internet","PAKET 25.000","Edit paket PAKET 25.000 (1 Mbps - Rp 25.000)"
-"LOG-1795096844626","19-11-2026","21.00.44","ilyas","ilyas","Super Admin","EDIT","Daftar Paket Internet","PAKET 200.000","Edit paket PAKET 200.000 (50 Mbps - Rp 200.000)"
