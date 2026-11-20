@@ -1,4 +1,7 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795159269212-510","20/11/2026","14:21:09","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG465 - ILHAM SUMBERANGET","Ubah status tagihan ILHAM SUMBERANGET (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795159267973-496","20/11/2026","14:21:07","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG464 - HOLIYAH SUMBERANGET","Ubah status tagihan HOLIYAH SUMBERANGET (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795159266900-575","20/11/2026","14:21:06","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG462 - FIRMAN SUMBERANGET","Ubah status tagihan FIRMAN SUMBERANGET (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159265677-187","20/11/2026","14:21:05","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG460 - FAISAL SUMBERANGET","Ubah status tagihan FAISAL SUMBERANGET (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159264517-353","20/11/2026","14:21:04","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG457 - BUK WIYAH SUMBERANGET","Ubah status tagihan BUK WIYAH SUMBERANGET (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795159263405-711","20/11/2026","14:21:03","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG454 - BUK NUVAL SUMBERANGET","Ubah status tagihan BUK NUVAL SUMBERANGET (November 2026) dari BELUM LUNAS menjadi LUNAS"
@@ -996,6 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795096976567","19-11-2026","21.02.56","ilyas","ilyas","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: blue, Sidebar: carbon, Background: clean)"
 "LOG-1795096974647","19-11-2026","21.02.54","ilyas","ilyas","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: blue, Sidebar: forest, Background: clean)"
 "LOG-1795096971232","19-11-2026","21.02.51","ilyas","ilyas","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: blue, Sidebar: indigo, Background: clean)"
-"LOG-1795096968359","19-11-2026","21.02.48","ilyas","ilyas","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: blue, Sidebar: slate, Background: clean)"
-"LOG-1795096966415","19-11-2026","21.02.46","ilyas","ilyas","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: cyan, Sidebar: slate, Background: clean)"
-"LOG-1795096962991","19-11-2026","21.02.42","ilyas","ilyas","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: rose, Sidebar: slate, Background: clean)"
