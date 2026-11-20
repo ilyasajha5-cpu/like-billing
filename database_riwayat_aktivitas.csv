@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795155298462-111","20/11/2026","13:14:58","RENDI","RENDI","Admin","TAMBAH","Daftar Pelanggan Off","ALIN-2","Input pelanggan off ALIN-2 (AJUNGTENGAH - Alasan: KELUAR KOTA)"
 "LOG-1795155125604-538","20/11/2026","13:12:05","RENDI","RENDI","Admin","EDIT","Catatan Janji Bayar","Massal (23 Pelanggan)","Menerapkan 23 catatan janji bayar ke Tagihan Pelanggan (November 2026)"
 "LOG-1795155118463-996","20/11/2026","13:11:58","RENDI","RENDI","Admin","TAMBAH","Catatan Janji Bayar","DILA BUK DINI KARANGPAITON","Tambah janji bayar DILA BUK DINI KARANGPAITON (Bayar tgl 08 tiap Bulan - Periode 11-2026)"
 "LOG-1795155107600-694","20/11/2026","13:11:47","RENDI","RENDI","Admin","TAMBAH","Catatan Janji Bayar","BUK ADI SUMBERANGET","Tambah janji bayar BUK ADI SUMBERANGET (Bayar tgl 25 tiap Bulan - Periode 11-2026)"
