@@ -1,4 +1,7 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795158973839-738","20/11/2026","14:16:13","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG359 - ANDAI PLALANGAN","Ubah status tagihan ANDAI PLALANGAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795158972768-777","20/11/2026","14:16:12","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG184 - VITA AJUNGTENGAH","Ubah status tagihan VITA AJUNGTENGAH (November 2026) dari BELUM LUNAS menjadi LUNAS"
+"LOG-1795158971736-482","20/11/2026","14:16:11","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG177 - SILVI AJUNGTENGAH","Ubah status tagihan SILVI AJUNGTENGAH (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158970584-216","20/11/2026","14:16:10","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG173 - RISKI AJUNGTENGAH","Ubah status tagihan RISKI AJUNGTENGAH (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158969368-405","20/11/2026","14:16:09","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG171 - REKNO AJUNGTENGAH","Ubah status tagihan REKNO AJUNGTENGAH (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158968120-629","20/11/2026","14:16:08","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG170 - RAISA AJUNGTENGAH","Ubah status tagihan RAISA AJUNGTENGAH (November 2026) dari BELUM LUNAS menjadi LUNAS"
@@ -996,6 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795095458974","19-11-2026","20.37.38","ilyas","ilyas","Super Admin","TAMBAH","Catatan Janji Bayar","PLG018 - ABDUH AJUNG","Tambah catatan janji bayar baru (Bayar tgl 25 tiap Bulan | Periode November 2026)"
 "LOG-1795094622014","19-11-2026","20.23.41","ilyas","ilyas","Super Admin","LOGIN","Autentikasi Sistem","ilyas","User ilyas (@ilyas) masuk sebagai Super Admin"
 "LOG-20261119-200745-719","19/11/2026","20:07:45","rendi","rendi","Admin","LOGIN","Autentikasi Sistem","rendi","User rendi (Admin) berhasil login ke aplikasi"
-"LOG-20261119-200124-121","19/11/2026","20:01:24","ilyas","ilyas","Super Admin","LOGIN","Autentikasi Sistem","ilyas","User ilyas (Super Admin) berhasil login ke aplikasi"
-"LOG-1795092424464-681","19/11/2026","19:47:04","ilyas","ilyas","Super Admin","TAMBAH","Input Lokasi / Area","UTARASAWAH","Menambahkan lokasi/area baru ""UTARASAWAH"""
-"LOG-1795092417205-421","19/11/2026","19:46:57","ilyas","ilyas","Super Admin","HAPUS","Input Lokasi / Area","UTARASAWAH","Menghapus lokasi/area ""UTARASAWAH"""
