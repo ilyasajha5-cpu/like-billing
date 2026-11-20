@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795184503266-209","20/11/2026","21:21:43","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: blue, Sidebar: slate, Background: ice-blue)"
 "LOG-1795184498003-108","20/11/2026","21:21:38","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Tema Visual","Mengubah tema visual (Aksen: blue, Sidebar: slate, Background: clean)"
 "LOG-1795184417471-977","20/11/2026","21:20:17","ILYAS","ILYAS","Super Admin","TAMBAH","Absensi & Perizinan","ERVAN (20/11/2026)","Tambah absensi & perizinan ERVAN: TIDAK MASUK KERJA"
 "LOG-1795184391503-710","20/11/2026","21:19:51","ILYAS","ILYAS","Super Admin","TAMBAH","Absensi & Perizinan","ERVAN (15/11/2026)","Tambah absensi & perizinan ERVAN: TIDAK MASUK KERJA"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795100059927","19-11-2026","21.54.19","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
 "LOG-1795098797711","19-11-2026","21.33.17","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
 "LOG-1795098791807","19-11-2026","21.33.11","ilyas","ilyas","Super Admin","LOGIN","Autentikasi Sistem","ilyas","User ilyas (@ilyas) keluar / logout dari aplikasi"
-"LOG-1795098763696","19-11-2026","21.32.43","ilyas","ilyas","Super Admin","TAMBAH","Input Lokasi / Area","UTARASAWAH","Menambahkan area lokasi baru: UTARASAWAH (-)"
