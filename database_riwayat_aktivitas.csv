@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795155015128-645","20/11/2026","13:10:15","RENDI","RENDI","Admin","TAMBAH","Catatan Janji Bayar","PAK KULSUM SUMBERMALANG","Tambah janji bayar PAK KULSUM SUMBERMALANG (Bayar tgl 10 tiap Bulan - Periode 11-2026)"
 "LOG-1795155003369-756","20/11/2026","13:10:03","RENDI","RENDI","Admin","TAMBAH","Catatan Janji Bayar","PAK MILA SUMBERANGET","Tambah janji bayar PAK MILA SUMBERANGET (Bayar tgl 10 tiap Bulan - Periode 11-2026)"
 "LOG-1795154992096-779","20/11/2026","13:09:52","RENDI","RENDI","Admin","TAMBAH","Catatan Janji Bayar","FARUK SUMBER ANGET","Tambah janji bayar FARUK SUMBER ANGET (Bayar tgl 10 tiap Bulan - Periode 11-2026)"
 "LOG-1795154981856-223","20/11/2026","13:09:41","RENDI","RENDI","Admin","TAMBAH","Catatan Janji Bayar","HOLIP FERDI K.U","Tambah janji bayar HOLIP FERDI K.U (Bayar tgl 10 tiap Bulan - Periode 11-2026)"
