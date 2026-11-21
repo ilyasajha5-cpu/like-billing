@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795249054251-236","21/11/2026","15:17:34","ILYAS","ILYAS","Super Admin","EDIT","Manajemen User Login","ILYAS","Mengubah akun user ILYAS (ILYAS - Role: Finance)"
 "LOG-1795249026182-511","21/11/2026","15:17:06","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
 "LOG-1795249016805-447","21/11/2026","15:16:56","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
 "LOG-1795248973632-690","21/11/2026","15:16:13","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Finance"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795144662012-433","20/11/2026","10:17:42","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","17-11-2026 (November 2026)","Tambah pengeluaran Rp 90.000 — cod oyister"
 "LOG-1795144650068-600","20/11/2026","10:17:30","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","17-11-2026 (November 2026)","Tambah pengeluaran Rp 50.000 — bensin mobil"
 "LOG-1795144634676-60","20/11/2026","10:17:14","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","16-11-2026 (November 2026)","Tambah pengeluaran Rp 15.000 — bensin tim"
-"LOG-1795144625205-779","20/11/2026","10:17:05","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","16-11-2026 (November 2026)","Tambah pengeluaran Rp 30.000 — belanja ke pasar"
