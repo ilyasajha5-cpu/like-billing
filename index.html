@@ -2003,6 +2003,116 @@
                     </div>
                 </div>
 
+                <!-- Panel 2B: Pengaturan Format Teks Notifikasi WhatsApp (WA) -->
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
+                    <div class="px-6 py-4 bg-gradient-to-r from-emerald-900 via-teal-900 to-slate-900 text-white flex flex-wrap items-center justify-between gap-3">
+                        <div>
+                            <h3 class="font-black text-sm flex items-center gap-2"><i data-lucide="message-square-text" class="w-4 h-4 text-emerald-400"></i> Pengaturan Format Teks Notifikasi WhatsApp (WA)</h3>
+                            <p class="text-[11px] text-emerald-100/80 mt-0.5">Kustomisasi template pesan WA berdasarkan status pelanggan &amp; bonus referal; otomatis tersimpan ke database dan langsung digunakan pada tombol WA</p>
+                        </div>
+                        <div class="flex flex-wrap items-center gap-2 text-xs">
+                            <button type="button" onclick="saveWATemplatesToDatabase(true)" class="px-4 py-2 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-extrabold cursor-pointer flex items-center gap-1.5 shadow-sm">
+                                <i data-lucide="save" class="w-4 h-4"></i> Simpan Format Teks WA
+                            </button>
+                            <button type="button" onclick="resetWATemplatesDefault()" class="px-3.5 py-2 rounded-xl bg-white/15 hover:bg-white/25 text-white font-bold cursor-pointer flex items-center gap-1.5">
+                                <i data-lucide="rotate-ccw" class="w-3.5 h-3.5"></i> Reset Default
+                            </button>
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-5 text-xs">
+                        <div class="p-3.5 rounded-xl bg-emerald-50/80 border border-emerald-200 text-emerald-950 space-y-1.5">
+                            <p class="font-extrabold text-[11px] uppercase tracking-wide text-emerald-800 flex items-center gap-1.5">
+                                <i data-lucide="info" class="w-3.5 h-3.5"></i> Panduan Variabel Otomatis (Akan Diganti Otomatis Saat Klik Tombol WA):
+                            </p>
+                            <div class="flex flex-wrap gap-1.5 font-mono text-[10px]">
+                                <span class="px-2 py-0.5 rounded bg-white border border-emerald-200 font-bold">{NAMA}</span>
+                                <span class="px-2 py-0.5 rounded bg-white border border-emerald-200 font-bold">{ID}</span>
+                                <span class="px-2 py-0.5 rounded bg-white border border-emerald-200 font-bold">{ALAMAT}</span>
+                                <span class="px-2 py-0.5 rounded bg-white border border-emerald-200 font-bold">{PERIODE}</span>
+                                <span class="px-2 py-0.5 rounded bg-white border border-emerald-200 font-bold">{PAKET}</span>
+                                <span class="px-2 py-0.5 rounded bg-white border border-emerald-200 font-bold">{DISKON}</span>
+                                <span class="px-2 py-0.5 rounded bg-white border border-emerald-200 font-bold">{TELAT}</span>
+                                <span class="px-2 py-0.5 rounded bg-white border border-emerald-200 font-bold">{TOTAL}</span>
+                                <span class="px-2 py-0.5 rounded bg-white border border-emerald-200 font-bold">{STATUS}</span>
+                                <span class="px-2 py-0.5 rounded bg-white border border-emerald-200 font-bold">{KETERANGAN}</span>
+                                <span class="px-2 py-0.5 rounded bg-white border border-emerald-200 font-bold">{BRAND}</span>
+                                <span class="px-2 py-0.5 rounded bg-white border border-emerald-200 font-bold">{PERUSAHAAN}</span>
+                                <span class="px-2 py-0.5 rounded bg-white border border-emerald-200 font-bold">{CS_PHONE}</span>
+                                <span class="px-2 py-0.5 rounded bg-white border border-emerald-200 font-bold">{REKENING}</span>
+                                <span class="px-2 py-0.5 rounded bg-purple-100 border border-purple-200 text-purple-900 font-bold">{JUMLAH_PSB}</span>
+                                <span class="px-2 py-0.5 rounded bg-purple-100 border border-purple-200 text-purple-900 font-bold">{TARIF_REFERAL}</span>
+                                <span class="px-2 py-0.5 rounded bg-purple-100 border border-purple-200 text-purple-900 font-bold">{TOTAL_BONUS}</span>
+                                <span class="px-2 py-0.5 rounded bg-purple-100 border border-purple-200 text-purple-900 font-bold">{DAFTAR_PSB}</span>
+                            </div>
+                        </div>
+
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+                            <!-- 1. LUNAS -->
+                            <div class="space-y-1.5 p-3.5 rounded-xl border border-emerald-200 bg-emerald-50/30">
+                                <label class="font-extrabold text-emerald-800 flex items-center justify-between">
+                                    <span>1. Format Teks WA — Status: LUNAS</span>
+                                    <span class="px-2 py-0.5 rounded bg-emerald-600 text-white text-[10px]">Tagihan Pelanggan</span>
+                                </label>
+                                <textarea id="wa-tpl-LUNAS" rows="6" onchange="onWATemplateAutoSave()" class="w-full px-3 py-2 rounded-xl border border-slate-300 bg-white font-medium text-slate-800 leading-relaxed focus:border-emerald-600 outline-none"></textarea>
+                            </div>
+
+                            <!-- 2. BELUM LUNAS -->
+                            <div class="space-y-1.5 p-3.5 rounded-xl border border-rose-200 bg-rose-50/30">
+                                <label class="font-extrabold text-rose-800 flex items-center justify-between">
+                                    <span>2. Format Teks WA — Status: BELUM LUNAS</span>
+                                    <span class="px-2 py-0.5 rounded bg-rose-600 text-white text-[10px]">Tagihan Pelanggan</span>
+                                </label>
+                                <textarea id="wa-tpl-BELUM-LUNAS" rows="6" onchange="onWATemplateAutoSave()" class="w-full px-3 py-2 rounded-xl border border-slate-300 bg-white font-medium text-slate-800 leading-relaxed focus:border-rose-600 outline-none"></textarea>
+                            </div>
+
+                            <!-- 3. ISOLIR -->
+                            <div class="space-y-1.5 p-3.5 rounded-xl border border-amber-200 bg-amber-50/30">
+                                <label class="font-extrabold text-amber-800 flex items-center justify-between">
+                                    <span>3. Format Teks WA — Status: ISOLIR</span>
+                                    <span class="px-2 py-0.5 rounded bg-amber-600 text-white text-[10px]">Tagihan Pelanggan</span>
+                                </label>
+                                <textarea id="wa-tpl-ISOLIR" rows="6" onchange="onWATemplateAutoSave()" class="w-full px-3 py-2 rounded-xl border border-slate-300 bg-white font-medium text-slate-800 leading-relaxed focus:border-amber-600 outline-none"></textarea>
+                            </div>
+
+                            <!-- 4. BARU -->
+                            <div class="space-y-1.5 p-3.5 rounded-xl border border-blue-200 bg-blue-50/30">
+                                <label class="font-extrabold text-blue-800 flex items-center justify-between">
+                                    <span>4. Format Teks WA — Status: BARU (PSB)</span>
+                                    <span class="px-2 py-0.5 rounded bg-blue-600 text-white text-[10px]">Tagihan Pelanggan</span>
+                                </label>
+                                <textarea id="wa-tpl-BARU" rows="6" onchange="onWATemplateAutoSave()" class="w-full px-3 py-2 rounded-xl border border-slate-300 bg-white font-medium text-slate-800 leading-relaxed focus:border-blue-600 outline-none"></textarea>
+                            </div>
+
+                            <!-- 5. DOUBLE -->
+                            <div class="space-y-1.5 p-3.5 rounded-xl border border-purple-200 bg-purple-50/30">
+                                <label class="font-extrabold text-purple-800 flex items-center justify-between">
+                                    <span>5. Format Teks WA — Status: DOUBLE</span>
+                                    <span class="px-2 py-0.5 rounded bg-purple-600 text-white text-[10px]">Tagihan Pelanggan</span>
+                                </label>
+                                <textarea id="wa-tpl-DOUBLE" rows="6" onchange="onWATemplateAutoSave()" class="w-full px-3 py-2 rounded-xl border border-slate-300 bg-white font-medium text-slate-800 leading-relaxed focus:border-purple-600 outline-none"></textarea>
+                            </div>
+
+                            <!-- 6. OFF -->
+                            <div class="space-y-1.5 p-3.5 rounded-xl border border-slate-300 bg-slate-100/60">
+                                <label class="font-extrabold text-slate-800 flex items-center justify-between">
+                                    <span>6. Format Teks WA — Status: OFF</span>
+                                    <span class="px-2 py-0.5 rounded bg-slate-700 text-white text-[10px]">Tagihan Pelanggan</span>
+                                </label>
+                                <textarea id="wa-tpl-OFF" rows="6" onchange="onWATemplateAutoSave()" class="w-full px-3 py-2 rounded-xl border border-slate-300 bg-white font-medium text-slate-800 leading-relaxed focus:border-slate-600 outline-none"></textarea>
+                            </div>
+
+                            <!-- 7. BONUS REFERAL PELANGGAN -->
+                            <div class="lg:col-span-2 space-y-1.5 p-4 rounded-xl border border-purple-300 bg-gradient-to-r from-purple-50/80 via-white to-indigo-50/50">
+                                <label class="font-extrabold text-purple-900 flex items-center justify-between">
+                                    <span>7. Format Teks WA — Bonus Referal Pelanggan (User Get User)</span>
+                                    <span class="px-2.5 py-0.5 rounded bg-purple-700 text-white text-[10px]">Menu Bonus Referal Pelanggan</span>
+                                </label>
+                                <textarea id="wa-tpl-REFERAL" rows="6" onchange="onWATemplateAutoSave()" class="w-full px-3 py-2 rounded-xl border border-purple-300 bg-white font-medium text-slate-800 leading-relaxed focus:border-purple-600 outline-none"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Panel 3: Manajemen User Login & Hak Akses (KHUSUS SUPER ADMIN) -->
                 <div id="user-management-card" class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
                     <div class="px-6 py-4 border-b border-slate-100 flex flex-wrap items-center justify-between gap-3">
@@ -2768,6 +2878,77 @@
                 kolektor: true,
                 ops: true,
                 janji: true
+            },
+            waTemplates: {
+                "LUNAS":
+                    "*BUKTI PEMBAYARAN LUNAS — {BRAND}*\n" +
+                    "Periode: *{PERIODE}*\n\n" +
+                    "Halo Bapak/Ibu *{NAMA}*,\n" +
+                    "Terima kasih, pembayaran tagihan Wi-Fi Anda telah kami terima dengan status *LUNAS*.\n\n" +
+                    "ID Pelanggan : {ID}\n" +
+                    "Alamat : {ALAMAT}\n" +
+                    "Paket Bulanan : Rp {PAKET}\n" +
+                    "Diskon Referal : - Rp {DISKON}\n" +
+                    "Denda Telat : + Rp {TELAT}\n" +
+                    "*Total Dibayar : Rp {TOTAL}*\n" +
+                    "Status : *{STATUS}*\n\n" +
+                    "Terima kasih telah menggunakan layanan *{PERUSAHAAN}*.",
+                "BELUM LUNAS":
+                    "Halo Bapak/Ibu *{NAMA}*,\n\n" +
+                    "Mohon konfirmasinya, karena hingga saat ini pembayaran tagihan Wi-Fi Anda periode *{PERIODE}* sebesar *Rp {TOTAL}* *belum kami terima*.\n" +
+                    "Mohon segera melakukan pembayaran dan mengirimkan konfirmasi pembayaran agar layanan Wi-Fi di rumah Anda tetap berjalan dengan lancar serta *terhindar dari sistem isolir (penonaktifan sementara) secara otomatis* akibat keterlambatan pembayaran.\n\n" +
+                    "Pembayaran dapat dilakukan melalui:\n" +
+                    "💳 *Transfer Bank BCA*\n" +
+                    "No. Rekening: *3340297287*\n" +
+                    "a.n. Mohamad Ilyasi\n" +
+                    "📱 *DANA*\n" +
+                    "No. DANA: *085236378731*\n" +
+                    "a.n. Mohamad Ilyasi\n\n" +
+                    "Setelah melakukan pembayaran, mohon kirimkan bukti transfer ke WhatsApp Admin:\n" +
+                    "📞 *0852-3637-8731*\n\n" +
+                    "Terima kasih atas perhatian dan kerja samanya.",
+                "ISOLIR":
+                    "Halo Bapak/Ibu *{NAMA}*,\n\n" +
+                    "Kami informasikan bahwa Layanan Wi-Fi Anda saat ini *terisolir atau di matikan sementara* secara otomatis oleh sistem kami.\n\n" +
+                    "Mohon untuk melakukan Pembayaran Tagihan periode *{PERIODE}* sebesar *Rp {TOTAL}* agar Wi-Fi Anda Kembali normal.\n\n" +
+                    "Untuk menghindari ketidanyamanan ini dikemudian hari, mohon untuk melakukan Pembayaran tepat waktu *sebelum tanggal 05* setiap bulannya.\n\n" +
+                    "Mohon kerja samanya,\n" +
+                    "Terima kasih.\n\n" +
+                    "Hormat kami,\n" +
+                    "*Admin Layanan Wi-Fi*\n\n" +
+                    "Jika Anda sudah melakukan pembayaran, kirim bukti transfer ke WhatsApp Admin: *0852-3637-8731*.",
+                "BARU":
+                    "Halo Bapak/Ibu *{NAMA}*,\n\n" +
+                    "Selamat bergabung menjadi pelanggan baru *{BRAND}* ({PERUSAHAAN})! 🎉\n" +
+                    "Berikut rincian aktivasi layanan Wi-Fi Anda:\n\n" +
+                    "ID Pelanggan : {ID}\n" +
+                    "Alamat : {ALAMAT}\n" +
+                    "Paket Bulanan : Rp {PAKET}\n" +
+                    "Keterangan : {KETERANGAN}\n" +
+                    "Status : *{STATUS}*\n\n" +
+                    "Jika membutuhkan bantuan teknis, silakan hubungi CS/Admin kami di *{CS_PHONE}*. Terima kasih!",
+                "DOUBLE":
+                    "Halo Bapak/Ibu *{NAMA}*,\n\n" +
+                    "Kami informasikan rincian tagihan Wi-Fi Anda pada periode *{PERIODE}* dengan status *{STATUS}*:\n\n" +
+                    "ID Pelanggan : {ID}\n" +
+                    "Alamat : {ALAMAT}\n" +
+                    "Paket Bulanan : Rp {PAKET}\n" +
+                    "Diskon Referal : - Rp {DISKON}\n" +
+                    "Denda Telat : + Rp {TELAT}\n" +
+                    "*Total Tagihan : Rp {TOTAL}*\n" +
+                    "Keterangan : {KETERANGAN}\n\n" +
+                    "Terima kasih atas kerja samanya.\n*{PERUSAHAAN}*",
+                "OFF":
+                    "Halo Bapak/Ibu *{NAMA}*,\n\n" +
+                    "Kami informasikan bahwa status layanan Wi-Fi Anda ({ID} - {ALAMAT}) saat ini tercatat *OFF / Non-Aktif* pada periode *{PERIODE}*.\n" +
+                    "Keterangan : {KETERANGAN}\n\n" +
+                    "Apabila Bapak/Ibu ingin mengaktifkan kembali layanan internet di kemudian hari, silakan hubungi Admin kami di *{CS_PHONE}*.\n" +
+                    "Terima kasih telah menjadi bagian dari pelanggan *{PERUSAHAAN}*.",
+                "REFERAL":
+                    "Halo Bapak/Ibu *{NAMA}*,\n\n" +
+                    "Selamat! Anda mendapatkan *Bonus Referal (User Get User)* sebesar *Rp {TOTAL_BONUS}* ({JUMLAH_PSB} PSB x Rp {TARIF_REFERAL}) atas rekomendasi pemasangan baru:\n" +
+                    "{DAFTAR_PSB}\n\n" +
+                    "Bonus tersebut otomatis mengurangi tagihan internet Anda. Terima kasih atas kepercayaannya kepada *{PERUSAHAAN}*."
             }
         };
 
@@ -3803,60 +3984,90 @@
             return digits;
         }
 
+        function getActiveWATemplates() {
+            const defaults = DEFAULT_APP_CONFIG.waTemplates;
+            const saved = (appConfig && appConfig.waTemplates && typeof appConfig.waTemplates === "object") ? appConfig.waTemplates : {};
+            return {
+                "LUNAS": saved["LUNAS"] !== undefined && saved["LUNAS"] !== "" ? saved["LUNAS"] : defaults["LUNAS"],
+                "BELUM LUNAS": saved["BELUM LUNAS"] !== undefined && saved["BELUM LUNAS"] !== "" ? saved["BELUM LUNAS"] : defaults["BELUM LUNAS"],
+                "ISOLIR": saved["ISOLIR"] !== undefined && saved["ISOLIR"] !== "" ? saved["ISOLIR"] : defaults["ISOLIR"],
+                "BARU": saved["BARU"] !== undefined && saved["BARU"] !== "" ? saved["BARU"] : defaults["BARU"],
+                "DOUBLE": saved["DOUBLE"] !== undefined && saved["DOUBLE"] !== "" ? saved["DOUBLE"] : defaults["DOUBLE"],
+                "OFF": saved["OFF"] !== undefined && saved["OFF"] !== "" ? saved["OFF"] : defaults["OFF"],
+                "REFERAL": saved["REFERAL"] !== undefined && saved["REFERAL"] !== "" ? saved["REFERAL"] : defaults["REFERAL"]
+            };
+        }
+
+        function renderWATemplateText(templateStr, varsMap) {
+            let result = String(templateStr || "");
+            Object.entries(varsMap || {}).forEach(([key, val]) => {
+                const token = `{${key}}`;
+                result = result.split(token).join(String(val ?? ""));
+            });
+            return result;
+        }
+
         function buildBillWAData(idx) {
             const list = ensureActiveBillingList();
             const c = list[idx];
             if (!c) return null;
             const periodLabel = getActiveBillingPeriodLabel();
             const statusUpper = String(c.status || "BELUM LUNAS").toUpperCase();
-            let text = "";
+            const templates = getActiveWATemplates();
+            const tpl = templates[statusUpper] || templates["BELUM LUNAS"];
 
-            if (statusUpper === "BELUM LUNAS") {
-                text =
-                    `Halo Bapak/Ibu *${c.nama}*,\n\n` +
-                    `Mohon konfirmasinya, karena hingga saat ini pembayaran tagihan Wi-Fi Anda *belum kami terima*.\n` +
-                    `Mohon segera melakukan pembayaran dan mengirimkan konfirmasi pembayaran agar layanan Wi-Fi di rumah Anda tetap berjalan dengan lancar serta *terhindar dari sistem isolir (penonaktifan sementara) secara otomatis* akibat keterlambatan pembayaran.\n\n` +
-                    `Pembayaran dapat dilakukan melalui:\n` +
-                    `💳 *Transfer Bank BCA*\n` +
-                    `No. Rekening: *3340297287*\n` +
-                    `a.n. Mohamad Ilyasi\n` +
-                    `📱 *DANA*\n` +
-                    `No. DANA: *085236378731*\n` +
-                    `a.n. Mohamad Ilyasi\n\n` +
-                    `Setelah melakukan pembayaran, mohon kirimkan bukti transfer ke WhatsApp Admin:\n` +
-                    `📞 *0852-3637-8731*\n\n` +
-                    `Terima kasih atas perhatian dan kerja samanya.`;
-            } else if (statusUpper === "ISOLIR") {
-                text =
-                    `Halo Bapak/Ibu *${c.nama}*,\n\n` +
-                    `Kami informasikan bahwa Layanan Wi-Fi Anda saat ini *terisolir atau di matikan sementara* secara otomatis oleh sistem kami.\n\n` +
-                    `Mohon untuk melakukan Pembayaran Tagihan agar Wi-Fi Anda Kembali normal.\n\n` +
-                    `Untuk menghindari ketidanyamanan ini dikemudian hari, mohon untuk melakukan Pembayaran tepat waktu *sebelum tanggal 05* setiap bulannya.\n\n` +
-                    `Mohon kerja samanya,\n` +
-                    `Terima kasih.\n\n` +
-                    `Hormat kami,\n` +
-                    `*Admin Layanan Wi-Fi*\n\n` +
-                    `Jika Anda sudah melakukan pembayaran, kirim bukti transfer ke WhatsApp Admin: *0852-3637-8731*.`;
-            } else {
-                text =
-                    `*INFORMASI TAGIHAN INTERNET — ${appConfig.brandName}*\n` +
-                    `Periode: *${periodLabel}*\n\n` +
-                    `ID Pelanggan : ${c.id}\n` +
-                    `Nama : *${c.nama}*\n` +
-                    `Alamat : ${c.alamat}\n` +
-                    `Paket Bulanan : Rp ${formatRibuan(c.paket)}\n` +
-                    `Diskon Referal : - Rp ${formatRibuan(c.diskon || 0)}\n` +
-                    `Denda Telat : + Rp ${formatRibuan(c.telat || 0)}\n` +
-                    `*Total Tagihan : Rp ${formatRibuan(c.total)}*\n` +
-                    `Status : *${c.status}*\n\n` +
-                    `Terima kasih telah menggunakan layanan ${appConfig.companyName}.`;
-            }
+            const text = renderWATemplateText(tpl, {
+                NAMA: c.nama || "",
+                ID: c.id || "-",
+                ALAMAT: c.alamat || "-",
+                PERIODE: periodLabel,
+                PAKET: formatRibuan(c.paket || 0),
+                DISKON: formatRibuan(c.diskon || 0),
+                TELAT: formatRibuan(c.telat || 0),
+                TOTAL: formatRibuan(c.total || 0),
+                STATUS: statusUpper,
+                KETERANGAN: c.ket || "-",
+                BRAND: appConfig.brandName || "LIKE Billing",
+                PERUSAHAAN: appConfig.companyName || "PT. JAVA DIGITAL NUSANTARA",
+                CS_PHONE: appConfig.csPhone || "085852228894",
+                REKENING: appConfig.bankInfo || "BCA / BRI a.n PT. JAVA DIGITAL NUSANTARA"
+            });
 
             return {
                 phone: formatPhoneToWA(c.hp),
                 text,
                 nama: c.nama
             };
+        }
+
+        function sanitizeWATextForProtocol(rawText) {
+            // Normalisasi NFC & pastikan seluruh karakter Unicode / Emoji (surrogate pairs) utuh saat di-encode UTF-8
+            const normalized = String(rawText || "").normalize("NFC");
+            let safeStr = "";
+            for (const ch of normalized) {
+                const cp = ch.codePointAt(0);
+                // Hindari lone surrogate rusak, pertahankan seluruh emoji & simbol Unicode secara utuh
+                if (cp !== undefined && !(cp >= 0xD800 && cp <= 0xDFFF)) {
+                    safeStr += ch;
+                }
+            }
+            return safeStr;
+        }
+
+        function openDirectWhatsAppApp(phone, messageText) {
+            const cleanText = sanitizeWATextForProtocol(messageText);
+            const encodedText = encodeURIComponent(cleanText);
+            const directAppUrl = `whatsapp://send?phone=${phone}&text=${encodedText}`;
+
+            // Buka langsung protokol aplikasi WhatsApp Desktop/Mobile tanpa pop-up tab browser baru
+            const anchor = document.createElement("a");
+            anchor.href = directAppUrl;
+            anchor.style.display = "none";
+            document.body.appendChild(anchor);
+            anchor.click();
+            setTimeout(() => {
+                if (anchor.parentNode) anchor.parentNode.removeChild(anchor);
+            }, 300);
         }
 
         function handleBillWAClick(event, idx) {
@@ -3867,8 +4078,7 @@
                 showToast(`Nomor HP / WA pelanggan "${data.nama}" belum diisi!`, "warning");
                 return false;
             }
-            const waUrl = `https://wa.me/${data.phone}?text=${encodeURIComponent(data.text)}`;
-            window.open(waUrl, "_blank");
+            openDirectWhatsAppApp(data.phone, data.text);
             return false;
         }
 
@@ -4475,12 +4685,22 @@
                 return false;
             }
             const psbNames = g.psbList.map((p, i) => `${i + 1}. ${p.nama} (${p.lokasi})`).join("\n");
-            const text =
-                `Halo Bapak/Ibu *${g.refName}*,\n\n` +
-                `Selamat! Anda mendapatkan *Bonus Referal (User Get User)* sebesar *Rp ${formatRibuan(g.totalBonus)}* (${g.count} PSB x Rp ${formatRibuan(g.rate)}) atas rekomendasi pemasangan baru:\n` +
-                `${psbNames}\n\n` +
-                `Bonus tersebut otomatis mengurangi tagihan internet Anda. Terima kasih atas kepercayaannya kepada *${appConfig.companyName}*.`;
-            window.open(`https://wa.me/${phone}?text=${encodeURIComponent(text)}`, "_blank");
+            const templates = getActiveWATemplates();
+            const text = renderWATemplateText(templates["REFERAL"], {
+                NAMA: g.refName || "",
+                ID: g.custId || "-",
+                ALAMAT: g.alamat || "-",
+                PERIODE: getActiveBillingPeriodLabel(),
+                JUMLAH_PSB: g.count,
+                TARIF_REFERAL: formatRibuan(g.rate),
+                TOTAL_BONUS: formatRibuan(g.totalBonus),
+                DAFTAR_PSB: psbNames,
+                BRAND: appConfig.brandName || "LIKE Billing",
+                PERUSAHAAN: appConfig.companyName || "PT. JAVA DIGITAL NUSANTARA",
+                CS_PHONE: appConfig.csPhone || "085852228894",
+                REKENING: appConfig.bankInfo || "BCA / BRI a.n PT. JAVA DIGITAL NUSANTARA"
+            });
+            openDirectWhatsAppApp(phone, text);
             return false;
         }
 
@@ -7537,11 +7757,57 @@
             document.getElementById("cfg-referal-rp").value = formatRibuan(cfg.referalBonusRp || 25000);
             document.getElementById("cfg-telat-rp").value = formatRibuan(cfg.telatDendaRp || 10000);
 
+            const waTpl = getActiveWATemplates();
+            if (document.getElementById("wa-tpl-LUNAS")) document.getElementById("wa-tpl-LUNAS").value = waTpl["LUNAS"];
+            if (document.getElementById("wa-tpl-BELUM-LUNAS")) document.getElementById("wa-tpl-BELUM-LUNAS").value = waTpl["BELUM LUNAS"];
+            if (document.getElementById("wa-tpl-ISOLIR")) document.getElementById("wa-tpl-ISOLIR").value = waTpl["ISOLIR"];
+            if (document.getElementById("wa-tpl-BARU")) document.getElementById("wa-tpl-BARU").value = waTpl["BARU"];
+            if (document.getElementById("wa-tpl-DOUBLE")) document.getElementById("wa-tpl-DOUBLE").value = waTpl["DOUBLE"];
+            if (document.getElementById("wa-tpl-OFF")) document.getElementById("wa-tpl-OFF").value = waTpl["OFF"];
+            if (document.getElementById("wa-tpl-REFERAL")) document.getElementById("wa-tpl-REFERAL").value = waTpl["REFERAL"];
+
             document.getElementById("gh-token-input").value = getActiveGitHubToken();
             document.getElementById("gh-repo-input").value = getActiveGitHubRepo();
             document.getElementById("gh-branch-input").value = getActiveGitHubBranch();
             renderAppUsersTable();
             scheduleLucideIcons(document.getElementById("view-settings"));
+        }
+
+        function collectWATemplatesFromInputs() {
+            const current = getActiveWATemplates();
+            return {
+                "LUNAS": document.getElementById("wa-tpl-LUNAS")?.value ?? current["LUNAS"],
+                "BELUM LUNAS": document.getElementById("wa-tpl-BELUM-LUNAS")?.value ?? current["BELUM LUNAS"],
+                "ISOLIR": document.getElementById("wa-tpl-ISOLIR")?.value ?? current["ISOLIR"],
+                "BARU": document.getElementById("wa-tpl-BARU")?.value ?? current["BARU"],
+                "DOUBLE": document.getElementById("wa-tpl-DOUBLE")?.value ?? current["DOUBLE"],
+                "OFF": document.getElementById("wa-tpl-OFF")?.value ?? current["OFF"],
+                "REFERAL": document.getElementById("wa-tpl-REFERAL")?.value ?? current["REFERAL"]
+            };
+        }
+
+        function onWATemplateAutoSave() {
+            appConfig.waTemplates = collectWATemplatesFromInputs();
+            saveAllToLocalStorage();
+            triggerAutoSave("database_master_konfigurasi.csv", false);
+            showToast("Format teks WA otomatis tersimpan ke database", "success");
+        }
+
+        function saveWATemplatesToDatabase(notify = true) {
+            appConfig.waTemplates = collectWATemplatesFromInputs();
+            saveAllToLocalStorage();
+            recordUserActivity("SIMPAN", "Setting Aplikasi & User", "Format Teks WhatsApp", "Menyimpan template format pesan WA (Lunas, Belum Lunas, Isolir, Baru, Double, Off & Bonus Referal)");
+            triggerAutoSave("database_master_konfigurasi.csv", true);
+            if (notify) showToast("Format teks WhatsApp berhasil disimpan & terkoneksi ke tombol WA!", "success");
+        }
+
+        function resetWATemplatesDefault() {
+            appConfig.waTemplates = JSON.parse(JSON.stringify(DEFAULT_APP_CONFIG.waTemplates));
+            renderSettingsView();
+            saveAllToLocalStorage();
+            recordUserActivity("RESET", "Setting Aplikasi & User", "Format Teks WhatsApp", "Mengembalikan seluruh template format pesan WA ke default");
+            triggerAutoSave("database_master_konfigurasi.csv", true);
+            showToast("Format teks WhatsApp dikembalikan ke default & tersimpan", "info");
         }
 
         function saveGitHubRepoSetting() {
@@ -8517,7 +8783,8 @@
                         respTablet: appConfig.respTablet,
                         respMobile: appConfig.respMobile,
                         dashWidgets: appConfig.dashWidgets
-                    })].map(csvEscape).join(",")
+                    })].map(csvEscape).join(","),
+                    ["WA_TEMPLATES_CONFIG", "WHATSAPP_TEMPLATES", "", "", "", JSON.stringify(getActiveWATemplates())].map(csvEscape).join(",")
                 ];
                 return [header, ...rows].join("\n");
             }
@@ -8609,12 +8876,23 @@
         }
 
         function encodeUTF8ToBase64(str) {
-            return btoa(unescape(encodeURIComponent(str)));
+            const bytes = new TextEncoder().encode(String(str || ""));
+            let bin = "";
+            for (let i = 0; i < bytes.length; i++) {
+                bin += String.fromCharCode(bytes[i]);
+            }
+            return btoa(bin);
         }
 
         function decodeBase64ToUTF8(b64) {
             try {
-                return decodeURIComponent(escape(atob(String(b64 || "").replace(/\s/g, ""))));
+                const cleanB64 = String(b64 || "").replace(/\s/g, "");
+                const bin = atob(cleanB64);
+                const bytes = new Uint8Array(bin.length);
+                for (let i = 0; i < bin.length; i++) {
+                    bytes[i] = bin.charCodeAt(i);
+                }
+                return new TextDecoder("utf-8").decode(bytes);
             } catch (_) {
                 try { return atob(String(b64 || "").replace(/\s/g, "")); } catch (__) { return ""; }
             }
@@ -8799,6 +9077,14 @@
                                 appConfig = Object.assign({}, DEFAULT_APP_CONFIG, appConfig, parsedTheme);
                                 localStorage.setItem("like_billing_app_config", JSON.stringify(appConfig));
                                 applyVisualThemeToDocument();
+                            }
+                        } catch (_) {}
+                    } else if (kat === "WA_TEMPLATES_CONFIG" && ket) {
+                        try {
+                            const parsedWA = JSON.parse(ket);
+                            if (parsedWA && typeof parsedWA === "object") {
+                                appConfig.waTemplates = Object.assign({}, DEFAULT_APP_CONFIG.waTemplates, parsedWA);
+                                localStorage.setItem("like_billing_app_config", JSON.stringify(appConfig));
                             }
                         } catch (_) {}
                     }
