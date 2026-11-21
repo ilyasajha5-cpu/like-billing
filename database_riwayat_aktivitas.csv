@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795223770319-926","21/11/2026","08:16:10","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
 "LOG-1795223388762-737","21/11/2026","08:09:48","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
 "LOG-1795221643331-188","21/11/2026","07:40:43","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) keluar / logout dari aplikasi"
 "LOG-1795221602239-348","21/11/2026","07:40:02","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795140959367-211","20/11/2026","09:15:59","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","10-11-2026 (November 2026)","Tambah pengeluaran Rp 65.000 — belanja basmalah ayah adek"
 "LOG-1795140937983-828","20/11/2026","09:15:37","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","10-11-2026 (November 2026)","Tambah pengeluaran Rp 25.000 — beli nasi jagung 2 bungkus"
 "LOG-1795140918463-432","20/11/2026","09:15:18","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","09-11-2026 (November 2026)","Tambah pengeluaran Rp 10.000 — bensin tim"
-"LOG-1795140901511-225","20/11/2026","09:15:01","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","09-11-2026 (November 2026)","Tambah pengeluaran Rp 30.000 — beli rokok ayah"
