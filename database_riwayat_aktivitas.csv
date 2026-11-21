@@ -1,4 +1,7 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795226161419-326","21/11/2026","08:56:01","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: rose, Wallpaper: pattern, Animasi: flip)"
+"LOG-1795226160140-539","21/11/2026","08:56:00","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: purple, Wallpaper: pattern, Animasi: flip)"
+"LOG-1795226158339-20","21/11/2026","08:55:58","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: emerald, Wallpaper: pattern, Animasi: flip)"
 "LOG-1795226155062-464","21/11/2026","08:55:55","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: blue, Wallpaper: pattern, Animasi: flip)"
 "LOG-1795226153303-838","21/11/2026","08:55:53","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: blue, Wallpaper: pattern, Animasi: flip)"
 "LOG-1795225732424-146","21/11/2026","08:48:52","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
@@ -996,6 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795141157757-999","20/11/2026","09:19:17","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","12-11-2026 (November 2026)","Tambah pengeluaran Rp 13.500.000 — BAYAR BANDWITDH JDN"
 "LOG-1795141125133-935","20/11/2026","09:18:45","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","12-11-2026 (November 2026)","Tambah pengeluaran Rp 100.000 — belanja ke pasar"
 "LOG-1795141113509-960","20/11/2026","09:18:33","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","11-11-2026 (November 2026)","Tambah pengeluaran Rp 25.000 — bensin tim"
-"LOG-1795141103605-897","20/11/2026","09:18:23","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","11-11-2026 (November 2026)","Tambah pengeluaran Rp 15.000 — beli baterai avometer"
-"LOG-1795141087773-666","20/11/2026","09:18:07","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","11-11-2026 (November 2026)","Tambah pengeluaran Rp 35.000 — beli payung"
-"LOG-1795141077573-692","20/11/2026","09:17:57","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","11-11-2026 (November 2026)","Tambah pengeluaran Rp 5.000 — beli micin"
