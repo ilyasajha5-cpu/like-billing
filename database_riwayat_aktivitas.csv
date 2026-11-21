@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795253194574-709","21/11/2026","16:26:34","RENDI","RENDI","Admin","TAMBAH","Absensi & Perizinan","ERVAN (21/11/2026)","Tambah absensi & perizinan ERVAN: TIDAK MASUK KERJA"
 "LOG-1795251354571-872","21/11/2026","15:55:54","RENDI","RENDI","Admin","EDIT","Agenda Teknisi","PERBAIKAN JALUR RIFKI (21/11/2026)","Edit agenda teknisi: PERBAIKAN JALUR RIFKI - AJUNG SELATAN"
 "LOG-1795251337811-892","21/11/2026","15:55:37","RENDI","RENDI","Admin","EDIT","Agenda Teknisi","PERBAIKAN JALUR RIFKI (21/11/2026)","Edit agenda teknisi: PERBAIKAN JALUR RIFKI - AJUNG SELATAN"
 "LOG-1795251317100-104","21/11/2026","15:55:17","RENDI","RENDI","Admin","TAMBAH","Agenda Teknisi","perbaikan jalur rifki (21/11/2026)","Tambah agenda teknisi: perbaikan jalur rifki - AJUNG SELATAN"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795144826293-968","20/11/2026","10:20:26","ILYAS","ILYAS","Super Admin","EDIT","Catatan Pengeluaran","18-11-2026 (November 2026)","Edit pengeluaran Rp 40.000 — cod kulit kursi"
 "LOG-1795144820038-763","20/11/2026","10:20:20","ILYAS","ILYAS","Super Admin","EDIT","Catatan Pengeluaran","18-11-2026 (November 2026)","Edit pengeluaran Rp 15.000 — belanja ke pasar"
 "LOG-1795144813950-839","20/11/2026","10:20:13","ILYAS","ILYAS","Super Admin","EDIT","Catatan Pengeluaran","18-11-2026 (November 2026)","Edit pengeluaran Rp 90.000 — cod oyister"
-"LOG-1795144807029-799","20/11/2026","10:20:07","ILYAS","ILYAS","Super Admin","EDIT","Catatan Pengeluaran","18-11-2026 (November 2026)","Edit pengeluaran Rp 50.000 — bensin mobil"
