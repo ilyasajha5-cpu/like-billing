@@ -1,4 +1,6 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795226447331-55","21/11/2026","09:00:47","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: blue, Wallpaper: pattern, Animasi: slide-right)"
+"LOG-1795226445924-683","21/11/2026","09:00:45","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: blue, Wallpaper: pattern, Animasi: flip)"
 "LOG-1795226443542-927","21/11/2026","09:00:43","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: blue, Wallpaper: pattern, Animasi: blur)"
 "LOG-1795226249741-684","21/11/2026","08:57:29","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: blue, Wallpaper: pattern, Animasi: flip)"
 "LOG-1795226247655-227","21/11/2026","08:57:27","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: blue, Wallpaper: pattern, Animasi: flip)"
@@ -997,5 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795142636259-485","20/11/2026","09:43:56","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","14-11-2026 (November 2026)","Tambah pengeluaran Rp 180.000 — bayar cod"
 "LOG-1795142613395-111","20/11/2026","09:43:33","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","14-11-2026 (November 2026)","Tambah pengeluaran Rp 20.000 — belanja ke pasar"
 "LOG-1795142596395-535","20/11/2026","09:43:16","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","13-11-2026 (November 2026)","Tambah pengeluaran Rp 70.000 — belanja ke indomart adek bunda"
-"LOG-1795142577787-73","20/11/2026","09:42:57","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","13-11-2026 (November 2026)","Tambah pengeluaran Rp 100.000 — nyelawat ke dendi"
-"LOG-1795142563955-42","20/11/2026","09:42:43","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","13-11-2026 (November 2026)","Tambah pengeluaran Rp 105.000 — cod case"
