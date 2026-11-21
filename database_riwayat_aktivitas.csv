@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795247898641-994","21/11/2026","14:58:18","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
 "LOG-1795247892912-371","21/11/2026","14:58:12","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
 "LOG-1795247873418-288","21/11/2026","14:57:53","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Finance"
 "LOG-1795247837399-307","21/11/2026","14:57:17","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795144536589-365","20/11/2026","10:15:36","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","15-11-2026 (November 2026)","Tambah pengeluaran Rp 15.000 — bensin tim"
 "LOG-1795144522501-907","20/11/2026","10:15:22","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","15-11-2026 (November 2026)","Tambah pengeluaran Rp 65.000 — beli nasi pecel maesan"
 "LOG-1795144492030-754","20/11/2026","10:14:52","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","15-11-2026 (November 2026)","Tambah pengeluaran Rp 100.000 — bensin mobil"
-"LOG-1795144029648-689","20/11/2026","10:07:09","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","14-11-2026 (November 2026)","Tambah pengeluaran Rp 100.000 — koleman rio"
