@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795281231328-608","22/11/2026","00:13:51","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
 "LOG-1795281221310-133","22/11/2026","00:13:41","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Finance"
 "LOG-1795281213848-426","22/11/2026","00:13:33","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) keluar / logout dari aplikasi"
 "LOG-1795277827059-981","21/11/2026","23:17:07","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795154150205-365","20/11/2026","12:55:50","RENDI","RENDI","Admin","TAMBAH","Daftar PSB & Bonus","KURNIA-2 AJUNGUTARA","Menambahkan PSB baru KURNIA-2 AJUNGUTARA (AJUNGUTARA, Tgl: 01-11-2026, Teknisi: RENDI, AREP)"
 "LOG-1795154023877-984","20/11/2026","12:53:43","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
 "LOG-1795145313063-522","20/11/2026","10:28:33","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
-"LOG-1795145106057-967","20/11/2026","10:25:06","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","20-11-2026 (November 2026)","Tambah pengeluaran Rp 70.000 — beli kertas f4"
