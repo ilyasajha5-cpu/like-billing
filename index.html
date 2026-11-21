@@ -6722,6 +6722,31 @@
         }
 
         // ==================== 14B. CATATAN PENGELUARAN OPERASIONAL ====================
+        function getPengeluaranSortTimestamp(item) {
+            const tglStr = String(item.tanggal || "").trim();
+            const m = tglStr.match(/^(\d{2})[-\/](\d{2})[-\/](\d{4})$/);
+            if (m) {
+                const yr = parseInt(m[3], 10) || 0;
+                const mo = parseInt(m[2], 10) || 1;
+                const dy = parseInt(m[1], 10) || 1;
+                return new Date(yr, mo - 1, dy).getTime();
+            }
+            const yrFallback = parseInt(item.tahun || "0", 10) || 0;
+            const moFallback = parseInt(item.bulan || "1", 10) || 1;
+            return new Date(yrFallback, moFallback - 1, 1).getTime();
+        }
+
+        function sortPengeluaranNewestFirst(a, b) {
+            const timeDiff = getPengeluaranSortTimestamp(b) - getPengeluaranSortTimestamp(a);
+            if (timeDiff !== 0) return timeDiff;
+
+            const idTimeA = parseInt(String(a.id || "").replace(/\D/g, ""), 10) || 0;
+            const idTimeB = parseInt(String(b.id || "").replace(/\D/g, ""), 10) || 0;
+            if (idTimeB !== idTimeA) return idTimeB - idTimeA;
+
+            return (b._idx ?? 0) - (a._idx ?? 0);
+        }
+
         function renderPengeluaranView() {
             const q = (document.getElementById("pengeluaran-search")?.value || "").toLowerCase();
             const pMonth = document.getElementById("pengeluaran-month")?.value || getCurrentPeriodMonth();
@@ -6735,7 +6760,8 @@
 
             const filtered = allPengeluaran.map((item, idx) => ({ ...item, _idx: idx }))
                 .filter(item => matchesPengeluaranPeriodFilter(item, pMonth, pYear))
-                .filter(item => !q || [item.tanggal, item.keterangan, String(item.nominal || ""), MONTH_NAMES_ID[item.bulan] || ""].some(v => String(v || "").toLowerCase().includes(q)));
+                .filter(item => !q || [item.tanggal, item.keterangan, String(item.nominal || ""), MONTH_NAMES_ID[item.bulan] || ""].some(v => String(v || "").toLowerCase().includes(q)))
+                .sort(sortPengeluaranNewestFirst);
 
             const totalNominal = filtered.reduce((s, it) => s + parseNumber(it.nominal), 0);
             const totalEl = document.getElementById("pengeluaran-total-rp");
@@ -6890,9 +6916,10 @@
             const pYear = document.getElementById("pengeluaran-year")?.value || getCurrentPeriodYear();
             const periodTitle = pMonth === "ALL" ? `SEMUA BULAN ${pYear}` : `${(MONTH_NAMES_ID[pMonth] || pMonth).toUpperCase()} ${pYear}`;
 
-            const rows = allPengeluaran
+            const rows = allPengeluaran.map((item, idx) => ({ ...item, _idx: idx }))
                 .filter(item => matchesPengeluaranPeriodFilter(item, pMonth, pYear))
-                .filter(item => !q || [item.tanggal, item.keterangan, String(item.nominal || "")].some(v => String(v || "").toLowerCase().includes(q)));
+                .filter(item => !q || [item.tanggal, item.keterangan, String(item.nominal || "")].some(v => String(v || "").toLowerCase().includes(q)))
+                .sort(sortPengeluaranNewestFirst);
 
             const totalNominal = rows.reduce((s, r) => s + parseNumber(r.nominal), 0);
 
