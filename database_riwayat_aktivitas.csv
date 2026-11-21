@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795254148005-689","21/11/2026","16:42:28","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Finance"
 "LOG-1795253804916-466","21/11/2026","16:36:44","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) keluar / logout dari aplikasi"
 "LOG-1795253194574-709","21/11/2026","16:26:34","RENDI","RENDI","Admin","TAMBAH","Absensi & Perizinan","ERVAN (21/11/2026)","Tambah absensi & perizinan ERVAN: TIDAK MASUK KERJA"
 "LOG-1795251354571-872","21/11/2026","15:55:54","RENDI","RENDI","Admin","EDIT","Agenda Teknisi","PERBAIKAN JALUR RIFKI (21/11/2026)","Edit agenda teknisi: PERBAIKAN JALUR RIFKI - AJUNG SELATAN"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795144838701-66","20/11/2026","10:20:38","ILYAS","ILYAS","Super Admin","EDIT","Catatan Pengeluaran","18-11-2026 (November 2026)","Edit pengeluaran Rp 500.000 — RENDI BON"
 "LOG-1795144832365-989","20/11/2026","10:20:32","ILYAS","ILYAS","Super Admin","EDIT","Catatan Pengeluaran","18-11-2026 (November 2026)","Edit pengeluaran Rp 50.000 — TIAR BON"
 "LOG-1795144826293-968","20/11/2026","10:20:26","ILYAS","ILYAS","Super Admin","EDIT","Catatan Pengeluaran","18-11-2026 (November 2026)","Edit pengeluaran Rp 40.000 — cod kulit kursi"
-"LOG-1795144820038-763","20/11/2026","10:20:20","ILYAS","ILYAS","Super Admin","EDIT","Catatan Pengeluaran","18-11-2026 (November 2026)","Edit pengeluaran Rp 15.000 — belanja ke pasar"
