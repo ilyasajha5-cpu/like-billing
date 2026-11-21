@@ -1,4 +1,6 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795226240165-788","21/11/2026","08:57:20","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: blue, Wallpaper: pattern, Animasi: flip)"
+"LOG-1795226238693-308","21/11/2026","08:57:18","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: blue, Wallpaper: pattern, Animasi: flip)"
 "LOG-1795226235503-888","21/11/2026","08:57:15","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: blue, Wallpaper: pattern, Animasi: flip)"
 "LOG-1795226232423-63","21/11/2026","08:57:12","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: blue, Wallpaper: pattern, Animasi: flip)"
 "LOG-1795226211077-24","21/11/2026","08:56:51","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Studio Tampilan Visual","Memperbarui tampilan aplikasi (Aksen: blue, Wallpaper: pattern, Animasi: flip)"
@@ -997,5 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795142370502-939","20/11/2026","09:39:30","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
 "LOG-1795141886736-642","20/11/2026","09:31:26","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
 "LOG-1795141839117-928","20/11/2026","09:30:39","ILYAS","ILYAS","Super Admin","EDIT","Setting Bonus Petugas","TIAR","Edit data petugas TIAR (Kolektor & Teknisi - Bonus PSB Rp 20.000)"
-"LOG-1795141825414-768","20/11/2026","09:30:25","ILYAS","ILYAS","Super Admin","EDIT","Setting Bonus Petugas","TIAR","Edit data petugas TIAR (Teknisi - Bonus PSB Rp 20.000)"
-"LOG-1795141344756-598","20/11/2026","09:22:24","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","13-11-2026 (November 2026)","Tambah pengeluaran Rp 50.000 — pijet bunda ke pak rendi"
