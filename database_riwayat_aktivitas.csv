@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795316840842-618","22/11/2026","10:07:20","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Finance"
 "LOG-1795310359781-697","22/11/2026","08:19:19","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) keluar / logout dari aplikasi"
 "LOG-1795310353487-506","22/11/2026","08:19:13","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
 "LOG-1795310343589-467","22/11/2026","08:19:03","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795139789040-984","20/11/2026","08:56:29","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","05-11-2026 (November 2026)","Tambah pengeluaran Rp 10.000 — saku aira"
 "LOG-1795139775599-864","20/11/2026","08:56:15","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","05-11-2026 (November 2026)","Tambah pengeluaran Rp 50.000 — token orang tua kalisat"
 "LOG-1795139755711-765","20/11/2026","08:55:55","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","05-11-2026 (November 2026)","Tambah pengeluaran Rp 100.000 — bayar wifi orang tua situbondo"
-"LOG-1795139734295-758","20/11/2026","08:55:34","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","05-11-2026 (November 2026)","Tambah pengeluaran Rp 80.000 — bayar listrik orang tua situbondo"
