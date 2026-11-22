@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795328072730-87","22/11/2026","13:14:32","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual bento; tema default"
 "LOG-1795328070400-977","22/11/2026","13:14:30","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual bento; tema default"
 "LOG-1795328068290-554","22/11/2026","13:14:28","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual bento; tema default"
 "LOG-1795328066474-823","22/11/2026","13:14:26","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual bento; tema default"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795145008940-150","20/11/2026","10:23:28","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","19-11-2026 (November 2026)","Tambah pengeluaran Rp 40.000 — beli kopi bubuk kapal api"
 "LOG-1795144991938-386","20/11/2026","10:23:11","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","19-11-2026 (November 2026)","Tambah pengeluaran Rp 25.000 — beli telur dan kerupuk"
 "LOG-1795144979329-755","20/11/2026","10:22:59","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","19-11-2026 (November 2026)","Tambah pengeluaran Rp 65.000 — beli krayon adek"
-"LOG-1795144967378-971","20/11/2026","10:22:47","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","19-11-2026 (November 2026)","Tambah pengeluaran Rp 50.000 — uang hilang di bunda"
