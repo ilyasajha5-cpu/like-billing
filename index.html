@@ -363,6 +363,56 @@
         ::-webkit-scrollbar-thumb:hover { background: rgba(100, 116, 139, 0.75); }
         /* Pastikan elemen anak di dalam tombol tidak menghalangi klik tepat di teks/ikon */
         button *, a * { pointer-events: none; }
+
+
+        /* Studio Kustomisasi Menu Navigasi - tambahan terisolasi */
+        #sidebar-nav-container .nav-item { transition: all .22s ease; }
+        body.menu-effect-lift #sidebar-nav-container .nav-item:hover { transform: translateX(3px) translateY(-1px); box-shadow: 0 7px 16px rgba(0,0,0,.16); }
+        body.menu-effect-glow #sidebar-nav-container .nav-item:hover, body.menu-effect-glow #sidebar-nav-container .nav-item.active { box-shadow: 0 0 0 1px rgba(96,165,250,.35), 0 0 16px rgba(59,130,246,.22); }
+        body.menu-effect-slide #sidebar-nav-container .nav-item:hover { transform: translateX(6px); }
+        body.menu-effect-underline #sidebar-nav-container .nav-item { border-radius: 0 !important; border-bottom: 2px solid transparent; }
+        body.menu-effect-underline #sidebar-nav-container .nav-item:hover, body.menu-effect-underline #sidebar-nav-container .nav-item.active { border-bottom-color: #60a5fa; }
+        body.menu-shape-rounded #sidebar-nav-container .nav-item { border-radius: 12px !important; }
+        body.menu-shape-pill #sidebar-nav-container .nav-item { border-radius: 999px !important; }
+        body.menu-shape-square #sidebar-nav-container .nav-item { border-radius: 5px !important; }
+        body.menu-shape-soft #sidebar-nav-container .nav-item { border-radius: 17px !important; }
+        body.menu-font-inter #sidebar-nav-container { font-family: Inter, ui-sans-serif, system-ui, sans-serif; }
+        body.menu-font-poppins #sidebar-nav-container { font-family: Poppins, ui-sans-serif, system-ui, sans-serif; }
+        body.menu-font-roboto #sidebar-nav-container { font-family: Roboto, Arial, sans-serif; }
+        body.menu-font-nunito #sidebar-nav-container { font-family: Nunito, ui-sans-serif, system-ui, sans-serif; }
+        body.menu-font-mono #sidebar-nav-container { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+        body.menu-color-ocean #sidebar-nav-container .nav-item.active { background: linear-gradient(100deg,#1d4ed8,#0891b2) !important; color:#fff !important; }
+        body.menu-color-emerald #sidebar-nav-container .nav-item.active { background: linear-gradient(100deg,#047857,#10b981) !important; color:#fff !important; }
+        body.menu-color-violet #sidebar-nav-container .nav-item.active { background: linear-gradient(100deg,#6d28d9,#a855f7) !important; color:#fff !important; }
+        body.menu-color-amber #sidebar-nav-container .nav-item.active { background: linear-gradient(100deg,#b45309,#f59e0b) !important; color:#fff !important; }
+        body.menu-color-rose #sidebar-nav-container .nav-item.active { background: linear-gradient(100deg,#be123c,#f43f5e) !important; color:#fff !important; }
+        body.menu-color-monochrome #sidebar-nav-container .nav-item.active { background:#e2e8f0 !important; color:#0f172a !important; }
+        body.menu-color-cyan #sidebar-nav-container .nav-item.active { background: linear-gradient(100deg,#0e7490,#22d3ee) !important; color:#082f49 !important; }
+        body.menu-visual-glass #sidebar-nav-container .nav-item { background:rgba(255,255,255,.055); border:1px solid rgba(255,255,255,.10); backdrop-filter:blur(12px); -webkit-backdrop-filter:blur(12px); }
+        body.menu-visual-glass #sidebar-nav-container .nav-item.active { background:rgba(96,165,250,.24) !important; border-color:rgba(147,197,253,.48); }
+        body.menu-visual-neumorphism #sidebar-nav-container .nav-item { background:rgba(255,255,255,.07); box-shadow:5px 5px 10px rgba(0,0,0,.18),-4px -4px 9px rgba(255,255,255,.035); border:0; }
+        body.menu-visual-neumorphism #sidebar-nav-container .nav-item.active { box-shadow:inset 3px 3px 7px rgba(0,0,0,.20),inset -2px -2px 5px rgba(255,255,255,.06); background:rgba(96,165,250,.18) !important; }
+        body.menu-visual-gradient #sidebar-nav-container .nav-item.active { background:linear-gradient(110deg,#2563eb,#7c3aed,#db2777) !important; color:#fff !important; }
+        body.menu-visual-neon #sidebar-nav-container .nav-item.active { background:rgba(8,145,178,.16) !important; color:#a5f3fc !important; border:1px solid rgba(34,211,238,.75); box-shadow:0 0 8px rgba(34,211,238,.55),inset 0 0 12px rgba(34,211,238,.12); }
+        body.menu-visual-minimal #sidebar-nav-container .nav-item { background:transparent !important; border:0; box-shadow:none !important; }
+        body.menu-visual-minimal #sidebar-nav-container .nav-item.active { background:rgba(148,163,184,.20) !important; border-left:3px solid #60a5fa; }
+        body.menu-visual-bento #sidebar-nav-container > div { padding:8px; border:1px solid rgba(255,255,255,.10); border-radius:16px; background:rgba(255,255,255,.035); }
+        body.menu-visual-bento #sidebar-nav-container .nav-item { min-height:43px; margin:3px 0; border-radius:12px; background:rgba(255,255,255,.045); }
+        body.menu-layout-compact #sidebar-nav-container { gap:10px; padding:10px; }
+        body.menu-layout-compact #sidebar-nav-container .nav-item { padding-top:7px !important; padding-bottom:7px !important; }
+        body.menu-layout-spacious #sidebar-nav-container .nav-item { padding-top:14px !important; padding-bottom:14px !important; margin-bottom:3px; }
+        body.menu-layout-icons #sidebar-nav-container .nav-item > span:first-child { gap:13px; }
+        body.menu-layout-icons #sidebar-nav-container .nav-item > span:first-child i { width:19px; height:19px; }
+        body.menu-layout-classic #sidebar-nav-container .nav-item { min-height:38px; }
+        body.menu-theme-midnight #sidebar-nav-container { background:linear-gradient(180deg,#020617,#111827) !important; }
+        body.menu-theme-ocean #sidebar-nav-container { background:linear-gradient(180deg,#082f49,#164e63) !important; }
+        body.menu-theme-forest #sidebar-nav-container { background:linear-gradient(180deg,#052e16,#14532d) !important; }
+        body.menu-theme-carbon #sidebar-nav-container { background:linear-gradient(180deg,#09090b,#27272a) !important; }
+        body.menu-theme-light #sidebar-nav-container { background:#f8fafc !important; border-right:1px solid #cbd5e1; }
+        body.menu-theme-light #sidebar-nav-container .nav-item { color:#334155 !important; }
+        body.menu-theme-light #sidebar-nav-container .nav-item:hover { background:#e2e8f0 !important; color:#0f172a !important; }
+        body.menu-theme-light #sidebar-nav-container > div > p { color:#64748b !important; }
+
     </style>
 </head>
 <body class="min-h-screen lg:h-screen lg:overflow-hidden flex flex-col lg:flex-row">
@@ -477,6 +527,10 @@
                 <button type="button" data-tab="catatan-tagihan" onclick="switchTab('catatan-tagihan')" class="nav-item w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl font-bold text-slate-300 hover:bg-white/10 hover:text-white transition cursor-pointer">
                     <span class="flex items-center gap-2.5"><i data-lucide="calendar-clock" class="w-4 h-4"></i> Catatan Janji Bayar</span>
                     <span id="badge-janji-bayar" class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-amber-500/20 text-amber-300">0</span>
+                </button>
+                <button type="button" data-tab="terima-tagihan" onclick="switchTab('terima-tagihan')" class="nav-item w-full flex items-center justify-between px-3.5 py-2.5 rounded-xl font-bold text-slate-300 hover:bg-white/10 hover:text-white transition cursor-pointer">
+                    <span class="flex items-center gap-2.5"><i data-lucide="file-spreadsheet" class="w-4 h-4"></i> Terima Data Tagihan</span>
+                    <span id="badge-terima-tagihan" class="px-2 py-0.5 rounded-full text-[10px] font-extrabold bg-cyan-500/20 text-cyan-300">0</span>
                 </button>
             </div>
 
@@ -815,6 +869,9 @@
                         </select>
                     </div>
                     <div class="flex flex-wrap items-center gap-2">
+                        <button type="button" onclick="exportCustomerBillingExcel()" class="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold flex items-center gap-1.5 cursor-pointer shadow-xs">
+                            <i data-lucide="file-down" class="w-4 h-4"></i> Kirim Data
+                        </button>
                         <button type="button" onclick="printTagihanFormatted()" class="px-4 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-900 text-white font-extrabold flex items-center gap-1.5 cursor-pointer shadow-xs">
                             <i data-lucide="printer" class="w-4 h-4"></i> Cetak Tagihan
                         </button>
@@ -847,6 +904,65 @@
                         </table>
                     </div>
                     <div id="bill-pagination" class="px-5 py-3 border-t border-slate-100 bg-slate-50/70 flex flex-wrap items-center justify-between gap-2 text-xs"></div>
+                </div>
+            </section>
+
+            <!-- TERIMA DATA TAGIHAN (MODUL TAMBAHAN TERPISAH) -->
+            <section id="view-terima-tagihan" class="hidden space-y-5">
+                <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-xs flex flex-wrap items-center justify-between gap-3 text-xs">
+                    <div>
+                        <h3 class="font-black text-slate-900 text-sm">Terima Data Tagihan</h3>
+                        <p class="text-slate-500 mt-1">Import Excel sebagai data penerimaan, periksa, lalu masukkan atau perbarui Tagihan Pelanggan.</p>
+                    </div>
+                    <div class="flex flex-wrap items-center gap-2">
+                        <input type="file" id="received-bill-import-input" accept=".xlsx,.xls,.csv" onchange="importReceivedBillingExcel(event)" class="hidden">
+                        <button type="button" onclick="document.getElementById('received-bill-import-input').click()" class="px-3.5 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold flex items-center gap-1.5 cursor-pointer">
+                            <i data-lucide="file-up" class="w-4 h-4"></i> Ambil Data
+                        </button>
+                        <button type="button" onclick="applyReceivedBillingToInvoices()" class="px-3.5 py-2 rounded-xl btn-accent font-extrabold flex items-center gap-1.5 cursor-pointer">
+                            <i data-lucide="refresh-cw" class="w-4 h-4"></i> Update ke Data Tagihan Pelanggan
+                        </button>
+                        <button type="button" onclick="confirmDeleteAllReceivedBilling()" class="px-3.5 py-2 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-bold flex items-center gap-1.5 cursor-pointer">
+                            <i data-lucide="trash-2" class="w-4 h-4"></i> Hapus Semua Data
+                        </button>
+                    </div>
+                </div>
+
+                <div id="received-bill-summary" class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-3"></div>
+
+                <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-xs flex flex-wrap items-center gap-2.5 text-xs">
+                    <select id="received-bill-filter-address" onchange="renderReceivedBillingView()" class="min-w-[180px] px-3 py-2 rounded-xl border border-slate-300 font-bold text-slate-700 outline-none">
+                        <option value="ALL">Semua Alamat</option>
+                    </select>
+                    <select id="received-bill-filter-status" onchange="renderReceivedBillingView()" class="min-w-[160px] px-3 py-2 rounded-xl border border-slate-300 font-bold text-slate-700 outline-none">
+                        <option value="ALL">Semua Status</option>
+                        <option value="BELUM LUNAS">BELUM LUNAS</option>
+                        <option value="LUNAS">LUNAS</option>
+                        <option value="OFF">OFF</option>
+                    </select>
+                    <select id="received-bill-filter-petugas" onchange="renderReceivedBillingView()" class="min-w-[160px] px-3 py-2 rounded-xl border border-slate-300 font-bold text-slate-700 outline-none">
+                        <option value="ALL">Semua Petugas</option>
+                    </select>
+                    <span id="received-bill-count" class="ml-auto font-bold text-slate-500">0 data</span>
+                </div>
+
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
+                    <div class="px-5 py-3.5 border-b border-slate-100 flex flex-wrap items-center justify-between gap-2 text-xs">
+                        <span class="font-extrabold text-slate-700 uppercase">Data Tagihan yang Diterima</span>
+                        <span class="text-slate-500">Kunci pembaruan: ID Pelanggan, dengan nama sebagai pencocokan cadangan</span>
+                    </div>
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-xs text-left min-w-[1500px]">
+                            <thead><tr class="bg-slate-50 text-slate-500 text-[10px] uppercase border-b border-slate-200">
+                                <th class="px-3 py-3">No</th><th class="px-3 py-3">ID_Pelanggan</th><th class="px-3 py-3">NAMA</th>
+                                <th class="px-3 py-3">ALAMAT</th><th class="px-3 py-3">NO.HP</th><th class="px-3 py-3">PAKET</th>
+                                <th class="px-3 py-3">DISKON</th><th class="px-3 py-3">TELAT</th><th class="px-3 py-3">TOTAL</th>
+                                <th class="px-3 py-3">STATUS</th><th class="px-3 py-3">USERNAME_PPPoE</th><th class="px-3 py-3">KETERANGAN</th>
+                                <th class="px-3 py-3">PETUGAS</th><th class="px-3 py-3">PERIODE</th>
+                            </tr></thead>
+                            <tbody id="received-bill-tbody" class="divide-y divide-slate-100"></tbody>
+                        </table>
+                    </div>
                 </div>
             </section>
 
@@ -1967,6 +2083,28 @@
                     </div>
                 </div>
 
+
+                <!-- Panel tambahan: Kustomisasi Menu Navigasi -->
+                <div class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
+                    <div class="px-6 py-4 bg-gradient-to-r from-indigo-950 via-slate-900 to-cyan-950 text-white">
+                        <h3 class="font-black text-sm flex items-center gap-2"><i data-lucide="panels-top-left" class="w-4 h-4 text-cyan-300"></i> Studio Kustomisasi Menu Navigasi</h3>
+                        <p class="text-[11px] text-slate-300 mt-1">Atur gaya tampilan menu sidebar secara terpisah. Perubahan diterapkan langsung dan tersimpan otomatis ke database konfigurasi.</p>
+                    </div>
+                    <div class="p-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 text-xs">
+                        <div class="space-y-1.5"><label class="font-extrabold text-slate-700">1. Default / Layout Menu</label><select id="set-menu-layout" onchange="applyMenuAppearanceSettings()" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 font-bold"><option value="classic">Classic Sidebar</option><option value="compact">Compact Navigation</option><option value="spacious">Spacious Navigation</option><option value="icons">Icon Emphasis</option></select><p class="text-[10px] text-slate-500">Mengatur kepadatan dan susunan visual navigasi.</p></div>
+                        <div class="space-y-1.5"><label class="font-extrabold text-slate-700">2. Efek Menu</label><select id="set-menu-effect" onchange="applyMenuAppearanceSettings()" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 font-bold"><option value="none">Tanpa Efek</option><option value="lift">Lift / Floating</option><option value="glow">Soft Glow</option><option value="slide">Slide Hover</option><option value="underline">Underline Active</option></select></div>
+                        <div class="space-y-1.5"><label class="font-extrabold text-slate-700">3. Bentuk / Style Menu</label><select id="set-menu-shape" onchange="applyMenuAppearanceSettings()" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 font-bold"><option value="rounded">Rounded Modern</option><option value="soft">Soft Rounded</option><option value="pill">Pill / Capsule</option><option value="square">Square Minimal</option></select></div>
+                        <div class="space-y-1.5"><label class="font-extrabold text-slate-700">4. Font Style Menu</label><select id="set-menu-font" onchange="applyMenuAppearanceSettings()" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 font-bold"><option value="default">Default System</option><option value="inter">Inter Style</option><option value="poppins">Poppins Style</option><option value="roboto">Roboto Style</option><option value="nunito">Nunito Style</option><option value="mono">Monospace Tech</option></select></div>
+                        <div class="space-y-1.5"><label class="font-extrabold text-slate-700">5. Warna Menu Aktif</label><select id="set-menu-color" onchange="applyMenuAppearanceSettings()" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 font-bold"><option value="default">Mengikuti Warna Default</option><option value="ocean">Ocean Blue</option><option value="emerald">Emerald Green</option><option value="violet">Royal Violet</option><option value="amber">Sunset Amber</option><option value="rose">Crimson Rose</option><option value="cyan">Cyber Cyan</option><option value="monochrome">Monochrome</option></select></div>
+                        <div class="space-y-1.5"><label class="font-extrabold text-slate-700">6. Visual Premium Menu</label><select id="set-menu-visual" onchange="applyMenuAppearanceSettings()" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 font-bold"><option value="default">Default — Tampilan default aplikasi</option><option value="glass">Glassmorphism — Kaca transparan & blur</option><option value="neumorphism">Neumorphism — Efek timbul dan cekung</option><option value="gradient">Gradient Studio — Perpaduan gradasi</option><option value="neon">Neon Accent — Aksen cahaya</option><option value="minimal">Minimalist Design — Bersih & sederhana</option><option value="bento">Bento Grid Layout — Kelompok kartu menu</option></select></div>
+                        <div class="space-y-1.5"><label class="font-extrabold text-slate-700">7. Tema Menu</label><select id="set-menu-theme" onchange="applyMenuAppearanceSettings()" class="w-full px-3 py-2.5 rounded-xl border border-slate-300 font-bold"><option value="default">Default / Ikuti Tema Aplikasi</option><option value="midnight">Midnight Black</option><option value="ocean">Deep Ocean</option><option value="forest">Forest Green</option><option value="carbon">Carbon Obsidian</option><option value="light">Light Sidebar</option></select></div>
+                        <div class="md:col-span-2 xl:col-span-3 flex flex-wrap items-center justify-between gap-3 rounded-xl bg-slate-50 border border-slate-200 p-3">
+                            <p class="text-[11px] text-slate-600">Setiap pilihan langsung diterapkan dan otomatis dimasukkan ke antrean sinkronisasi database GitHub.</p>
+                            <div class="flex gap-2"><button type="button" onclick="resetMenuAppearanceSettings()" class="px-3.5 py-2 rounded-lg border border-slate-300 bg-white font-bold text-slate-700 hover:bg-slate-100">Reset Menu</button><button type="button" onclick="saveMenuAppearanceSettings(true)" class="px-3.5 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold"><i data-lucide="save" class="w-3.5 h-3.5 inline mr-1"></i>Simpan ke Database</button></div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- Panel 2: Profil Perusahaan & Konfigurasi Billing -->
                 <div class="bg-white rounded-2xl border border-slate-200 shadow-xs overflow-hidden">
                     <div class="px-6 py-4 border-b border-slate-100 flex items-center justify-between">
@@ -2861,6 +2999,13 @@
             psbBonusRate: 20000,
             accentTheme: "blue",
             sidebarTheme: "slate",
+            menuLayout: "classic",
+            menuEffect: "none",
+            menuShape: "rounded",
+            menuFont: "default",
+            menuColor: "default",
+            menuVisual: "default",
+            menuTheme: "default",
             bgTheme: "clean",
             cornerStyle: "rounded",
             animPage: "slide",
@@ -3759,6 +3904,63 @@
                 "Iya, Reset Tagihan",
                 "Tidak, Batalkan"
             );
+        }
+
+        function exportCustomerBillingExcel() {
+            if (typeof XLSX === "undefined") {
+                showToast("Modul Excel belum termuat. Periksa koneksi internet lalu coba kembali.", "error");
+                return;
+            }
+
+            const list = ensureActiveBillingList();
+            const q = (document.getElementById("bill-search")?.value || "").toLowerCase();
+            const fStatus = document.getElementById("bill-filter-status")?.value || "ALL";
+            const rawPtg = document.getElementById("bill-filter-petugas")?.value || "ALL";
+            const fPtg = rawPtg.toLowerCase();
+            const filtered = list.filter(c => {
+                const mSt = fStatus === "ALL" || c.status === fStatus;
+                const mPtg = fPtg === "all" || !fPtg || (c.petugas || "").toLowerCase() === fPtg;
+                const mQ = !q || [c.id, c.nama, c.alamat, c.hp, c.pppoe, c.petugas, c.ket].some(v => String(v || "").toLowerCase().includes(q));
+                return mSt && mPtg && mQ;
+            }).sort(sortByPetugasAlamatNama);
+
+            if (!filtered.length) {
+                showToast("Tidak ada data tagihan yang sesuai dengan filter untuk diekspor.", "warning");
+                return;
+            }
+
+            const headers = ["ID_Pelanggan", "NAMA", "ALAMAT", "NO.HP", "PAKET", "DISKON", "TELAT", "TOTAL", "STATUS", "USERNAME_PPPoE", "KETERANGAN", "PETUGAS", "PERIODE"];
+            const period = getActiveBillingPeriodLabel();
+            const rows = filtered.map(c => ({
+                ID_Pelanggan: c.id || "",
+                NAMA: c.nama || "",
+                ALAMAT: c.alamat || "",
+                "NO.HP": c.hp || "",
+                PAKET: parseNumber(c.paket),
+                DISKON: parseNumber(c.diskon),
+                TELAT: parseNumber(c.telat),
+                TOTAL: parseNumber(c.total),
+                STATUS: c.status || "",
+                USERNAME_PPPoE: c.pppoe || "",
+                KETERANGAN: c.ket || "",
+                PETUGAS: c.petugas || "",
+                PERIODE: period
+            }));
+
+            const ws = XLSX.utils.json_to_sheet(rows, { header: headers });
+            ws["!cols"] = [16, 28, 34, 18, 14, 14, 12, 16, 16, 24, 30, 20, 18].map(wch => ({ wch }));
+            const wb = XLSX.utils.book_new();
+            XLSX.utils.book_append_sheet(wb, ws, "Tagihan Pelanggan");
+
+            const now = new Date();
+            const pad = n => String(n).padStart(2, "0");
+            const selectedOfficer = rawPtg && rawPtg !== "ALL" ? rawPtg : "SEMUA-PETUGAS";
+            const safeOfficer = String(selectedOfficer).trim().replace(/[\\/:*?"<>|]+/g, "-").replace(/\s+/g, "-");
+            const datePart = `${pad(now.getDate())}-${pad(now.getMonth() + 1)}-${now.getFullYear()}`;
+            const timePart = `${pad(now.getHours())}.${pad(now.getMinutes())}`;
+            const fileName = `TAGIHAN_${safeOfficer}_${datePart}_${timePart}.xlsx`;
+            XLSX.writeFile(wb, fileName);
+            showToast(`Data tagihan berhasil diekspor: ${filtered.length} pelanggan.`, "success");
         }
 
         function renderCustomerTable() {
@@ -7683,6 +7885,63 @@
             document.getElementById("sidebar-company-name").textContent = cfg.companyName || "PT. JAVA DIGITAL NUSANTARA";
             document.getElementById("login-brand-title").textContent = cfg.brandName || "LIKE Billing";
             document.getElementById("login-company-subtitle").textContent = cfg.companyName || "PT. JAVA DIGITAL NUSANTARA";
+            applyMenuAppearanceClasses(cfg);
+        }
+
+        // ==================== STUDIO KUSTOMISASI MENU NAVIGASI ====================
+        function applyMenuAppearanceClasses(cfg = appConfig || {}) {
+            const b = document.body;
+            const keys = ["menu-layout-classic", "menu-layout-compact", "menu-layout-spacious", "menu-layout-icons", "menu-effect-lift", "menu-effect-glow", "menu-effect-slide", "menu-effect-underline", "menu-shape-rounded", "menu-shape-soft", "menu-shape-pill", "menu-shape-square", "menu-font-inter", "menu-font-poppins", "menu-font-roboto", "menu-font-nunito", "menu-font-mono", "menu-color-ocean", "menu-color-emerald", "menu-color-violet", "menu-color-amber", "menu-color-rose", "menu-color-cyan", "menu-color-monochrome", "menu-visual-glass", "menu-visual-neumorphism", "menu-visual-gradient", "menu-visual-neon", "menu-visual-minimal", "menu-visual-bento", "menu-theme-midnight", "menu-theme-ocean", "menu-theme-forest", "menu-theme-carbon", "menu-theme-light"];
+            b.classList.remove(...keys);
+            const map = { menuLayout: "menu-layout-", menuEffect: "menu-effect-", menuShape: "menu-shape-", menuFont: "menu-font-", menuColor: "menu-color-", menuVisual: "menu-visual-", menuTheme: "menu-theme-" };
+            Object.entries(map).forEach(([key, prefix]) => {
+                const value = cfg[key] || "default";
+                if (value !== "default" && !(key === "menuEffect" && value === "none")) b.classList.add(prefix + value);
+            });
+        }
+
+        function readMenuAppearanceInputs() {
+            const get = (id, fallback) => document.getElementById(id)?.value || fallback;
+            appConfig.menuLayout = get("set-menu-layout", "classic");
+            appConfig.menuEffect = get("set-menu-effect", "none");
+            appConfig.menuShape = get("set-menu-shape", "rounded");
+            appConfig.menuFont = get("set-menu-font", "default");
+            appConfig.menuColor = get("set-menu-color", "default");
+            appConfig.menuVisual = get("set-menu-visual", "default");
+            appConfig.menuTheme = get("set-menu-theme", "default");
+        }
+
+        function applyMenuAppearanceSettings() {
+            readMenuAppearanceInputs();
+            applyMenuAppearanceClasses(appConfig);
+            saveAllToLocalStorage();
+            triggerAutoSave("database_master_konfigurasi.csv", false);
+            recordUserActivity("EDIT", "Setting Aplikasi & User", "Kustomisasi Menu Navigasi", `Layout ${appConfig.menuLayout}; visual ${appConfig.menuVisual}; tema ${appConfig.menuTheme}`);
+        }
+
+        function saveMenuAppearanceSettings(showMessage = false) {
+            readMenuAppearanceInputs();
+            applyMenuAppearanceClasses(appConfig);
+            saveAllToLocalStorage();
+            triggerAutoSave("database_master_konfigurasi.csv", true);
+            recordUserActivity("SIMPAN", "Setting Aplikasi & User", "Kustomisasi Menu Navigasi", "Menyimpan pengaturan tampilan menu navigasi");
+            if (showMessage) showToast("Pengaturan tampilan menu berhasil disimpan ke database", "success");
+        }
+
+        function resetMenuAppearanceSettings() {
+            appConfig.menuLayout = "classic";
+            appConfig.menuEffect = "none";
+            appConfig.menuShape = "rounded";
+            appConfig.menuFont = "default";
+            appConfig.menuColor = "default";
+            appConfig.menuVisual = "default";
+            appConfig.menuTheme = "default";
+            renderSettingsView();
+            applyMenuAppearanceClasses(appConfig);
+            saveAllToLocalStorage();
+            triggerAutoSave("database_master_konfigurasi.csv", true);
+            recordUserActivity("RESET", "Setting Aplikasi & User", "Kustomisasi Menu Navigasi", "Mengembalikan pengaturan menu ke default");
+            showToast("Tampilan menu dikembalikan ke default dan disimpan", "info");
         }
 
         function applyVisualThemeFromInputs() {
@@ -7728,6 +7987,13 @@
         function resetVisualThemeDefault() {
             appConfig.accentTheme = "blue";
             appConfig.sidebarTheme = "slate";
+            appConfig.menuLayout = "classic";
+            appConfig.menuEffect = "none";
+            appConfig.menuShape = "rounded";
+            appConfig.menuFont = "default";
+            appConfig.menuColor = "default";
+            appConfig.menuVisual = "default";
+            appConfig.menuTheme = "default";
             appConfig.bgTheme = "clean";
             appConfig.cornerStyle = "rounded";
             appConfig.animPage = "slide";
@@ -7753,6 +8019,9 @@
         function renderSettingsView() {
             const cfg = Object.assign({}, DEFAULT_APP_CONFIG, appConfig || {});
             const dw = Object.assign({}, DEFAULT_APP_CONFIG.dashWidgets, cfg.dashWidgets || {});
+
+            const menuSettings = { "set-menu-layout": cfg.menuLayout || "classic", "set-menu-effect": cfg.menuEffect || "none", "set-menu-shape": cfg.menuShape || "rounded", "set-menu-font": cfg.menuFont || "default", "set-menu-color": cfg.menuColor || "default", "set-menu-visual": cfg.menuVisual || "default", "set-menu-theme": cfg.menuTheme || "default" };
+            Object.entries(menuSettings).forEach(([id, value]) => { const el = document.getElementById(id); if (el) el.value = value; });
 
             document.getElementById("set-accent-theme").value = cfg.accentTheme || "blue";
             document.getElementById("set-sidebar-theme").value = cfg.sidebarTheme || "slate";
@@ -8798,6 +9067,13 @@
                     ["UI_THEME_CONFIG", "VISUAL_STUDIO", "", "", "", JSON.stringify({
                         accentTheme: appConfig.accentTheme,
                         sidebarTheme: appConfig.sidebarTheme,
+                        menuLayout: appConfig.menuLayout || "classic",
+                        menuEffect: appConfig.menuEffect || "none",
+                        menuShape: appConfig.menuShape || "rounded",
+                        menuFont: appConfig.menuFont || "default",
+                        menuColor: appConfig.menuColor || "default",
+                        menuVisual: appConfig.menuVisual || "default",
+                        menuTheme: appConfig.menuTheme || "default",
                         bgTheme: appConfig.bgTheme,
                         cornerStyle: appConfig.cornerStyle,
                         animPage: appConfig.animPage,
@@ -9839,6 +10115,7 @@
             "bonus-referal": ["Bonus Referal Pelanggan", "Akumulasi bonus User Get User dan kirim informasi otomatis ke WhatsApp"],
             "pelanggan-off": ["Daftar Pelanggan Off", "Catatan pelanggan berhenti berlangganan dan pergantian username PPPoE"],
             "catatan-tagihan": ["Catatan Janji Bayar", "Pencatatan kesepakatan jadwal janji bayar pelanggan dan integrasi keterangan tagihan"],
+            "terima-tagihan": ["Terima Data Tagihan", "Import, filter, dan perbarui data tagihan pelanggan dari file Excel"],
             "paket": ["Daftar Paket Internet", "Master pilihan paket kecepatan dan tarif langganan bulanan"],
             "lokasi": ["Input Lokasi / Area", "Master daftar wilayah cakupan jaringan"],
             "bonus-setting": ["Setting Bonus Petugas", "Pengaturan tarif bonus PSB dan daftar petugas / teknisi lapangan"],
@@ -9898,6 +10175,7 @@
             else if (tabId === "bonus-referal") renderBonusReferalView();
             else if (tabId === "pelanggan-off") renderOffView();
             else if (tabId === "catatan-tagihan") { populateDropdownOptions(); renderCatatanTagihanView(); }
+            else if (tabId === "terima-tagihan") renderReceivedBillingView();
             else if (tabId === "paket") renderPaketView();
             else if (tabId === "lokasi") renderLokasiView();
             else if (tabId === "bonus-setting") renderBonusSettingView();
@@ -10037,6 +10315,8 @@
 
         function updateAllSidebarBadges() {
             const activeBills = ensureActiveBillingList();
+            const receivedBadge = document.getElementById("badge-terima-tagihan");
+            if (receivedBadge) receivedBadge.textContent = (typeof receivedBillingData !== "undefined" ? receivedBillingData.length : 0);
             document.getElementById("badge-master-cust").textContent = masterCustomers.length;
             document.getElementById("badge-tagihan").textContent = activeBills.length;
 
@@ -10655,6 +10935,240 @@
                 }
             }, 15000);
         });
-    </script>
+    
+        // ==================== MODUL TAMBAHAN: TERIMA DATA TAGIHAN ====================
+        // Data penerimaan disimpan terpisah agar tidak mengubah tagihan aktif sebelum tombol Masuk/Update ditekan.
+        let receivedBillingData = [];
+        try {
+            const savedReceivedBills = JSON.parse(localStorage.getItem("like_billing_received_bills") || "[]");
+            if (Array.isArray(savedReceivedBills)) receivedBillingData = savedReceivedBills;
+        } catch (_) { receivedBillingData = []; }
+
+        function saveReceivedBillingData() {
+            try { localStorage.setItem("like_billing_received_bills", JSON.stringify(receivedBillingData)); }
+            catch (err) { showToast("Gagal menyimpan data penerimaan ke penyimpanan lokal.", "error"); }
+            const badge = document.getElementById("badge-terima-tagihan");
+            if (badge) badge.textContent = receivedBillingData.length;
+        }
+
+        function receivedNormalizeHeader(value) {
+            return String(value ?? "").toLowerCase().trim().replace(/[^a-z0-9]/g, "");
+        }
+
+        function receivedNormalizePeriod(value) {
+            const raw = String(value ?? "").trim();
+            if (!raw) return getActiveBillingPeriodKey();
+            let m = raw.match(/^(\d{1,2})[-/](\d{4})$/);
+            if (m) return `${String(m[1]).padStart(2, "0")}-${m[2]}`;
+            m = raw.match(/^(\d{4})[-/](\d{1,2})$/);
+            if (m) return `${String(m[2]).padStart(2, "0")}-${m[1]}`;
+            const names = Object.entries(MONTH_NAMES_ID).find(([, name]) => name.toLowerCase() === raw.toLowerCase());
+            if (names) return `${names[0]}-${getCurrentPeriodYear()}`;
+            m = raw.match(/^([A-Za-z]+)\s+(\d{4})$/);
+            if (m) {
+                const found = Object.entries(MONTH_NAMES_ID).find(([, name]) => name.toLowerCase() === m[1].toLowerCase());
+                if (found) return `${found[0]}-${m[2]}`;
+            }
+            return raw;
+        }
+
+        function receivedPeriodLabel(value) {
+            const key = receivedNormalizePeriod(value);
+            const parts = key.split("-");
+            return parts.length === 2 ? `${MONTH_NAMES_ID[parts[0]] || parts[0]} ${parts[1]}` : key;
+        }
+
+        function receivedGetField(row, aliases) {
+            const keys = Object.keys(row || {});
+            const key = keys.find(k => aliases.includes(receivedNormalizeHeader(k)));
+            return key === undefined ? "" : row[key];
+        }
+
+        function receivedToBillRecord(row) {
+            const id = String(receivedGetField(row, ["idpelanggan", "id", "kodepelanggan"])).trim();
+            const nama = String(receivedGetField(row, ["nama", "namapelanggan"])).trim();
+            const statusRaw = String(receivedGetField(row, ["status", "statustagihan"])).trim().toUpperCase();
+            const status = statusRaw === "LUNAS" ? "LUNAS" :
+                (statusRaw === "OFF" ? "OFF" : (statusRaw || "BELUM LUNAS"));
+            return {
+                id, nama,
+                alamat: String(receivedGetField(row, ["alamat", "lokasi", "alamatlokasi"])).trim(),
+                hp: String(receivedGetField(row, ["nohp", "hp", "nowa", "nomorhp", "nohpwa"])).trim(),
+                paket: parseNumber(receivedGetField(row, ["paket", "paketbulanan", "tarif"])),
+                diskon: parseNumber(receivedGetField(row, ["diskon"])),
+                telat: parseNumber(receivedGetField(row, ["telat", "denda", "keterlambatan"])),
+                total: parseNumber(receivedGetField(row, ["total", "totaltagihan", "nominal"])),
+                status,
+                pppoe: String(receivedGetField(row, ["usernamepppoe", "pppoe", "userpppoe"])).trim(),
+                ket: String(receivedGetField(row, ["keterangan", "ket", "catatan"])).trim(),
+                petugas: String(receivedGetField(row, ["petugas", "kolektor"])).trim(),
+                periode: receivedNormalizePeriod(receivedGetField(row, ["periode", "periodetagihan", "bulan"]))
+            };
+        }
+
+        function importReceivedBillingExcel(event) {
+            const file = event.target.files && event.target.files[0];
+            if (!file) return;
+            if (typeof XLSX === "undefined") {
+                showToast("Modul Excel belum termuat. Periksa koneksi internet lalu coba kembali.", "error");
+                event.target.value = "";
+                return;
+            }
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const wb = XLSX.read(e.target.result, { type: "array" });
+                    const sheet = wb.Sheets[wb.SheetNames[0]];
+                    if (!sheet) throw new Error("Sheet pertama tidak ditemukan.");
+                    const rows = XLSX.utils.sheet_to_json(sheet, { defval: "", raw: false });
+                    if (!rows.length) throw new Error("File Excel tidak berisi data.");
+                    const parsed = rows.map(receivedToBillRecord).filter(r => r.id || r.nama);
+                    if (!parsed.length) throw new Error("Kolom ID_Pelanggan atau NAMA tidak ditemukan.");
+                    let added = 0, updated = 0;
+                    parsed.forEach(item => {
+                        const idx = receivedBillingData.findIndex(old =>
+                            (item.id && String(old.id).trim().toLowerCase() === item.id.toLowerCase()) ||
+                            (item.nama && String(old.nama).trim().toLowerCase() === item.nama.toLowerCase())
+                        );
+                        if (idx >= 0) { receivedBillingData[idx] = { ...receivedBillingData[idx], ...item }; updated++; }
+                        else { receivedBillingData.push(item); added++; }
+                    });
+                    saveReceivedBillingData();
+                    renderReceivedBillingView();
+                    showToast(`Data berhasil diambil: ${added} data baru, ${updated} data diperbarui.`, "success");
+                } catch (err) {
+                    console.error("Import Terima Data Tagihan:", err);
+                    showToast(err.message || "Gagal membaca file Excel.", "error");
+                } finally { event.target.value = ""; }
+            };
+            reader.onerror = function() {
+                showToast("File Excel gagal dibaca.", "error");
+                event.target.value = "";
+            };
+            reader.readAsArrayBuffer(file);
+        }
+
+
+        function renderReceivedBillingView() {
+            const addresses = [...new Set(receivedBillingData.map(r => r.alamat).filter(Boolean))].sort((a,b) => a.localeCompare(b, "id"));
+            const officers = [...new Set(receivedBillingData.map(r => r.petugas).filter(Boolean))].sort((a,b) => a.localeCompare(b, "id"));
+            const fillSelect = (id, values, firstLabel) => {
+                const el = document.getElementById(id);
+                if (!el) return;
+                const current = el.value || "ALL";
+                el.innerHTML = `<option value="ALL">${firstLabel}</option>` + values.map(v => `<option value="${escapeHTML(v)}">${escapeHTML(v)}</option>`).join("");
+                el.value = values.includes(current) ? current : "ALL";
+            };
+            fillSelect("received-bill-filter-address", addresses, "Semua Alamat");
+            fillSelect("received-bill-filter-petugas", officers, "Semua Petugas");
+
+            const statusList = ["BELUM LUNAS", "LUNAS", "OFF"];
+            const summary = document.getElementById("received-bill-summary");
+            if (summary) {
+                const cards = statusList.map(status => {
+                    const list = receivedBillingData.filter(r => String(r.status).toUpperCase() === status);
+                    const nominal = list.reduce((sum, r) => sum + (Number(r.total) || 0), 0);
+                    const color = status === "LUNAS" ? "emerald" : (status === "OFF" ? "slate" : "rose");
+                    return `<div class="bg-white rounded-2xl p-4 border border-${color}-200 shadow-xs">
+                        <p class="text-[10px] uppercase font-extrabold tracking-wider text-${color}-600">${status}</p>
+                        <p class="text-xl font-black text-slate-900 mt-1">${list.length.toLocaleString("id-ID")} <span class="text-xs font-bold text-slate-500">Pelanggan</span></p>
+                        <p class="text-xs font-bold text-${color}-700 mt-1">Rp ${nominal.toLocaleString("id-ID")}</p>
+                    </div>`;
+                }).join("");
+                summary.innerHTML = `<div class="bg-white rounded-2xl p-4 border border-blue-200 shadow-xs">
+                    <p class="text-[10px] uppercase font-extrabold tracking-wider text-blue-600">Rincian Total Pelanggan</p>
+                    <p class="text-2xl font-black text-slate-900 mt-1">${receivedBillingData.length.toLocaleString("id-ID")}</p>
+                    <p class="text-xs text-slate-500 mt-1">Seluruh data penerimaan</p>
+                </div>${cards}`;
+            }
+
+            const fAddress = document.getElementById("received-bill-filter-address")?.value || "ALL";
+            const fStatus = document.getElementById("received-bill-filter-status")?.value || "ALL";
+            const fPetugas = document.getElementById("received-bill-filter-petugas")?.value || "ALL";
+            const filtered = receivedBillingData.filter(r =>
+                (fAddress === "ALL" || r.alamat === fAddress) &&
+                (fStatus === "ALL" || String(r.status).toUpperCase() === fStatus) &&
+                (fPetugas === "ALL" || r.petugas === fPetugas)
+            );
+            const count = document.getElementById("received-bill-count");
+            if (count) count.textContent = `${filtered.length} dari ${receivedBillingData.length} data`;
+            const tbody = document.getElementById("received-bill-tbody");
+            if (!tbody) return;
+            if (!filtered.length) {
+                tbody.innerHTML = `<tr><td colspan="14" class="px-4 py-8 text-center text-slate-400 font-semibold">Belum ada data sesuai filter. Klik Ambil Data untuk mengimpor file Excel.</td></tr>`;
+                return;
+            }
+            tbody.innerHTML = filtered.map((r, i) => `<tr class="hover:bg-slate-50">
+                <td class="px-3 py-3 text-slate-500">${i+1}</td><td class="px-3 py-3 font-mono">${escapeHTML(r.id)}</td>
+                <td class="px-3 py-3 font-bold text-slate-800">${escapeHTML(r.nama)}</td><td class="px-3 py-3">${escapeHTML(r.alamat)}</td>
+                <td class="px-3 py-3">${escapeHTML(r.hp)}</td><td class="px-3 py-3 text-right">${(Number(r.paket)||0).toLocaleString("id-ID")}</td>
+                <td class="px-3 py-3 text-right">${(Number(r.diskon)||0).toLocaleString("id-ID")}</td><td class="px-3 py-3 text-right">${(Number(r.telat)||0).toLocaleString("id-ID")}</td>
+                <td class="px-3 py-3 text-right font-bold">${(Number(r.total)||0).toLocaleString("id-ID")}</td><td class="px-3 py-3 font-bold">${escapeHTML(r.status)}</td>
+                <td class="px-3 py-3 font-mono">${escapeHTML(r.pppoe)}</td><td class="px-3 py-3">${escapeHTML(r.ket)}</td>
+                <td class="px-3 py-3">${escapeHTML(r.petugas)}</td><td class="px-3 py-3">${escapeHTML(receivedPeriodLabel(r.periode))}</td>
+            </tr>`).join("");
+        }
+
+        function applyReceivedBillingToInvoices() {
+            if (!receivedBillingData.length) {
+                showToast("Belum ada data untuk dimasukkan ke Tagihan Pelanggan.", "warning");
+                return;
+            }
+            const invalid = receivedBillingData.filter(r => !r.id && !r.nama);
+            if (invalid.length) {
+                showToast("Ada data tanpa ID Pelanggan dan Nama. Periksa file Excel.", "error");
+                return;
+            }
+            const grouped = {};
+            receivedBillingData.forEach(r => {
+                const key = receivedNormalizePeriod(r.periode);
+                if (!grouped[key]) grouped[key] = [];
+                grouped[key].push(r);
+            });
+            let inserted = 0, updated = 0;
+            Object.entries(grouped).forEach(([periodKey, rows]) => {
+                if (!Array.isArray(monthlyBillsStore[periodKey])) monthlyBillsStore[periodKey] = [];
+                const target = monthlyBillsStore[periodKey];
+                rows.forEach(r => {
+                    let idx = r.id ? target.findIndex(x => String(x.id || "").trim().toLowerCase() === r.id.toLowerCase()) : -1;
+                    if (idx < 0 && r.nama) idx = target.findIndex(x => String(x.nama || "").trim().toLowerCase() === r.nama.toLowerCase());
+                    const bill = {
+                        id:r.id, nama:r.nama, alamat:r.alamat, hp:r.hp, paket:Number(r.paket)||0,
+                        diskon:Number(r.diskon)||0, telat:Number(r.telat)||0, total:Number(r.total)||0,
+                        status:r.status || "BELUM LUNAS", pppoe:r.pppoe, ket:r.ket, petugas:r.petugas
+                    };
+                    if (idx >= 0) { target[idx] = { ...target[idx], ...bill }; updated++; }
+                    else { target.push(bill); inserted++; }
+                });
+            });
+            saveAllToLocalStorage();
+            recordUserActivity("UPDATE", "Tagihan Pelanggan", "Terima Data Tagihan", `${inserted} data baru dan ${updated} data diperbarui dari modul Terima Data Tagihan.`);
+            updateAllSidebarBadges();
+            triggerAutoSave("database_pelanggan.csv", true);
+            if (activeTabId === "pelanggan") renderCustomerTable();
+            showToast(`Berhasil masuk ke Tagihan Pelanggan: ${inserted} data baru, ${updated} data diperbarui. Data lama yang cocok tidak dihapus.`, "success");
+        }
+
+        function confirmDeleteAllReceivedBilling() {
+            if (!receivedBillingData.length) {
+                showToast("Data penerimaan sudah kosong.", "warning");
+                return;
+            }
+            openActionConfirmModal(
+                "Hapus Semua Data Penerimaan",
+                "Semua data pada menu Terima Data Tagihan akan dikosongkan. Data di menu Tagihan Pelanggan tidak ikut dihapus. Lanjutkan?",
+                () => {
+                    receivedBillingData = [];
+                    saveReceivedBillingData();
+                    renderReceivedBillingView();
+                    recordUserActivity("HAPUS", "Terima Data Tagihan", "Semua Data", "Mengosongkan seluruh data penerimaan tagihan.");
+                    showToast("Semua data penerimaan berhasil dikosongkan. Data Tagihan Pelanggan tetap aman.", "success");
+                },
+                "Iya, Hapus Semua",
+                "Tidak, Batalkan"
+            );
+        }
+
+</script>
 </body>
 </html>
