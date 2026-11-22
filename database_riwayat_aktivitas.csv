@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795328094746-863","22/11/2026","13:14:54","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout classic; visual bento; tema default"
 "LOG-1795328089810-730","22/11/2026","13:14:49","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual bento; tema default"
 "LOG-1795328087874-693","22/11/2026","13:14:47","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual bento; tema default"
 "LOG-1795328086002-83","22/11/2026","13:14:46","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual bento; tema default"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795154023877-984","20/11/2026","12:53:43","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
 "LOG-1795145313063-522","20/11/2026","10:28:33","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
 "LOG-1795145106057-967","20/11/2026","10:25:06","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","20-11-2026 (November 2026)","Tambah pengeluaran Rp 70.000 — beli kertas f4"
-"LOG-1795145093009-282","20/11/2026","10:24:53","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","20-11-2026 (November 2026)","Tambah pengeluaran Rp 15.000 — bensin tim"
