@@ -1,4 +1,6 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795328006226-679","22/11/2026","13:13:26","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual neumorphism; tema default"
+"LOG-1795328004698-286","22/11/2026","13:13:24","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual glass; tema default"
 "LOG-1795328003069-174","22/11/2026","13:13:23","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
 "LOG-1795327999666-11","22/11/2026","13:13:19","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual glass; tema default"
 "LOG-1795327990338-994","22/11/2026","13:13:10","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual glass; tema default"
@@ -997,5 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795144820038-763","20/11/2026","10:20:20","ILYAS","ILYAS","Super Admin","EDIT","Catatan Pengeluaran","18-11-2026 (November 2026)","Edit pengeluaran Rp 15.000 — belanja ke pasar"
 "LOG-1795144813950-839","20/11/2026","10:20:13","ILYAS","ILYAS","Super Admin","EDIT","Catatan Pengeluaran","18-11-2026 (November 2026)","Edit pengeluaran Rp 90.000 — cod oyister"
 "LOG-1795144807029-799","20/11/2026","10:20:07","ILYAS","ILYAS","Super Admin","EDIT","Catatan Pengeluaran","18-11-2026 (November 2026)","Edit pengeluaran Rp 50.000 — bensin mobil"
-"LOG-1795144731563-507","20/11/2026","10:18:51","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","17-11-2026 (November 2026)","Tambah pengeluaran Rp 500.000 — RENDI BON"
-"LOG-1795144700372-42","20/11/2026","10:18:20","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","17-11-2026 (November 2026)","Tambah pengeluaran Rp 50.000 — TIAR BON"
