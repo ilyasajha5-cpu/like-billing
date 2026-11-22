@@ -1,4 +1,6 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795327520276-865","22/11/2026","13:05:20","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
+"LOG-1795327518867-907","22/11/2026","13:05:18","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout classic; visual default; tema default"
 "LOG-1795327517316-825","22/11/2026","13:05:17","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout icons; visual default; tema default"
 "LOG-1795327515924-405","22/11/2026","13:05:15","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout spacious; visual default; tema default"
 "LOG-1795327514117-126","22/11/2026","13:05:14","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
@@ -997,5 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795140253334-101","20/11/2026","09:04:13","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","08-11-2026 (November 2026)","Tambah pengeluaran Rp 70.000 — belanja basmalah"
 "LOG-1795140232886-535","20/11/2026","09:03:52","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","07-11-2026 (November 2026)","Tambah pengeluaran Rp 300.000 — makan bersama tim efelnet dan likenet"
 "LOG-1795140208014-553","20/11/2026","09:03:28","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","07-11-2026 (November 2026)","Tambah pengeluaran Rp 35.000 — cod shopee aira"
-"LOG-1795140175708-944","20/11/2026","09:02:55","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","07-11-2026 (November 2026)","Tambah pengeluaran Rp 20.000 — token bek sugik"
-"LOG-1795140158636-598","20/11/2026","09:02:38","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","07-11-2026 (November 2026)","Tambah pengeluaran Rp 65.000 — cod stiker modem"
