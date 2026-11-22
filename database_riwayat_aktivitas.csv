@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795327716477-429","22/11/2026","13:08:36","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
 "LOG-1795327714438-378","22/11/2026","13:08:34","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
 "LOG-1795327699772-77","22/11/2026","13:08:19","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
 "LOG-1795327697717-194","22/11/2026","13:08:17","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795141344756-598","20/11/2026","09:22:24","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","13-11-2026 (November 2026)","Tambah pengeluaran Rp 50.000 — pijet bunda ke pak rendi"
 "LOG-1795141317677-522","20/11/2026","09:21:57","ILYAS","ILYAS","Super Admin","EDIT","Catatan Pengeluaran","06-11-2026 (November 2026)","Edit pengeluaran Rp 100.000 — beli air botol kardus dan semangka"
 "LOG-1795141302804-335","20/11/2026","09:21:42","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","13-11-2026 (November 2026)","Tambah pengeluaran Rp 60.000 — beli air botol kardus"
-"LOG-1795141285212-474","20/11/2026","09:21:25","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","13-11-2026 (November 2026)","Tambah pengeluaran Rp 60.000 — cod breket monitor"
