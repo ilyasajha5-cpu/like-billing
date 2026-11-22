@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795353009031-644","22/11/2026","20:10:09","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
 "LOG-1795353004401-899","22/11/2026","20:10:04","ILYAS","ILYAS","Finance","TAMBAH","Catatan Pengeluaran","22-11-2026 (November 2026)","Tambah pengeluaran Rp 600.000 — Sedekah"
 "LOG-1795352991980-475","22/11/2026","20:09:51","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Finance"
 "LOG-1795339826678-819","22/11/2026","16:30:26","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795155015128-645","20/11/2026","13:10:15","RENDI","RENDI","Admin","TAMBAH","Catatan Janji Bayar","PAK KULSUM SUMBERMALANG","Tambah janji bayar PAK KULSUM SUMBERMALANG (Bayar tgl 10 tiap Bulan - Periode 11-2026)"
 "LOG-1795155003369-756","20/11/2026","13:10:03","RENDI","RENDI","Admin","TAMBAH","Catatan Janji Bayar","PAK MILA SUMBERANGET","Tambah janji bayar PAK MILA SUMBERANGET (Bayar tgl 10 tiap Bulan - Periode 11-2026)"
 "LOG-1795154992096-779","20/11/2026","13:09:52","RENDI","RENDI","Admin","TAMBAH","Catatan Janji Bayar","FARUK SUMBER ANGET","Tambah janji bayar FARUK SUMBER ANGET (Bayar tgl 10 tiap Bulan - Periode 11-2026)"
-"LOG-1795154981856-223","20/11/2026","13:09:41","RENDI","RENDI","Admin","TAMBAH","Catatan Janji Bayar","HOLIP FERDI K.U","Tambah janji bayar HOLIP FERDI K.U (Bayar tgl 10 tiap Bulan - Periode 11-2026)"
