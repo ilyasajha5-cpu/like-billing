@@ -1,4 +1,6 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795327515924-405","22/11/2026","13:05:15","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout spacious; visual default; tema default"
+"LOG-1795327514117-126","22/11/2026","13:05:14","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
 "LOG-1795327512071-968","22/11/2026","13:05:12","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout classic; visual default; tema default"
 "LOG-1795327510939-553","22/11/2026","13:05:10","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout classic; visual default; tema default"
 "LOG-1795327509691-266","22/11/2026","13:05:09","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout classic; visual default; tema default"
@@ -997,5 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795140175708-944","20/11/2026","09:02:55","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","07-11-2026 (November 2026)","Tambah pengeluaran Rp 20.000 — token bek sugik"
 "LOG-1795140158636-598","20/11/2026","09:02:38","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","07-11-2026 (November 2026)","Tambah pengeluaran Rp 65.000 — cod stiker modem"
 "LOG-1795140130134-455","20/11/2026","09:02:10","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","06-11-2026 (November 2026)","Tambah pengeluaran Rp 3.000.000 — MAS FEBTU PINJAM"
-"LOG-1795140093229-225","20/11/2026","09:01:33","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","06-11-2026 (November 2026)","Tambah pengeluaran Rp 200.000 — ongkos mobil anam main kerumah sama orang tua"
-"LOG-1795140066957-57","20/11/2026","09:01:06","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","06-11-2026 (November 2026)","Tambah pengeluaran Rp 340.000 — bayar DPP aira"
