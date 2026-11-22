@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795327457935-138","22/11/2026","13:04:17","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
 "LOG-1795327351557-736","22/11/2026","13:02:31","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) keluar / logout dari aplikasi"
 "LOG-1795327328959-92","22/11/2026","13:02:08","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
 "LOG-1795326728941-804","22/11/2026","12:52:08","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795140028509-172","20/11/2026","09:00:28","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","06-11-2026 (November 2026)","Tambah pengeluaran Rp 80.000 — cod baju jdn"
 "LOG-1795140006349-423","20/11/2026","09:00:06","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","06-11-2026 (November 2026)","Tambah pengeluaran Rp 100.000 — beli air kardus dan semangka"
 "LOG-1795139981846-857","20/11/2026","08:59:41","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","06-11-2026 (November 2026)","Tambah pengeluaran Rp 100.000 — sedekah es cincau jum'at"
-"LOG-1795139963126-824","20/11/2026","08:59:23","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","06-11-2026 (November 2026)","Tambah pengeluaran Rp 350.000 — cod lcd laptop"
