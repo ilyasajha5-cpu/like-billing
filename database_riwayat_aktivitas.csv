@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795328121698-406","22/11/2026","13:15:21","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout icons; visual bento; tema default"
 "LOG-1795328118585-333","22/11/2026","13:15:18","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout classic; visual bento; tema default"
 "LOG-1795328115958-759","22/11/2026","13:15:15","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout icons; visual bento; tema default"
 "LOG-1795328111530-971","22/11/2026","13:15:11","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout classic; visual bento; tema default"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795154425795-506","20/11/2026","13:00:25","RENDI","RENDI","Admin","TAMBAH","Daftar PSB & Bonus","DESTA AJUNGUTARA","Menambahkan PSB baru DESTA AJUNGUTARA (AJUNGUTARA, Tgl: 07-11-2026, Teknisi: AREP, FERDI, ERVAN)"
 "LOG-1795154353979-799","20/11/2026","12:59:13","RENDI","RENDI","Admin","EDIT","Daftar PSB & Bonus","NURI DAWUHAN","Mengubah data PSB NURI DAWUHAN (DAWUHAN, Tgl: 05-11-2026, Teknisi: -)"
 "LOG-1795154343147-851","20/11/2026","12:59:03","RENDI","RENDI","Admin","TAMBAH","Daftar PSB & Bonus","NURI DAWUHAN","Menambahkan PSB baru NURI DAWUHAN (DAWUHAN, Tgl: 05-11-2026, Teknisi: -)"
-"LOG-1795154277075-615","20/11/2026","12:57:57","RENDI","RENDI","Admin","TAMBAH","Daftar PSB & Bonus","RISAL KARANGPAITON","Menambahkan PSB baru RISAL KARANGPAITON (KARANGPAITON, Tgl: 02-11-2026, Teknisi: RENDI, AREP, FERDI, TIAR)"
