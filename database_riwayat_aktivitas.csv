@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795328033918-685","22/11/2026","13:13:53","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual neumorphism; tema default"
 "LOG-1795328028283-614","22/11/2026","13:13:48","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual glass; tema default"
 "LOG-1795328021234-274","22/11/2026","13:13:41","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual bento; tema default"
 "LOG-1795328015594-780","22/11/2026","13:13:35","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual minimal; tema default"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795144886546-430","20/11/2026","10:21:26","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","19-11-2026 (November 2026)","Tambah pengeluaran Rp 15.000 — beli bakwan"
 "LOG-1795144876658-685","20/11/2026","10:21:16","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","19-11-2026 (November 2026)","Tambah pengeluaran Rp 30.000 — beli syrup obh adek"
 "LOG-1795144863283-86","20/11/2026","10:21:03","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","19-11-2026 (November 2026)","Tambah pengeluaran Rp 20.000 — belanja ke pasar"
-"LOG-1795144838701-66","20/11/2026","10:20:38","ILYAS","ILYAS","Super Admin","EDIT","Catatan Pengeluaran","18-11-2026 (November 2026)","Edit pengeluaran Rp 500.000 — RENDI BON"
