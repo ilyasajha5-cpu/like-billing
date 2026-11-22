@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795327903076-642","22/11/2026","13:11:43","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual neumorphism; tema default"
 "LOG-1795327898560-834","22/11/2026","13:11:38","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual glass; tema default"
 "LOG-1795327892476-864","22/11/2026","13:11:32","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual bento; tema default"
 "LOG-1795327887315-606","22/11/2026","13:11:27","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual minimal; tema default"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795144610788-443","20/11/2026","10:16:50","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","15-11-2026 (November 2026)","Tambah pengeluaran Rp 50.000 — jastip adek"
 "LOG-1795144597892-894","20/11/2026","10:16:37","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","15-11-2026 (November 2026)","Tambah pengeluaran Rp 260.000 — beli rokok toppas 1 pres"
 "LOG-1795144576583-311","20/11/2026","10:16:16","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","15-11-2026 (November 2026)","Tambah pengeluaran Rp 100.000 — CAK NONO PINJEM (buat bayar arisan keluarga dirumah de dodik kretek)"
-"LOG-1795144536589-365","20/11/2026","10:15:36","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","15-11-2026 (November 2026)","Tambah pengeluaran Rp 15.000 — bensin tim"
