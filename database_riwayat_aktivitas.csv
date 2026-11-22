@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795327594150-407","22/11/2026","13:06:34","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
 "LOG-1795327591118-997","22/11/2026","13:06:31","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
 "LOG-1795327585991-323","22/11/2026","13:06:25","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
 "LOG-1795327581366-219","22/11/2026","13:06:21","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795140959367-211","20/11/2026","09:15:59","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","10-11-2026 (November 2026)","Tambah pengeluaran Rp 65.000 — belanja basmalah ayah adek"
 "LOG-1795140937983-828","20/11/2026","09:15:37","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","10-11-2026 (November 2026)","Tambah pengeluaran Rp 25.000 — beli nasi jagung 2 bungkus"
 "LOG-1795140918463-432","20/11/2026","09:15:18","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","09-11-2026 (November 2026)","Tambah pengeluaran Rp 10.000 — bensin tim"
-"LOG-1795140901511-225","20/11/2026","09:15:01","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","09-11-2026 (November 2026)","Tambah pengeluaran Rp 30.000 — beli rokok ayah"
