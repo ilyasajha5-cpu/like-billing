@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795328158209-699","22/11/2026","13:15:58","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout classic; visual bento; tema light"
 "LOG-1795328153664-502","22/11/2026","13:15:53","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout classic; visual bento; tema carbon"
 "LOG-1795328152142-26","22/11/2026","13:15:52","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout classic; visual bento; tema forest"
 "LOG-1795328149626-693","22/11/2026","13:15:49","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout classic; visual bento; tema ocean"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795154708273-924","20/11/2026","13:05:08","RENDI","RENDI","Admin","TAMBAH","Daftar PSB & Bonus","AYU SUMBERANGET","Menambahkan PSB baru AYU SUMBERANGET (SUMBERANGET, Tgl: 14-11-2026, Teknisi: RENDI, AREP)"
 "LOG-1795154642328-96","20/11/2026","13:04:02","RENDI","RENDI","Admin","TAMBAH","Daftar PSB & Bonus","PAK VITA AJUNGTENGAH","Menambahkan PSB baru PAK VITA AJUNGTENGAH (AJUNGTENGAH, Tgl: 11-11-2026, Teknisi: RENDI, FERDI, TIAR)"
 "LOG-1795154599314-375","20/11/2026","13:03:19","RENDI","RENDI","Admin","TAMBAH","Daftar PSB & Bonus","CAK HASAN PLALANGAN","Menambahkan PSB baru CAK HASAN PLALANGAN (PLALANGAN, Tgl: 10-11-2026, Teknisi: RENDI, AREP, FERDI, TIAR)"
-"LOG-1795154544498-127","20/11/2026","13:02:24","RENDI","RENDI","Admin","EDIT","Daftar PSB & Bonus","MOS PLALANGAN","Mengubah data PSB MOS PLALANGAN (PLALANGAN, Tgl: 08-11-2026, Teknisi: RENDI, ERVAN, TIAR)"
