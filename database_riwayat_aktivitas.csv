@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795327562206-293","22/11/2026","13:06:02","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
 "LOG-1795327547959-225","22/11/2026","13:05:47","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
 "LOG-1795327540534-757","22/11/2026","13:05:40","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
 "LOG-1795327537854-892","22/11/2026","13:05:37","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout classic; visual default; tema default"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795140828463-209","20/11/2026","09:13:48","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","09-11-2026 (November 2026)","Tambah pengeluaran Rp 25.000 — bensin tim"
 "LOG-1795140373547-357","20/11/2026","09:06:13","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","09-11-2026 (November 2026)","Tambah pengeluaran Rp 40.000 — beli telur, sayur, dan bumbu"
 "LOG-1795140350587-970","20/11/2026","09:05:50","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","09-11-2026 (November 2026)","Tambah pengeluaran Rp 50.000 — periksa bunda"
-"LOG-1795140335051-331","20/11/2026","09:05:35","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","09-11-2026 (November 2026)","Tambah pengeluaran Rp 10.000 — saku aira"
