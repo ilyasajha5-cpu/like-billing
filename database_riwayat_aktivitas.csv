@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795339791046-62","22/11/2026","16:29:51","ILYAS","ILYAS","Finance","TAMBAH","Catatan Pengeluaran","22-11-2026 (November 2026)","Tambah pengeluaran Rp 20.000 — Beli rexona basmalah"
 "LOG-1795339765405-775","22/11/2026","16:29:25","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Finance"
 "LOG-1795328562032-515","22/11/2026","13:22:42","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
 "LOG-1795328556162-453","22/11/2026","13:22:36","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795154971336-628","20/11/2026","13:09:31","RENDI","RENDI","Admin","TAMBAH","Catatan Janji Bayar","HERMAN K.U","Tambah janji bayar HERMAN K.U (Bayar tgl 10 tiap Bulan - Periode 11-2026)"
 "LOG-1795154960680-542","20/11/2026","13:09:20","RENDI","RENDI","Admin","TAMBAH","Catatan Janji Bayar","DEQI K.U","Tambah janji bayar DEQI K.U (Bayar tgl 10 tiap Bulan - Periode 11-2026)"
 "LOG-1795154949752-226","20/11/2026","13:09:09","RENDI","RENDI","Admin","TAMBAH","Catatan Janji Bayar","YUSUF STASIUN","Tambah janji bayar YUSUF STASIUN (Bayar tgl 10 tiap Bulan - Periode 11-2026)"
-"LOG-1795154940336-223","20/11/2026","13:09:00","RENDI","RENDI","Admin","TAMBAH","Catatan Janji Bayar","PAK ADI STASIUN","Tambah janji bayar PAK ADI STASIUN (Bayar tgl 10 tiap Bulan - Periode 11-2026)"
