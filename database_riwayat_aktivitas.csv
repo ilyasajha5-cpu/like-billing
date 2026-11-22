@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795327676102-419","22/11/2026","13:07:56","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
 "LOG-1795327673989-568","22/11/2026","13:07:53","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
 "LOG-1795327670765-377","22/11/2026","13:07:50","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
 "LOG-1795327668893-131","22/11/2026","13:07:48","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795141187853-743","20/11/2026","09:19:47","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","12-11-2026 (November 2026)","Tambah pengeluaran Rp 15.000 — bensin tim"
 "LOG-1795141174164-916","20/11/2026","09:19:34","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","12-11-2026 (November 2026)","Tambah pengeluaran Rp 30.000 — belanja ke indomart adek"
 "LOG-1795141157757-999","20/11/2026","09:19:17","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","12-11-2026 (November 2026)","Tambah pengeluaran Rp 13.500.000 — BAYAR BANDWITDH JDN"
-"LOG-1795141125133-935","20/11/2026","09:18:45","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","12-11-2026 (November 2026)","Tambah pengeluaran Rp 100.000 — belanja ke pasar"
