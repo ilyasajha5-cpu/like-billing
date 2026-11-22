@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795328077789-65","22/11/2026","13:14:37","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual bento; tema default"
 "LOG-1795328076033-353","22/11/2026","13:14:36","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual bento; tema default"
 "LOG-1795328074457-376","22/11/2026","13:14:34","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual bento; tema default"
 "LOG-1795328072730-87","22/11/2026","13:14:32","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual bento; tema default"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795145057922-281","20/11/2026","10:24:17","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","20-11-2026 (November 2026)","Tambah pengeluaran Rp 35.000 — belanja ayam ke pasar"
 "LOG-1795145048129-349","20/11/2026","10:24:08","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","19-11-2026 (November 2026)","Tambah pengeluaran Rp 20.000 — isi data hp adit"
 "LOG-1795145035769-222","20/11/2026","10:23:55","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","19-11-2026 (November 2026)","Tambah pengeluaran Rp 50.000 — ERVAN BON (beli token rumah situbondo)"
-"LOG-1795145008940-150","20/11/2026","10:23:28","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","19-11-2026 (November 2026)","Tambah pengeluaran Rp 40.000 — beli kopi bubuk kapal api"
