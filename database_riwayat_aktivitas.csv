@@ -1,4 +1,6 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795327734204-311","22/11/2026","13:08:54","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
+"LOG-1795327732453-261","22/11/2026","13:08:52","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
 "LOG-1795327730764-389","22/11/2026","13:08:50","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
 "LOG-1795327728779-205","22/11/2026","13:08:48","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
 "LOG-1795327727221-210","22/11/2026","13:08:47","ILYAS","ILYAS","Super Admin","EDIT","Setting Aplikasi & User","Kustomisasi Menu Navigasi","Layout compact; visual default; tema default"
@@ -997,5 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795142636259-485","20/11/2026","09:43:56","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","14-11-2026 (November 2026)","Tambah pengeluaran Rp 180.000 — bayar cod"
 "LOG-1795142613395-111","20/11/2026","09:43:33","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","14-11-2026 (November 2026)","Tambah pengeluaran Rp 20.000 — belanja ke pasar"
 "LOG-1795142596395-535","20/11/2026","09:43:16","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","13-11-2026 (November 2026)","Tambah pengeluaran Rp 70.000 — belanja ke indomart adek bunda"
-"LOG-1795142577787-73","20/11/2026","09:42:57","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","13-11-2026 (November 2026)","Tambah pengeluaran Rp 100.000 — nyelawat ke dendi"
-"LOG-1795142563955-42","20/11/2026","09:42:43","ILYAS","ILYAS","Super Admin","TAMBAH","Catatan Pengeluaran","13-11-2026 (November 2026)","Tambah pengeluaran Rp 105.000 — cod case"
