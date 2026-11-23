@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795398455364-670","23/11/2026","08:47:35","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
 "LOG-1795398450779-246","23/11/2026","08:47:30","ILYAS","ILYAS","Finance","TAMBAH","Catatan Pengeluaran","23-11-2026 (November 2026)","Tambah pengeluaran Rp 15.000 — Bensin tim"
 "LOG-1795398433842-817","23/11/2026","08:47:13","ILYAS","ILYAS","Finance","TAMBAH","Catatan Pengeluaran","23-11-2026 (November 2026)","Tambah pengeluaran Rp 20.000 — Belanja makan"
 "LOG-1795398411167-390","23/11/2026","08:46:51","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Finance"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795155026952-73","20/11/2026","13:10:26","RENDI","RENDI","Admin","TAMBAH","Catatan Janji Bayar","ALIFIA KARANGPAITON","Tambah janji bayar ALIFIA KARANGPAITON (Bayar tgl 14 tiap Bulan - Periode 11-2026)"
 "LOG-1795155015128-645","20/11/2026","13:10:15","RENDI","RENDI","Admin","TAMBAH","Catatan Janji Bayar","PAK KULSUM SUMBERMALANG","Tambah janji bayar PAK KULSUM SUMBERMALANG (Bayar tgl 10 tiap Bulan - Periode 11-2026)"
 "LOG-1795155003369-756","20/11/2026","13:10:03","RENDI","RENDI","Admin","TAMBAH","Catatan Janji Bayar","PAK MILA SUMBERANGET","Tambah janji bayar PAK MILA SUMBERANGET (Bayar tgl 10 tiap Bulan - Periode 11-2026)"
-"LOG-1795154992096-779","20/11/2026","13:09:52","RENDI","RENDI","Admin","TAMBAH","Catatan Janji Bayar","FARUK SUMBER ANGET","Tambah janji bayar FARUK SUMBER ANGET (Bayar tgl 10 tiap Bulan - Periode 11-2026)"
