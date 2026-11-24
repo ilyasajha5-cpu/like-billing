@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795491637879-90","24/11/2026","10:40:37","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Finance"
 "LOG-1795443460012-866","23/11/2026","21:17:40","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) keluar / logout dari aplikasi"
 "LOG-1795443438924-66","23/11/2026","21:17:18","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
 "LOG-1795443098820-574","23/11/2026","21:11:38","RENDI","RENDI","Admin","HAPUS","Terima Data Tagihan","Semua Data","Mengosongkan seluruh data penerimaan tagihan."
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795155339021-22","20/11/2026","13:15:39","RENDI","RENDI","Admin","TAMBAH","Daftar Pelanggan Off","NAFIS","Input pelanggan off NAFIS (SUMBERMALANG - Alasan: TIDAK ADA YANG PAKE)"
 "LOG-1795155298462-111","20/11/2026","13:14:58","RENDI","RENDI","Admin","TAMBAH","Daftar Pelanggan Off","ALIN-2","Input pelanggan off ALIN-2 (AJUNGTENGAH - Alasan: KELUAR KOTA)"
 "LOG-1795155125604-538","20/11/2026","13:12:05","RENDI","RENDI","Admin","EDIT","Catatan Janji Bayar","Massal (23 Pelanggan)","Menerapkan 23 catatan janji bayar ke Tagihan Pelanggan (November 2026)"
-"LOG-1795155118463-996","20/11/2026","13:11:58","RENDI","RENDI","Admin","TAMBAH","Catatan Janji Bayar","DILA BUK DINI KARANGPAITON","Tambah janji bayar DILA BUK DINI KARANGPAITON (Bayar tgl 08 tiap Bulan - Periode 11-2026)"
