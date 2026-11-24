@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795491693154-654","24/11/2026","10:41:33","ILYAS","ILYAS","Finance","TAMBAH","Catatan Pengeluaran","24-11-2026 (November 2026)","Tambah pengeluaran Rp 850.000 — Beli kabel fiber ganti jalur ke plalangan"
 "LOG-1795491665843-111","24/11/2026","10:41:05","ILYAS","ILYAS","Finance","TAMBAH","Catatan Pengeluaran","24-11-2026 (November 2026)","Tambah pengeluaran Rp 20.000 — Belanja makan"
 "LOG-1795491651455-815","24/11/2026","10:40:51","ILYAS","ILYAS","Finance","TAMBAH","Catatan Pengeluaran","24-11-2026 (November 2026)","Tambah pengeluaran Rp 10.000 — Saku aira"
 "LOG-1795491637879-90","24/11/2026","10:40:37","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Finance"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795155520366-972","20/11/2026","13:18:40","RENDI","RENDI","Admin","TAMBAH","Data Laporan Gangguan","PAK RAFI (02/11/2026)","Tambah gangguan pelanggan PAK RAFI: KABEL PUTUS"
 "LOG-1795155414492-267","20/11/2026","13:16:54","RENDI","RENDI","Admin","TAMBAH","Daftar Pelanggan Off","SAHRUL","Input pelanggan off SAHRUL (AJUNGTENGAH - Alasan: TIDAK PUNYA UANG)"
 "LOG-1795155372717-857","20/11/2026","13:16:12","RENDI","RENDI","Admin","TAMBAH","Daftar Pelanggan Off","PAK RAPEK","Input pelanggan off PAK RAPEK (KARANGPAITON - Alasan: TIDAK PUNYA UANG)"
-"LOG-1795155339021-22","20/11/2026","13:15:39","RENDI","RENDI","Admin","TAMBAH","Daftar Pelanggan Off","NAFIS","Input pelanggan off NAFIS (SUMBERMALANG - Alasan: TIDAK ADA YANG PAKE)"
