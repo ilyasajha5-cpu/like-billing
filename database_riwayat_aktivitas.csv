@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795513118019-220","24/11/2026","16:38:38","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
 "LOG-1795496911994-179","24/11/2026","12:08:31","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) keluar / logout dari aplikasi"
 "LOG-1795496776287-845","24/11/2026","12:06:16","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
 "LOG-1795491712640-439","24/11/2026","10:41:52","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795155741459-498","20/11/2026","13:22:21","RENDI","RENDI","Admin","TAMBAH","Data Laporan Gangguan","TOPAN (07/11/2026)","Tambah gangguan pelanggan TOPAN: MODEM KE RISET"
 "LOG-1795155711683-11","20/11/2026","13:21:51","RENDI","RENDI","Admin","TAMBAH","Data Laporan Gangguan","JALUR ASARI (06/11/2026)","Tambah gangguan pelanggan JALUR ASARI: REDAMAN NAIK"
 "LOG-1795155618099-603","20/11/2026","13:20:18","RENDI","RENDI","Admin","TAMBAH","Data Laporan Gangguan","JALUR PAK VIVI (06/11/2026)","Tambah gangguan pelanggan JALUR PAK VIVI: KABEL PUTUS"
-"LOG-1795155561188-885","20/11/2026","13:19:21","RENDI","RENDI","Admin","EDIT","Data Laporan Gangguan","GUDANG RUKIN (02/11/2026)","Edit gangguan pelanggan GUDANG RUKIN: KABEL"
