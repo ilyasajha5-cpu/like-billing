@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795532806152-584","24/11/2026","22:06:46","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
 "LOG-1795532801100-39","24/11/2026","22:06:41","ILYAS","ILYAS","Finance","TAMBAH","Catatan Pengeluaran","24-11-2026 (November 2026)","Tambah pengeluaran Rp 20.000 — Tf ke adit buat sango lomba"
 "LOG-1795532786725-238","24/11/2026","22:06:26","ILYAS","ILYAS","Finance","TAMBAH","Catatan Pengeluaran","24-11-2026 (November 2026)","Tambah pengeluaran Rp 50.000 — Periksa adek"
 "LOG-1795532774066-450","24/11/2026","22:06:14","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Finance"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795155886401-360","20/11/2026","13:24:46","RENDI","RENDI","Admin","TAMBAH","Data Laporan Gangguan","AYU SELATAN DAN NUR HANIFAH (14/11/2026)","Tambah gangguan pelanggan AYU SELATAN DAN NUR HANIFAH: SPLITER EROR"
 "LOG-1795155854209-584","20/11/2026","13:24:14","RENDI","RENDI","Admin","TAMBAH","Data Laporan Gangguan","JALUR WIWIN (14/11/2026)","Tambah gangguan pelanggan JALUR WIWIN: KABEL PUTUS"
 "LOG-1795155823386-200","20/11/2026","13:23:43","RENDI","RENDI","Admin","TAMBAH","Data Laporan Gangguan","JALUR LEK NDEN (13/11/2026)","Tambah gangguan pelanggan JALUR LEK NDEN: KABEL PUTUS"
-"LOG-1795155789489-373","20/11/2026","13:23:09","RENDI","RENDI","Admin","TAMBAH","Data Laporan Gangguan","BUK FANI (11/11/2026)","Tambah gangguan pelanggan BUK FANI: KABEL PUTUS"
