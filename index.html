@@ -3929,7 +3929,7 @@
                 return;
             }
 
-            const headers = ["ID_Pelanggan", "NAMA", "ALAMAT", "NO.HP", "PAKET", "DISKON", "TELAT", "TOTAL", "STATUS", "USERNAME_PPPoE", "KETERANGAN", "PETUGAS", "PERIODE"];
+            const headers = ["ID_Pelanggan", "NAMA", "ALAMAT", "NO.HP", "PAKET", "DISKON", "DISKON_REFERAL", "TELAT", "TOTAL", "STATUS", "USERNAME_PPPoE", "KETERANGAN", "PETUGAS", "PERIODE"];
             const period = getActiveBillingPeriodLabel();
             const rows = filtered.map(c => ({
                 ID_Pelanggan: c.id || "",
@@ -3938,6 +3938,7 @@
                 "NO.HP": c.hp || "",
                 PAKET: parseNumber(c.paket),
                 DISKON: parseNumber(c.diskon),
+                DISKON_REFERAL: getBillReferalDiscount(c),
                 TELAT: parseNumber(c.telat),
                 TOTAL: parseNumber(c.total),
                 STATUS: c.status || "",
@@ -3948,7 +3949,7 @@
             }));
 
             const ws = XLSX.utils.json_to_sheet(rows, { header: headers });
-            ws["!cols"] = [16, 28, 34, 18, 14, 14, 12, 16, 16, 24, 30, 20, 18].map(wch => ({ wch }));
+            ws["!cols"] = [16, 28, 34, 18, 14, 14, 16, 12, 16, 16, 24, 30, 20, 18].map(wch => ({ wch }));
             const wb = XLSX.utils.book_new();
             XLSX.utils.book_append_sheet(wb, ws, "Tagihan Pelanggan");
 
@@ -4134,6 +4135,7 @@
                 hp: document.getElementById("inp-hp").value.trim(),
                 paket,
                 diskon,
+                diskonReferal: idx >= 0 && list[idx] ? getBillReferalDiscount(list[idx]) : 0,
                 telat,
                 total: Math.max(0, paket - diskon + telat),
                 status: document.getElementById("inp-status").value,
@@ -4716,6 +4718,40 @@
         }
 
         // ==================== 5. BONUS REFERAL PELANGGAN ====================
+        function getReferalTargetPeriodKey(psbDate) {
+            const raw = String(psbDate || "").trim();
+            const m = raw.match(/^(\d{1,2})[-\/](\d{1,2})[-\/](\d{4})$/);
+            if (!m) return "";
+            const day = parseInt(m[1], 10);
+            const month = parseInt(m[2], 10);
+            const year = parseInt(m[3], 10);
+            const check = new Date(year, month - 1, day);
+            if (month < 1 || month > 12 || day < 1 || check.getFullYear() !== year || check.getMonth() !== month - 1 || check.getDate() !== day) return "";
+            const targetDate = new Date(year, month, 1);
+            return `${String(targetDate.getMonth() + 1).padStart(2, "0")}-${targetDate.getFullYear()}`;
+        }
+
+        function getReferalTargetPeriodLabel(periodKey) {
+            const parts = String(periodKey || "").split("-");
+            return parts.length === 2 ? `${MONTH_NAMES_ID[parts[0]] || parts[0]} ${parts[1]}` : "Periode tidak valid";
+        }
+
+        function findReferalBill(refName, periodKey) {
+            const list = monthlyBillsStore[periodKey];
+            if (!Array.isArray(list)) return { list: null, bill: null };
+            const bill = list.find(b => String(b.nama || "").trim().toUpperCase() === refName);
+            return { list, bill: bill || null };
+        }
+
+        function getBillReferalDiscount(bill) {
+            if (!bill) return 0;
+            if (bill.diskonReferal !== undefined && bill.diskonReferal !== null && bill.diskonReferal !== "") {
+                return Math.max(0, parseNumber(bill.diskonReferal));
+            }
+            // Kompatibilitas data lama: versi sebelumnya menandai diskon referal di kolom keterangan.
+            return /Diskon Bonus Referal/i.test(String(bill.ket || "")) ? Math.max(0, parseNumber(bill.diskon)) : 0;
+        }
+
         function getGroupedReferalData() {
             const rate = parseNumber(document.getElementById("referal-discount-rate")?.value || appConfig.referalBonusRp || 25000);
             const refM = document.getElementById("ref-month")?.value || getCurrentPeriodMonth();
@@ -4725,24 +4761,27 @@
             allPSB.filter(p => matchesMonthYearFilter(p.tanggal, refM, refY)).forEach(p => {
                 const refName = String(p.bonus || "").trim().toUpperCase();
                 if (!refName) return;
-                if (!groupedMap.has(refName)) {
-                    let matchedCust = masterCustomers.find(c => c.nama.toUpperCase() === refName) ||
-                        ensureActiveBillingList().find(c => c.nama.toUpperCase() === refName);
+                const targetPeriodKey = getReferalTargetPeriodKey(p.tanggal);
+                const groupKey = `${refName}__${targetPeriodKey || "INVALID"}`;
+                if (!groupedMap.has(groupKey)) {
+                    let matchedCust = masterCustomers.find(c => String(c.nama || "").toUpperCase() === refName);
                     if (!matchedCust) {
                         for (const list of Object.values(monthlyBillsStore)) {
-                            const found = (list || []).find(c => (c.nama || "").toUpperCase() === refName);
+                            const found = (list || []).find(c => String(c.nama || "").toUpperCase() === refName);
                             if (found) { matchedCust = found; break; }
                         }
                     }
-                    groupedMap.set(refName, {
+                    groupedMap.set(groupKey, {
                         refName,
+                        targetPeriodKey,
+                        targetPeriodLabel: getReferalTargetPeriodLabel(targetPeriodKey),
                         custId: matchedCust ? matchedCust.id : "-",
                         alamat: matchedCust ? matchedCust.alamat : "-",
                         hp: matchedCust ? matchedCust.hp : "",
                         psbList: []
                     });
                 }
-                groupedMap.get(refName).psbList.push(p);
+                groupedMap.get(groupKey).psbList.push(p);
             });
 
             return Array.from(groupedMap.values()).map(g => ({
@@ -4751,6 +4790,12 @@
                 count: g.psbList.length,
                 totalBonus: g.psbList.length * rate
             }));
+        }
+
+        function isReferalBonusApplied(g) {
+            if (!g || !g.targetPeriodKey) return false;
+            const { bill } = findReferalBill(g.refName, g.targetPeriodKey);
+            return !!bill && getBillReferalDiscount(bill) === parseNumber(g.totalBonus) && parseNumber(g.totalBonus) > 0;
         }
 
         function renderBonusReferalView() {
@@ -4762,11 +4807,9 @@
 
             const groups = getGroupedReferalData();
             const labelEl = document.getElementById("referal-count-label");
-            if (labelEl) labelEl.textContent = `${groups.length} Pelanggan Dapat Bonus`;
+            if (labelEl) labelEl.textContent = `${groups.length} Data Bonus Referal`;
             const tbody = document.getElementById("referal-tbody");
             if (!tbody) return;
-
-            const activeBills = ensureActiveBillingList();
 
             if (groups.length === 0) {
                 tbody.innerHTML = `<tr><td colspan="7" class="px-4 py-8 text-center text-slate-400 font-semibold">Belum ada pelanggan yang memperoleh bonus referal pada periode ${escapeHTML(periodTitle)}.</td></tr>`;
@@ -4774,9 +4817,11 @@
             }
 
             tbody.innerHTML = groups.map((g, idx) => {
-                const billMatch = activeBills.find(b => b.nama.toUpperCase() === g.refName);
-                const isApplied = billMatch && parseNumber(billMatch.diskon) > 0;
+                const isApplied = isReferalBonusApplied(g);
                 const safeRef = escapeHTML(g.refName.replace(/'/g, "\\'"));
+                const safeTarget = escapeHTML(g.targetPeriodKey || "");
+                const statusLabel = !g.targetPeriodKey ? "TANGGAL PSB TIDAK VALID" : (isApplied ? "SUDAH MASUK DISKON" : "BELUM DITERAPKAN");
+                const statusClass = isApplied ? "bg-emerald-100 text-emerald-800" : "bg-amber-100 text-amber-800";
 
                 return `
                     <tr class="hover:bg-purple-50/30 transition">
@@ -4802,24 +4847,16 @@
                         <td class="px-4 py-3 text-right">
                             <div class="text-[11px] font-bold text-slate-600">${g.count} PSB &times; Rp ${formatRibuan(g.rate)}</div>
                             <div class="text-sm font-black text-emerald-700">= Rp ${formatRibuan(g.totalBonus)}</div>
+                            <div class="text-[10px] font-bold text-indigo-600 mt-1">Masuk tagihan: ${escapeHTML(g.targetPeriodLabel)}</div>
                         </td>
                         <td class="px-4 py-3 text-center">
-                            ${isApplied
-                                ? `<span class="px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 font-extrabold text-[10px]">SUDAH MASUK DISKON</span>`
-                                : `<span class="px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 font-extrabold text-[10px]">BELUM DITERAPKAN</span>`
-                            }
+                            <span class="px-2.5 py-1 rounded-full ${statusClass} font-extrabold text-[10px]">${statusLabel}</span>
                         </td>
                         <td class="px-4 py-3 text-center">
                             <div class="inline-flex flex-wrap items-center justify-center gap-1.5">
-                                <button type="button" onclick="applySingleReferalDiscount('${safeRef}')" class="px-2.5 py-1.5 rounded-xl btn-accent font-extrabold text-[11px] flex items-center gap-2 cursor-pointer shadow-sm">
-                                    Masuk ke Diskon Tagihan
-                                </button>
-                                <button type="button" onclick="cancelSingleReferalDiscount('${safeRef}')" class="px-2.5 py-1.5 rounded-xl btn-accent font-extrabold text-[11px] flex items-center gap-2 cursor-pointer shadow-sm">
-                                    Batal Masuk ke Diskon Tagihan
-                                </button>
-                                <a href="whatsapp://send" onclick="return handleReferalWAClick(event, ${idx})" class="px-2.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-[11px] cursor-pointer inline-flex items-center gap-1 no-underline">
-                                    WA
-                                </a>
+                                <button type="button" onclick="applySingleReferalDiscount('${safeRef}', '${safeTarget}')" class="px-2.5 py-1.5 rounded-xl btn-accent font-extrabold text-[11px] flex items-center gap-2 cursor-pointer shadow-sm">Masuk ke Diskon Tagihan</button>
+                                <button type="button" onclick="cancelSingleReferalDiscount('${safeRef}', '${safeTarget}')" class="px-2.5 py-1.5 rounded-xl btn-accent font-extrabold text-[11px] flex items-center gap-2 cursor-pointer shadow-sm">Batal Masuk ke Diskon Tagihan</button>
+                                <a href="whatsapp://send" onclick="return handleReferalWAClick(event, ${idx})" class="px-2.5 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-[11px] cursor-pointer inline-flex items-center gap-1 no-underline">WA</a>
                             </div>
                         </td>
                     </tr>
@@ -4828,53 +4865,83 @@
             scheduleLucideIcons(tbody);
         }
 
-        function applySingleReferalDiscount(refName) {
-            const groups = getGroupedReferalData();
-            const g = groups.find(x => x.refName === refName);
-            if (!g) return;
-            const key = getActiveBillingPeriodKey();
-            const list = ensureActiveBillingList();
-            const bill = list.find(b => b.nama.toUpperCase() === refName);
-            if (!bill) {
-                showToast(`Pelanggan "${refName}" tidak ditemukan di daftar tagihan aktif`, "error");
-                return;
+        function applyReferalGroupToBill(g, silent = false) {
+            if (!g || !g.targetPeriodKey) {
+                if (!silent) showToast(`Tanggal PSB untuk referal ${g?.refName || "ini"} tidak valid. Bonus belum diterapkan.`, "warning");
+                return { applied: false, reason: "invalid-date" };
             }
-            bill.diskon = g.totalBonus;
-            bill.total = Math.max(0, parseNumber(bill.paket) - g.totalBonus + parseNumber(bill.telat));
-            const psbNames = g.psbList.map(p => p.nama).join(", ");
-            const baseKet = String(bill.ket || "").split(" | Diskon Bonus Referal")[0].replace(/^Diskon Bonus Referal.*$/i, "").trim();
-            bill.ket = baseKet ? `${baseKet} | Diskon Bonus Referal (${g.count} PSB: ${psbNames})` : `Diskon Bonus Referal (${g.count} PSB: ${psbNames})`;
+            const { list, bill } = findReferalBill(g.refName, g.targetPeriodKey);
+            if (!list || !bill) {
+                if (!silent) showToast(`Data tagihan ${g.refName} untuk periode ${g.targetPeriodLabel} belum tersedia. Bonus tetap BELUM DITERAPKAN.`, "warning");
+                return { applied: false, reason: "missing-bill" };
+            }
 
-            monthlyBillsStore[key] = list;
-            recordUserActivity("EDIT", "Bonus Referal Pelanggan", refName, `Menerapkan diskon bonus referal Rp ${formatRibuan(g.totalBonus)} ke tagihan ${refName}`);
-            refreshActiveTabOnly();
-            triggerAutoSave("database_pelanggan.csv", true);
-            showToast(`Diskon Rp ${formatRibuan(g.totalBonus)} diterapkan & rincian tagihan ${refName} diperbarui`, "success");
+            const previousReferal = getBillReferalDiscount(bill);
+            const otherDiscount = Math.max(0, parseNumber(bill.diskon) - previousReferal);
+            bill.diskonReferal = parseNumber(g.totalBonus);
+            bill.diskon = otherDiscount + bill.diskonReferal;
+            bill.total = Math.max(0, parseNumber(bill.paket) - parseNumber(bill.diskon) + parseNumber(bill.telat));
+            const psbNames = g.psbList.map(p => p.nama).join(", ");
+            const cleanedKet = String(bill.ket || "").split(" | Diskon Bonus Referal")[0].replace(/^Diskon Bonus Referal.*$/i, "").trim();
+            bill.ket = cleanedKet ? `${cleanedKet} | Diskon Bonus Referal (${g.count} PSB: ${psbNames})` : `Diskon Bonus Referal (${g.count} PSB: ${psbNames})`;
+            monthlyBillsStore[g.targetPeriodKey] = list;
+            return { applied: true, bill };
         }
 
-        function cancelSingleReferalDiscount(refName) {
-            const key = getActiveBillingPeriodKey();
-            const list = ensureActiveBillingList();
-            const bill = list.find(b => b.nama.toUpperCase() === refName);
-            if (!bill) {
-                showToast(`Pelanggan "${refName}" tidak ditemukan di daftar tagihan aktif`, "error");
-                return;
-            }
-            bill.diskon = 0;
-            bill.total = Math.max(0, parseNumber(bill.paket) + parseNumber(bill.telat));
-            const cleanedKet = String(bill.ket || "").split(" | Diskon Bonus Referal")[0].replace(/^Diskon Bonus Referal.*$/i, "").trim();
-            bill.ket = cleanedKet;
-
-            monthlyBillsStore[key] = list;
-            recordUserActivity("EDIT", "Bonus Referal Pelanggan", refName, `Membatalkan diskon bonus referal pada tagihan ${refName}`);
+        function applySingleReferalDiscount(refName, targetPeriodKey) {
+            const g = getGroupedReferalData().find(x => x.refName === refName && x.targetPeriodKey === targetPeriodKey);
+            if (!g) return;
+            const result = applyReferalGroupToBill(g, false);
+            if (!result.applied) return;
+            recordUserActivity("EDIT", "Bonus Referal Pelanggan", refName, `Menerapkan diskon bonus referal Rp ${formatRibuan(g.totalBonus)} ke tagihan ${refName} periode ${g.targetPeriodLabel}`);
             refreshActiveTabOnly();
             triggerAutoSave("database_pelanggan.csv", true);
-            showToast(`Diskon bonus referal "${refName}" dibatalkan & rincian tagihan kembali normal`, "info");
+            showToast(`Bonus Rp ${formatRibuan(g.totalBonus)} berhasil diterapkan ke tagihan ${g.targetPeriodLabel}`, "success");
+        }
+
+        function cancelSingleReferalDiscount(refName, targetPeriodKey) {
+            const g = getGroupedReferalData().find(x => x.refName === refName && x.targetPeriodKey === targetPeriodKey);
+            if (!g || !g.targetPeriodKey) return;
+            const { list, bill } = findReferalBill(refName, targetPeriodKey);
+            if (!list || !bill) {
+                showToast(`Data tagihan ${refName} untuk periode ${g.targetPeriodLabel} belum tersedia.`, "warning");
+                return;
+            }
+            const previousReferal = getBillReferalDiscount(bill);
+            if (previousReferal <= 0) {
+                showToast(`Belum ada diskon bonus referal yang diterapkan pada tagihan ${g.targetPeriodLabel}.`, "info");
+                return;
+            }
+            const otherDiscount = Math.max(0, parseNumber(bill.diskon) - previousReferal);
+            bill.diskonReferal = 0;
+            bill.diskon = otherDiscount;
+            bill.total = Math.max(0, parseNumber(bill.paket) - parseNumber(bill.diskon) + parseNumber(bill.telat));
+            bill.ket = String(bill.ket || "").split(" | Diskon Bonus Referal")[0].replace(/^Diskon Bonus Referal.*$/i, "").trim();
+            monthlyBillsStore[targetPeriodKey] = list;
+            recordUserActivity("EDIT", "Bonus Referal Pelanggan", refName, `Membatalkan diskon bonus referal pada tagihan ${refName} periode ${g.targetPeriodLabel}`);
+            refreshActiveTabOnly();
+            triggerAutoSave("database_pelanggan.csv", true);
+            showToast(`Diskon bonus referal dibatalkan. Diskon lain tetap dipertahankan.`, "info");
         }
 
         function applyAllReferalDiscounts() {
             const groups = getGroupedReferalData();
-            groups.forEach(g => applySingleReferalDiscount(g.refName));
+            let applied = 0;
+            let missing = 0;
+            groups.forEach(g => {
+                const result = applyReferalGroupToBill(g, true);
+                if (result.applied) {
+                    applied++;
+                    recordUserActivity("EDIT", "Bonus Referal Pelanggan", g.refName, `Menerapkan diskon bonus referal Rp ${formatRibuan(g.totalBonus)} ke tagihan periode ${g.targetPeriodLabel}`);
+                } else missing++;
+            });
+            if (applied > 0) {
+                refreshActiveTabOnly();
+                triggerAutoSave("database_pelanggan.csv", true);
+            }
+            if (missing > 0) showToast(`${applied} bonus diterapkan. ${missing} bonus belum diterapkan karena tanggal PSB atau tagihan periode tujuan belum tersedia.`, "warning");
+            else if (applied > 0) showToast(`${applied} bonus referal berhasil diterapkan sesuai periode tagihan tujuan.`, "success");
+            else showToast("Tidak ada bonus yang dapat diterapkan.", "warning");
         }
 
         function handleReferalWAClick(event, groupIdx) {
@@ -4893,7 +4960,7 @@
                 NAMA: g.refName || "",
                 ID: g.custId || "-",
                 ALAMAT: g.alamat || "-",
-                PERIODE: getActiveBillingPeriodLabel(),
+                PERIODE: g.targetPeriodLabel || getActiveBillingPeriodLabel(),
                 JUMLAH_PSB: g.count,
                 TARIF_REFERAL: formatRibuan(g.rate),
                 TOTAL_BONUS: formatRibuan(g.totalBonus),
@@ -8349,7 +8416,6 @@
             const refY = document.getElementById("ref-year")?.value || getCurrentPeriodYear();
             const periodTitle = refM === "ALL" ? `SEMUA BULAN ${refY}` : `${(MONTH_NAMES_ID[refM] || refM).toUpperCase()} ${refY}`;
             const groups = getGroupedReferalData();
-            const activeBills = ensureActiveBillingList();
             const grandTotalBonus = groups.reduce((s, g) => s + parseNumber(g.totalBonus), 0);
 
             const html = `
@@ -8392,8 +8458,7 @@
                         </thead>
                         <tbody>
                             ${groups.map((g, i) => {
-                                const billMatch = activeBills.find(b => b.nama.toUpperCase() === g.refName);
-                                const isApplied = billMatch && parseNumber(billMatch.diskon) > 0;
+                                const isApplied = isReferalBonusApplied(g);
                                 const psbDetails = g.psbList.map((p, idx) => `${idx + 1}. ${p.nama} (${p.lokasi} - ${p.tanggal})`).join("<br>");
                                 return `
                                     <tr>
@@ -8402,7 +8467,7 @@
                                         <td>${escapeHTML(g.custId)} (${escapeHTML(g.alamat)})</td>
                                         <td style="white-space:nowrap;">${escapeHTML(g.hp || "-")}</td>
                                         <td>${psbDetails}</td>
-                                        <td style="text-align:center; white-space:nowrap;">${g.count} PSB &times; Rp ${formatRibuan(g.rate)}</td>
+                                        <td style="text-align:center; white-space:nowrap;">${g.count} PSB &times; Rp ${formatRibuan(g.rate)}<br><b>Tagihan: ${escapeHTML(g.targetPeriodLabel)}</b></td>
                                         <td style="text-align:right; font-weight:700; white-space:nowrap;">Rp ${formatRibuan(g.totalBonus)}</td>
                                         <td style="text-align:center; font-weight:700;">${isApplied ? "SUDAH MASUK DISKON" : "BELUM DITERAPKAN"}</td>
                                     </tr>
@@ -9020,11 +9085,11 @@
 
         function buildCSVByFileName(fileName) {
             if (fileName === "database_pelanggan.csv") {
-                const header = "ID_Pelanggan,NAMA,ALAMAT,NO.HP,PAKET,DISKON,TELAT,TOTAL,STATUS,USERNAME_PPPoE,KETERANGAN,PETUGAS,PERIODE";
+                const header = "ID_Pelanggan,NAMA,ALAMAT,NO.HP,PAKET,DISKON,DISKON_REFERAL,TELAT,TOTAL,STATUS,USERNAME_PPPoE,KETERANGAN,PETUGAS,PERIODE";
                 const rows = [];
                 Object.entries(monthlyBillsStore).forEach(([periode, list]) => {
                     (list || []).forEach(c => {
-                        rows.push([c.id, c.nama, c.alamat, c.hp, c.paket, c.diskon, c.telat, c.total, c.status, c.pppoe, c.ket, c.petugas, periode].map(csvEscape).join(","));
+                        rows.push([c.id, c.nama, c.alamat, c.hp, c.paket, c.diskon, getBillReferalDiscount(c), c.telat, c.total, c.status, c.pppoe, c.ket, c.petugas, periode].map(csvEscape).join(","));
                     });
                 });
                 return [header, ...rows].join("\n");
@@ -9241,7 +9306,13 @@
             if (fileName === "database_pelanggan.csv") {
                 const newStore = {};
                 rows.forEach(r => {
-                    const [id, nama, alamat, hp, paket, diskon, telat, total, status, pppoe, ket, petugas, periode] = r;
+                    let id, nama, alamat, hp, paket, diskon, diskonReferal, telat, total, status, pppoe, ket, petugas, periode;
+                    if (r.length >= 14) {
+                        [id, nama, alamat, hp, paket, diskon, diskonReferal, telat, total, status, pppoe, ket, petugas, periode] = r;
+                    } else {
+                        [id, nama, alamat, hp, paket, diskon, telat, total, status, pppoe, ket, petugas, periode] = r;
+                        diskonReferal = /Diskon Bonus Referal/i.test(String(ket || "")) ? diskon : 0;
+                    }
                     if (!nama) return;
                     const perKey = periode || "11-2026";
                     if (!newStore[perKey]) newStore[perKey] = [];
@@ -9252,6 +9323,7 @@
                         hp: hp || "",
                         paket: parseNumber(paket),
                         diskon: parseNumber(diskon),
+                        diskonReferal: diskonReferal !== undefined && diskonReferal !== "" ? parseNumber(diskonReferal) : (/Diskon Bonus Referal/i.test(String(ket || "")) ? parseNumber(diskon) : 0),
                         telat: parseNumber(telat),
                         total: parseNumber(total),
                         status: status || "BELUM LUNAS",
