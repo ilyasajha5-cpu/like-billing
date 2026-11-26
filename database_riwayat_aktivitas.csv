@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795705227994-985","26/11/2026","22:00:27","RENDI","RENDI","Admin","LOGIN","Autentikasi Sistem","RENDI","User RENDI (@RENDI) masuk sebagai Admin"
 "LOG-1795703042514-18","26/11/2026","21:24:02","ILYAS","ILYAS","Finance","TAMBAH","Catatan Pengeluaran","26-11-2026 (November 2026)","Tambah pengeluaran Rp 150.000 — Beli kue ulang tahun adek"
 "LOG-1795703016032-499","26/11/2026","21:23:36","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Finance"
 "LOG-1795702716135-553","26/11/2026","21:18:36","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795158270927-301","20/11/2026","14:04:30","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG019 - AMELIA AJUNG","Ubah status tagihan AMELIA AJUNG (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158268788-587","20/11/2026","14:04:28","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG018 - ABDUH AJUNG","Ubah status tagihan ABDUH AJUNG (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158188204-370","20/11/2026","14:03:08","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG017 - BUK KULSUM SUMBERANGET","Ubah status tagihan BUK KULSUM SUMBERANGET (November 2026) dari BELUM LUNAS menjadi ISOLIR"
-"LOG-1795158176404-765","20/11/2026","14:02:56","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG016 - PROYEK K.U","Ubah status tagihan PROYEK K.U (November 2026) dari BELUM LUNAS menjadi ISOLIR"
