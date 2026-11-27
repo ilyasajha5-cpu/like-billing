@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795761501242-855","27/11/2026","13:38:21","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
 "LOG-1795761498562-638","27/11/2026","13:38:18","ILYAS","ILYAS","Super Admin","SIMPAN","Gaji Tim","Periode 11-2026","Menyimpan & memperbarui perhitungan Gaji Tim periode 11-2026"
 "LOG-1795761456360-684","27/11/2026","13:37:36","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
 "LOG-1795761444387-829","27/11/2026","13:37:24","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795158297740-927","20/11/2026","14:04:57","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG030 - HENDRA CAK SOR AJUNG","Ubah status tagihan HENDRA CAK SOR AJUNG (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158295676-144","20/11/2026","14:04:55","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG029 - HAR AJUNG","Ubah status tagihan HAR AJUNG (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158293725-58","20/11/2026","14:04:53","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG028 - HAN AJUNG","Ubah status tagihan HAN AJUNG (November 2026) dari BELUM LUNAS menjadi LUNAS"
-"LOG-1795158290244-826","20/11/2026","14:04:50","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG001 - HAMBALI AJUNG","Ubah status tagihan HAMBALI AJUNG (November 2026) dari BELUM LUNAS menjadi LUNAS"
