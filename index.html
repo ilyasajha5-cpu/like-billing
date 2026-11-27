@@ -2383,9 +2383,10 @@
                         <label class="font-bold text-slate-700">ID Pelanggan *</label>
                         <input type="text" id="inp-id" required class="w-full px-3 py-2 rounded-xl border border-slate-300 font-bold uppercase">
                     </div>
-                    <div class="space-y-1">
+                    <div class="space-y-1 relative">
                         <label class="font-bold text-slate-700">Nama Pelanggan *</label>
-                        <input type="text" id="inp-nama" required class="w-full px-3 py-2 rounded-xl border border-slate-300 font-bold uppercase">
+                        <input type="text" id="inp-nama" required autocomplete="off" oninput="searchMasterCustomerSuggestions()" onfocus="searchMasterCustomerSuggestions()" onblur="setTimeout(hideMasterCustomerSuggestions, 160)" placeholder="Ketik nama / ID pelanggan..." class="w-full px-3 py-2 rounded-xl border border-slate-300 font-bold uppercase">
+                        <div id="inp-nama-suggestions" class="hidden absolute left-0 right-0 top-full mt-1 bg-white border border-slate-200 rounded-xl shadow-xl z-[70] max-h-52 overflow-y-auto"></div>
                     </div>
                     <div class="space-y-1">
                         <label class="font-bold text-slate-700">Alamat / Lokasi *</label>
@@ -4068,8 +4069,57 @@
             showToast(`Status "${list[idx].nama}" diubah menjadi ${newStatus}`, "success");
         }
 
+        // Pencarian master pelanggan untuk pengisian otomatis form tagihan.
+        function hideMasterCustomerSuggestions() {
+            const box = document.getElementById("inp-nama-suggestions");
+            if (box) { box.classList.add("hidden"); box.innerHTML = ""; }
+        }
+
+        function searchMasterCustomerSuggestions() {
+            const input = document.getElementById("inp-nama");
+            const box = document.getElementById("inp-nama-suggestions");
+            if (!input || !box || parseInt(document.getElementById("edit-index")?.value ?? "-1", 10) >= 0) return;
+            const q = input.value.trim().toLowerCase();
+            if (!q) { hideMasterCustomerSuggestions(); return; }
+            const matches = (Array.isArray(masterCustomers) ? masterCustomers : [])
+                .map((customer, index) => ({ customer, index }))
+                .filter(({ customer }) => `${customer.nama || ""} ${customer.id || ""} ${customer.alamat || ""} ${customer.pppoe || ""}`.toLowerCase().includes(q))
+                .slice(0, 12);
+            if (!matches.length) {
+                box.innerHTML = `<div class="px-3 py-3 text-slate-500">Pelanggan tidak ditemukan di Data Pelanggan.</div>`;
+            } else {
+                box.innerHTML = matches.map(({ customer, index }) => `
+                    <button type="button" onmousedown="selectMasterCustomerForBill(${index})" class="w-full text-left px-3 py-2.5 hover:bg-blue-50 border-b border-slate-100 last:border-0">
+                        <div class="font-extrabold text-slate-800">${escapeHTML(customer.nama || "-")}</div>
+                        <div class="text-[10px] text-slate-500 mt-0.5">${escapeHTML(customer.id || "-")} · ${escapeHTML(customer.alamat || "-")}</div>
+                    </button>`).join("");
+            }
+            box.classList.remove("hidden");
+        }
+
+        function selectMasterCustomerForBill(index) {
+            const customer = masterCustomers[index];
+            if (!customer) return;
+            document.getElementById("inp-id").value = customer.id || "";
+            document.getElementById("inp-nama").value = customer.nama || "";
+            setSelectValueSafely("inp-alamat", customer.alamat || "");
+            document.getElementById("inp-hp").value = customer.hp || "";
+            setSelectValueSafely("inp-paket", formatRibuan(customer.paket || 0), `Paket Khusus — Rp ${formatRibuan(customer.paket || 0)}`);
+            setSelectValueSafely("inp-petugas", (customer.petugas || "").toLowerCase(), (customer.petugas || "").toUpperCase());
+            document.getElementById("inp-pppoe").value = customer.pppoe || "";
+
+            // Nilai khusus tagihan diinisialisasi; master data saat ini hanya menyimpan profil pelanggan.
+            document.getElementById("inp-diskon").value = formatRibuan(customer.diskon || customer.diskonReferal || 0);
+            document.getElementById("inp-telat").value = formatRibuan(customer.telat || 0);
+            document.getElementById("inp-status").value = customer.status || "BELUM LUNAS";
+            document.getElementById("inp-ket").value = customer.ket || "";
+            calcBillTotalInput();
+            hideMasterCustomerSuggestions();
+        }
+
         function openCustomerModal(idx = -1) {
             populateDropdownOptions();
+            hideMasterCustomerSuggestions();
             const list = ensureActiveBillingList();
             document.getElementById("edit-index").value = idx;
             document.getElementById("cust-modal-title").textContent = idx >= 0 ? "Edit Tagihan Pelanggan" : "Tambah Tagihan Pelanggan";
