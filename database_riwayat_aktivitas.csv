@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795764884621-707","27/11/2026","14:34:44","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) keluar / logout dari aplikasi"
 "LOG-1795764870812-134","27/11/2026","14:34:30","ILYAS","ILYAS","Finance","TAMBAH","Catatan Pengeluaran","27-11-2026 (November 2026)","Tambah pengeluaran Rp 315.000 — Beli kado ultah aira"
 "LOG-1795764848510-192","27/11/2026","14:34:08","ILYAS","ILYAS","Finance","TAMBAH","Catatan Pengeluaran","27-11-2026 (November 2026)","Tambah pengeluaran Rp 35.000 — Bensin tim"
 "LOG-1795764823609-426","27/11/2026","14:33:43","ILYAS","ILYAS","Finance","TAMBAH","Catatan Pengeluaran","27-11-2026 (November 2026)","Tambah pengeluaran Rp 10.000 — Saku aira"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795158311588-78","20/11/2026","14:05:11","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG035 - LUKMAN-1 AJUNG","Ubah status tagihan LUKMAN-1 AJUNG (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158309420-863","20/11/2026","14:05:09","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG034 - LINA AJUNG","Ubah status tagihan LINA AJUNG (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158303300-880","20/11/2026","14:05:03","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG033 - LEK WAHYU AJUNG","Ubah status tagihan LEK WAHYU AJUNG (November 2026) dari BELUM LUNAS menjadi LUNAS"
-"LOG-1795158300484-794","20/11/2026","14:05:00","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG032 - LEK SUKI AJUNG","Ubah status tagihan LEK SUKI AJUNG (November 2026) dari BELUM LUNAS menjadi LUNAS"
