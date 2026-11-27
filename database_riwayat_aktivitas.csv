@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795783335230-657","27/11/2026","19:42:15","ILYAS","ILYAS","Finance","TAMBAH","Catatan Pengeluaran","27-11-2026 (November 2026)","Tambah pengeluaran Rp 15.000 — Beli bakwan ayah adek"
 "LOG-1795783321627-661","27/11/2026","19:42:01","ILYAS","ILYAS","Finance","TAMBAH","Catatan Pengeluaran","27-11-2026 (November 2026)","Tambah pengeluaran Rp 100.000 — Bensin mobil"
 "LOG-1795783310315-265","27/11/2026","19:41:50","ILYAS","ILYAS","Finance","TAMBAH","Catatan Pengeluaran","27-11-2026 (November 2026)","Tambah pengeluaran Rp 50.000 — TIAR BON"
 "LOG-1795783295074-464","27/11/2026","19:41:35","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Finance"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795158354587-206","20/11/2026","14:05:54","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG062 - MBAK ROM AJUNG-5","Ubah status tagihan MBAK ROM AJUNG-5 (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158353555-232","20/11/2026","14:05:53","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG061 - LUKMAN AJUNG-5","Ubah status tagihan LUKMAN AJUNG-5 (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158352532-992","20/11/2026","14:05:52","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG060 - LILA2 AJUNG-5","Ubah status tagihan LILA2 AJUNG-5 (November 2026) dari BELUM LUNAS menjadi LUNAS"
-"LOG-1795158351523-800","20/11/2026","14:05:51","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG059 - HASBI AJUNG-5","Ubah status tagihan HASBI AJUNG-5 (November 2026) dari BELUM LUNAS menjadi LUNAS"
