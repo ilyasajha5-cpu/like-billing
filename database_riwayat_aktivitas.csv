@@ -1,4 +1,5 @@
 ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AKTIVITAS
+"LOG-1795852691566-746","28/11/2026","14:58:11","ILYAS","ILYAS","Finance","TAMBAH","Catatan Pengeluaran","28-11-2026 (November 2026)","Tambah pengeluaran Rp 60.000 — Beli baju adit"
 "LOG-1795852674793-905","28/11/2026","14:57:54","ILYAS","ILYAS","Finance","TAMBAH","Catatan Pengeluaran","28-11-2026 (November 2026)","Tambah pengeluaran Rp 40.000 — Beli mie ayam ayah bunda"
 "LOG-1795852655895-846","28/11/2026","14:57:35","ILYAS","ILYAS","Finance","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Finance"
 "LOG-1795838265680-971","28/11/2026","10:57:45","ILYAS","ILYAS","Super Admin","LOGIN","Autentikasi Sistem","ILYAS","User ILYAS (@ILYAS) masuk sebagai Super Admin"
@@ -998,4 +999,3 @@ ID_LOG,TANGGAL,WAKTU,USERNAME,NAMA_USER,ROLE,TINDAKAN,MENU,TARGET_DATA,DETAIL_AK
 "LOG-1795158367017-501","20/11/2026","14:06:07","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG073 - AYU AJUNGSELATAN","Ubah status tagihan AYU AJUNGSELATAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158366121-201","20/11/2026","14:06:06","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG072 - ANDRIYANI AJUNGSELATAN","Ubah status tagihan ANDRIYANI AJUNGSELATAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
 "LOG-1795158365290-254","20/11/2026","14:06:05","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG071 - ANDRE AJUNGSELATAN","Ubah status tagihan ANDRE AJUNGSELATAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
-"LOG-1795158364425-537","20/11/2026","14:06:04","RENDI","RENDI","Admin","EDIT","Tagihan Pelanggan","PLG070 - ADEL AJUNGSELATAN","Ubah status tagihan ADEL AJUNGSELATAN (November 2026) dari BELUM LUNAS menjadi LUNAS"
